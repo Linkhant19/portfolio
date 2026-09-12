@@ -1,17 +1,22 @@
 // src/components/character/CharacterDisplay.jsx
 
-export default function CharacterDisplay() {
+export default function CharacterDisplay({ character }) {
     return(
-        <section className="flex-1 flex items-center justify-center">
-            <div>
-                <div className="h-80 w-80">
-                    <p className="mt-6 max-w-md">
-                        I will include here: <br />
-                        1. dynamic image<br />
-                        2. small intro<br />
-                        that changes with the character
-                    </p>
-                </div>
+        <section className="flex-1 flex items-center justify-center p-8">
+            <div className="max-w-lg">
+                <img
+                    src={character.image}
+                    alt={character.title}
+                    className="aspect-square w-full object-cover"
+                />
+
+                <h2 className="mt-6 text-2xl font-semibold">
+                    {character.title}
+                </h2>
+
+                <p className="mt-3 text-lg leading-relaxed text-neutral-600">
+                    {character.description}
+                </p>
             </div>
         </section>
     );

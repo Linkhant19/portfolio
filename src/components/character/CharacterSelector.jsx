@@ -1,18 +1,29 @@
 // src/components/character/CharacterSelector.jsx
 
-export default function CharacterSelector() {
+import CharacterOption from "./CharacterOption";
+
+export default function CharacterSelector({
+    characters,
+    selectedCharacterId,
+    onSelect,
+}) {
     return (
-        <section className="flex-1 flex items-center">
-            <div>
-                <h1 className="text-4xl font-bold mb-8">
+        <section className="flex flex-1 items-center p-8">
+            <div className="w-full max-w-xl">
+                <h1 className="mb-10 text-4xl font-bold">
                     SELECT YOUR CHARACTER
                 </h1>
 
-                <div className="flex flex-col gap-4 items-start">
-                    <button>Software Developer</button>
-                    <button>Events and Puzzles Designer</button>
-                    <button>Creative Writer</button>
-                    <button>Human</button>
+                <div className="flex flex-col">
+                    {characters.map((character, index) => (
+                        <CharacterOption
+                        key={character.id}
+                        character={character}
+                        index={index}
+                        isSelected={character.id === selectedCharacterId}
+                        onSelect={onSelect}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
