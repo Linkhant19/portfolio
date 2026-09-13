@@ -10,7 +10,7 @@ export default function CharacterSelector({
     return (
         <section className="flex flex-1 items-center p-8">
             <div className="w-full max-w-xl">
-                <h1 className="mb-10 text-4xl font-bold">
+                <h1 className="font-major-mono text-5xl">
                     SELECT YOUR CHARACTER
                 </h1>
 

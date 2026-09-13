@@ -5,7 +5,7 @@
 // 3. image
 // 4. description
 
-import developerImage from "../assets/images/characters/developer.jpg"
+import developerImage from "../assets/images/characters/testing.gif"
 
 export const characters = [
     {
