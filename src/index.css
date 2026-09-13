@@ -11,3 +11,7 @@
 @theme {
     --font-major-mono: "Major Mono Display", monospace;
 }
+
+html {
+    scroll-behavior: smooth;
+}

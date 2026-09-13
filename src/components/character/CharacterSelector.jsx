@@ -10,7 +10,7 @@ export default function CharacterSelector({
     return (
         <section className="flex flex-1 items-center p-8">
             <div className="w-full max-w-xl">
-                <h1 className="font-major-mono text-5xl">
+                <h1 className="font-major-mono text-5xl mb-8">
                     SELECT YOUR CHARACTER
                 </h1>
 
@@ -25,6 +25,13 @@ export default function CharacterSelector({
                         />
                     ))}
                 </div>
+
+                <a
+                    href="#projects"
+                    className="mt-10 inline-block border border-current px-6 py-3 font-major-mono"
+                >
+                    Begin Your Adventure ↓
+                </a>
             </div>
         </section>
     )

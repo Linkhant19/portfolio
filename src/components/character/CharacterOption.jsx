@@ -20,11 +20,11 @@ export default function CharacterOption({
             >
             <span className="flex items-center gap-5">
                 <span className="text-sm text-neutral-500">
-                {String(index + 1).padStart(2, "0")}
+                    {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <span className="text-xl font-medium">
-                {character.title}
+                <span className="font-major-mono text-sm">
+                    {character.title}
                 </span>
             </span>
 
