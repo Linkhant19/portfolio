@@ -41,7 +41,10 @@ export default function Home() {
             />
             </div>
 
-            <ProjectsSection projects={selectedProjects} />
+            <ProjectsSection
+                projects={selectedProjects}
+                character={selectedCharacter}
+            />
         </main>
     );
 }
