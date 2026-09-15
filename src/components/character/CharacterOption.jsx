@@ -29,6 +29,6 @@ export default function CharacterOption({
             </span>
 
             <span aria-hidden="true">→</span>
-    </button>
+        </button>
     );
 }

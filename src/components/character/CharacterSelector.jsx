@@ -17,11 +17,11 @@ export default function CharacterSelector({
                 <div className="flex flex-col">
                     {characters.map((character, index) => (
                         <CharacterOption
-                        key={character.id}
-                        character={character}
-                        index={index}
-                        isSelected={character.id === selectedCharacterId}
-                        onSelect={onSelect}
+                            key={character.id}
+                            character={character}
+                            index={index}
+                            isSelected={character.id === selectedCharacterId}
+                            onSelect={onSelect}
                         />
                     ))}
                 </div>
