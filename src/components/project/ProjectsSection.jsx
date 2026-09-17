@@ -6,19 +6,33 @@ export default function ProjectsSection({ projects, character }) {
     return (
         <section
             id="projects"
-            className="min-h-screen scroll-mt-16 px-8 py-20"
+            className="min-h-screen scroll-mt-16 px-4 py-16"
         >
-            <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-7xl">
     
-                <p className="font-major-mono text-sm">
-                    current path:
-                </p>
-        
-                <h2 className="font-major-mono text-sm">
-                    {character.title}
-                </h2>
-        
-                <div className="mt-10 grid gap-6 md:grid-cols-2">
+                <div className="grid gap-8 md:grid-cols-2">
+            
+                    {/* Left side will include my current path: x */}
+                    <div>
+                        <p className="font-major-mono text-sm">
+                            current path:
+                        </p>
+
+                        <p className="mt-2 font-major-mono text-lg">
+                            {character.title}
+                        </p>
+                    </div>
+
+                    {/* Right side will have the experience title */}
+                    <div>
+                        <h2 className="font-major-mono text-lg italic lowercase text-end">
+                        {character.projectHeading}
+                        </h2>
+                    </div>
+
+                </div>
+            
+                <div className="mt-17 grid gap-16 md:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}

@@ -45,6 +45,8 @@ export default function Home() {
                 projects={selectedProjects}
                 character={selectedCharacter}
             />
+
+            
         </main>
     );
 }

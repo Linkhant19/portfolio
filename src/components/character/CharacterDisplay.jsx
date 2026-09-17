@@ -4,7 +4,7 @@ export default function CharacterDisplay({ character }) {
     return (
         <section className="flex flex-1 items-center justify-center p-8">
             <div className="w-full max-w-sm">
-                <div className="aspect-[4/5] w-50 overflow-hidden">
+                <div className="w-120 overflow-hidden">
                     <img
                     src={character.image}
                     alt={character.title}
