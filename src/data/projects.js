@@ -24,6 +24,7 @@ export const projects = [
     {
         id: "escape-room",
         title: "Escape Room",
+        slug: "escape-room",
         characterIds: ["puzzle-designer", "human"],
         description: "escape room I did with Nyrein",
         image: CommuteBeatGif,
