@@ -28,14 +28,6 @@ export const projects = [
         description: "escape room I did with Nyrein",
         image: CommuteBeatGif,
     },
-  
-    {
-        id: "poetry",
-        title: "Seven Ways To Heaven",
-        characterIds: ["writer", "human"],
-        description: "poetry",
-        image: CommuteBeatGif,
-    },
     {
         id: "commute-beat",
         title: "Commute Beat - Full Stack Web App",
@@ -131,5 +123,77 @@ export const projects = [
             "Connect Four AI player",
         ],
         image: LivableStreetsGif,
+    },
+    {
+        id: "shadows-of-you",
+        title: "Shadows of You",
+        characterIds: ["writer"],
+        description: "- written in March 2024",
+        image: LivableStreetsGif,
+        links: [
+            {
+                label: "Website",
+                url: "https://linkhant19.github.io/ShadowsOfYou",
+            },
+        ]
+    },
+    {
+        id: "seven-ways-to-heaven",
+        title: "Seven Ways To Heaven",
+        characterIds: ["writer"],
+        description: "- written in January 2025",
+        image: LivableStreetsGif,
+        links: [
+            {
+                label: "Website",
+                url: "https://seven-ways-to-heaven-a241a7b892e1.herokuapp.com",
+            },
+        ]
+    },
+    {
+        id: "the-midnight-friendship-service",
+        title: "The Midnight Friendship Service",
+        characterIds: ["writer"],
+        description: "- written in June 2025",
+        image: LivableStreetsGif,
+        links: [
+            {
+                label: "Website",
+                url: "https://midnightfriendshipservice.vercel.app",
+            },
+            {
+                label: "GitHub",
+                url: "https://github.com/Linkhant19/midnightfriendshipservice",
+            },
+        ]
+    },
+    {
+        id: "midnight-friendship-service-short-story",
+        title: "The Midnight Friendship Service - A Short Story",
+        characterIds: ["writer"],
+        description: "- written as a class assignment in Spring 2025. This is different from The Midnight Friendship Service poetry collection (even though they have the same title). This is a story set in a distopian future with an Artificial Intelligence company called 'The Midnight Friendship Service'.",
+        image: LivableStreetsGif,
+        links: [
+            {
+                label: "PDF",
+                url: "/writings/THE-MIDNIGHT-FRIENDSHIP-SERVICE-SHORT-STORY.pdf",
+            },
+        ]
+    },
+    {
+        id: "phoenix.inc",
+        title: "Phoenix.Inc - A Short Play",
+        characterIds: ["writer"],
+        description: "- written in Fall 2024 for a PlayWriting class. Haunted by regrets and bad memories, \
+        the old man Dick visits a healthcare company called Phoenix.Inc. \
+        Their treatments offer a new way of changing and reliving past situations with the help of generative AI. \
+        Will Dick be able to change his past successfully?",
+        image: LivableStreetsGif,
+        links: [
+            {
+                label: "PDF",
+                url: "/writings/Phoenix.Inc-Playwriting.pdf",
+            },
+        ]
     }
 ];

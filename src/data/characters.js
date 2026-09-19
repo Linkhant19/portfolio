@@ -8,6 +8,7 @@
 import developerImage from "../assets/images/characters/testing.gif"
 import writerImage from "../assets/images/characters/writer.gif"
 import puzzleDesignerImage from "../assets/images/characters/puzzle_designer.gif"
+import HumanImage from "../assets/images/characters/human.gif"
 import { Puzzle } from "iconoir-react"
 
 export const characters = [
@@ -36,7 +37,7 @@ export const characters = [
         id: "human",
         title: "Human",
         projectHeading: "Human",
-        image: developerImage,
+        image: HumanImage,
         description: "human",
     },
 ]

@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+/* Major Mono Display */
 @font-face {
     font-family: "Major Mono Display";
     src: url("./assets/fonts/Font_Header.ttf") format("truetype");
@@ -6,10 +9,18 @@
     font-display: swap;
 }
 
-@import "tailwindcss";
+/* Libre Caslon Display */
+@font-face {
+    font-family: "Libre Caslon Display";
+    src: url("./assets/fonts/LibreCaslonDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 @theme {
     --font-major-mono: "Major Mono Display", monospace;
+    --font-caslon: "Libre Caslon Display", serif;
 }
 
 html {

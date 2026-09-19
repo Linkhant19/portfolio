@@ -32,13 +32,13 @@ export default function Home() {
     return (
         <main className="min-h-screen">
             <div className="flex min-h-screen flex-col lg:flex-row">
-            <CharacterDisplay character={selectedCharacter} />
+                <CharacterDisplay character={selectedCharacter} />
 
-            <CharacterSelector
-                characters={characters}
-                selectedCharacterId={selectedCharacterId}
-                onSelect={setSelectedCharacterId}
-            />
+                <CharacterSelector
+                    characters={characters}
+                    selectedCharacterId={selectedCharacterId}
+                    onSelect={setSelectedCharacterId}
+                />
             </div>
 
             <ProjectsSection

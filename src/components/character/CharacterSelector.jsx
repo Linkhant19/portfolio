@@ -8,7 +8,7 @@ export default function CharacterSelector({
     onSelect,
 }) {
     return (
-        <section className="flex flex-1 items-center p-8">
+        <section className="flex flex-1 items-center p-25">
             <div className="w-full max-w-xl">
                 <h1 className="font-major-mono text-5xl mb-8">
                     SELECT YOUR CHARACTER
