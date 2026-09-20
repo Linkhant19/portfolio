@@ -78,8 +78,8 @@ export default function EscapeRoomPuzzleDesign() {
 
                 </div>
 
-                <p className="mt-4 font-caslon text-sm italic opacity-70">
-                    Early puzzle concepts sketched on my iPad during
+                <p className="mt-4 font-caslon text-sm italic opacity-70 text-end">
+                    * Early puzzle concepts sketched on my iPad during
                     the ideation process.
                 </p>
 

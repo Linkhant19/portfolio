@@ -5,6 +5,7 @@ import EscapeRoomDetails from "../components/escape-room/EscapeRoomDetails";
 import EscapeRoomBeginnings from "../components/escape-room/EscapeRoomBeginnings";
 import EscapeRoomConcept from "../components/escape-room/EscapeRoomConcept";
 import EscapeRoomPuzzleDesign from "../components/escape-room/EscapeRoomPuzzleDesign";
+import EscapeRoomPuzzleFlow from "../components/escape-room/EscapeRoomPuzzleFlow";
 
 export default function EscapeRoom() {
     return (
@@ -16,6 +17,7 @@ export default function EscapeRoom() {
                 <EscapeRoomBeginnings />
                 <EscapeRoomConcept />
                 <EscapeRoomPuzzleDesign />
+                <EscapeRoomPuzzleFlow />
 
             </div>
         </main>
