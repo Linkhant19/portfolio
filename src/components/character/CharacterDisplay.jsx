@@ -2,9 +2,9 @@
 
 export default function CharacterDisplay({ character }) {
     return (
-        <section className="flex flex-1 items-center p-30">
-            <div className="w-full max-w-2xl">
-                <div className="w-130 overflow-hidden">
+        <section className="flex flex-1 items-center p-5 pl-30">
+            <div className="w-full max-w-xl">
+                <div className="w-150 overflow-hidden">
                     <img
                     src={character.image}
                     alt={character.title}
@@ -12,7 +12,7 @@ export default function CharacterDisplay({ character }) {
                     />
                 </div>
         
-                <div className="mt-6 min-h-20">
+                <div className="mt-0">
                     <h2 className="text-2xl font-semibold">
                     {character.title}
                     </h2>
