@@ -8,6 +8,7 @@ import EscapeRoomPuzzleDesign from "../components/escape-room/EscapeRoomPuzzleDe
 import EscapeRoomPuzzleFlow from "../components/escape-room/EscapeRoomPuzzleFlow";
 import EscapeRoomFeaturedPuzzles from "../components/escape-room/EscapeRoomFeaturedPuzzles";
 import EscapeRoomBuilding from "../components/escape-room/EscapeRoomBuilding";
+import EscapeRoomPlaytesting from "../components/escape-room/EscapeRoomPlaytesting";
 
 export default function EscapeRoom() {
     return (
@@ -22,6 +23,7 @@ export default function EscapeRoom() {
                 <EscapeRoomPuzzleFlow />
                 <EscapeRoomFeaturedPuzzles />
                 <EscapeRoomBuilding />
+                <EscapeRoomPlaytesting />
 
             </div>
         </main>
