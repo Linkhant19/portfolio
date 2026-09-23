@@ -3,7 +3,7 @@
 import React from "react";
 export default function EscapeRoomBuilding() {
     return (
-        <section className="mt-32">
+        <section id="building" className="mt-32 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 05 / bringing the world to life

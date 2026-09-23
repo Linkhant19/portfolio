@@ -1,5 +1,7 @@
 // src/pages/EscapeRoom.jsx
 
+import EscapeRoomNavigation from "../components/escape-room/EscapeRoomNavigation";
+
 import EscapeRoomHero from "../components/escape-room/EscapeRoomHero";
 import EscapeRoomDetails from "../components/escape-room/EscapeRoomDetails";
 import EscapeRoomBeginnings from "../components/escape-room/EscapeRoomBeginnings";
@@ -14,8 +16,10 @@ import EscapeRoomReflection from "../components/escape-room/EscapeRoomReflection
 export default function EscapeRoom() {
     return (
         <main className="min-h-screen px-6 py-20">
-            <div className="mx-auto max-w-6xl">
 
+            <EscapeRoomNavigation />
+
+            <div className="mx-auto max-w-6xl">
                 <EscapeRoomHero />
                 <EscapeRoomDetails />
                 <EscapeRoomBeginnings />
@@ -26,8 +30,8 @@ export default function EscapeRoom() {
                 <EscapeRoomBuilding />
                 <EscapeRoomPlaytesting />
                 <EscapeRoomReflection />
-
             </div>
+            
         </main>
     );
 }

@@ -2,7 +2,7 @@
 
 export default function EscapeRoomReflection() {
     return (
-        <section className="mt-32 mb-24">
+        <section id="reflection" className="mt-32 mb-24 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 07 / reflection

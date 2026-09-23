@@ -6,7 +6,7 @@ import React from "react";
 
 export default function EscapeRoomFeaturedPuzzles() {
     return (
-        <section className="mt-32">
+        <section id="featured-puzzles" className="mt-32 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 04 / featured puzzles

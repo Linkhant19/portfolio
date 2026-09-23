@@ -3,7 +3,7 @@
 
 export default function EscapeRoomHero() {
     return (
-        <section>
+        <section id="overview">
             <p className="font-major-mono text-sm">
                 selected adventure:
             </p>

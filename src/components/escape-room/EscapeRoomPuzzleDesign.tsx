@@ -11,7 +11,7 @@ import PuzzleDraftFourImage from "../../assets/images/escaperoom/puzzle_draft_4.
 
 export default function EscapeRoomPuzzleDesign() {
     return (
-        <section className="mt-32">
+        <section id="puzzle-design" className="mt-32 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 03 / puzzle design

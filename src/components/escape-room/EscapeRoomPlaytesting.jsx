@@ -2,7 +2,7 @@
 
 export default function EscapeRoomPlaytesting() {
     return (
-        <section className="mt-32">
+        <section id="playtesting" className="mt-32 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 06 / playtesting

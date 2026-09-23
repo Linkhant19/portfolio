@@ -4,7 +4,7 @@
 import React from "react";
 export default function EscapeRoomConcept() {
     return (
-        <section className="mt-32">
+        <section id="concept" className="mt-32 scroll-mt-20">
 
             <p className="font-major-mono text-sm">
                 02 / the concept
