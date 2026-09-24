@@ -1,7 +1,7 @@
 // src/components/escape-room/EscapeRoomNavigation.tsx
 // this should handle my sidebar and navigation
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 
 const sections = [
@@ -17,6 +17,41 @@ const sections = [
 
 export default function EscapeRoomNavigation() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("overview");
+
+    useEffect(() => {
+        function updateActiveSection() {
+            const offset = window.innerHeight * 0.3;
+    
+            let currentSection = sections[0].id;
+    
+            sections.forEach((section) => {
+                const element = document.getElementById(section.id);
+    
+                if (
+                    element &&
+                    element.getBoundingClientRect().top <= offset
+                ) {
+                    currentSection = section.id;
+                }
+            });
+    
+            setActiveSection(currentSection);
+        }
+    
+        window.addEventListener("scroll", updateActiveSection, {
+            passive: true,
+        });
+    
+        updateActiveSection();
+    
+        return () => {
+            window.removeEventListener(
+                "scroll",
+                updateActiveSection
+            );
+        };
+    }, []);
 
     return (
         <>
@@ -26,15 +61,31 @@ export default function EscapeRoomNavigation() {
                 onClick={() => setIsOpen(true)}
                 aria-label="Open case study navigation"
                 aria-expanded={isOpen}
-                className="fixed right-6 top-6 z-50 font-major-mono text-sm"
+                className="
+                    fixed right-6 top-6 z-50
+                    flex cursor-pointer items-center gap-4
+                    font-major-mono text-sm
+                "
             >
-                ☰ menu
+                <span className="hidden sm:inline">
+                    {sections.find(
+                        (section) => section.id === activeSection
+                    )?.number}
+
+                    {" / "}
+
+                    {sections.find(
+                        (section) => section.id === activeSection
+                    )?.label}
+                </span>
+
+                <span>☰ menu</span>
             </button>
 
             <div
                 onClick={() => setIsOpen(false)}
                 className={`
-                    fixed inset-0 z-40 bg-black/30
+                    fixed inset-0 z-40 cursor-pointer bg-black/30
                     transition-opacity duration-300
                     ${
                         isOpen
@@ -62,7 +113,7 @@ export default function EscapeRoomNavigation() {
                     <button
                         onClick={() => setIsOpen(false)}
                         aria-label="Close case study navigation"
-                        className="font-major-mono text-sm"
+                        className="cursor-pointer font-major-mono text-sm"
                     >
                         ✕ close
                     </button>
@@ -80,28 +131,54 @@ export default function EscapeRoomNavigation() {
                     </h2>
                 </div>
 
-                {/* SECTION LINKS */}
+                {/* SECTION LINKS SECTION */}
 
                 <nav className="mt-12">
                     <ul className="space-y-5">
 
-                        {sections.map((section) => (
-                            <li key={section.id}>
-                                <a
-                                    href={`#${section.id}`}
-                                    onClick={() => setIsOpen(false)}
-                                    className="group flex items-center gap-4"
-                                >
-                                    <span className="font-major-mono text-xs opacity-50">
-                                        {section.number}
-                                    </span>
+                    {sections.map((section) => (
+                        <li key={section.id}>
+                            <a
+                                href={`#${section.id}`}
+                                onClick={() => setIsOpen(false)}
+                                aria-current={
+                                    activeSection === section.id
+                                        ? "location"
+                                        : undefined
+                                }
+                                className={`
+                                    group flex cursor-pointer items-center gap-4
+                                    transition-opacity
+                                    ${
+                                        activeSection === section.id
+                                            ? "opacity-100"
+                                            : "opacity-50 hover:opacity-100"
+                                    }
+                                `}
+                            >
+                                <span className="font-major-mono text-xs">
+                                    {section.number}
+                                </span>
 
-                                    <span className="font-caslon text-xl transition-opacity group-hover:opacity-50">
-                                        {section.label}
-                                    </span>
-                                </a>
-                            </li>
-                        ))}
+                                <span
+                                    className={`
+                                        font-caslon text-xl
+                                        ${
+                                            activeSection === section.id
+                                                ? "font-bold"
+                                                : ""
+                                        }
+                                    `}
+                                >
+                                    {section.label}
+                                </span>
+
+                                {activeSection === section.id && (
+                                    <span aria-hidden="true">←</span>
+                                )}
+                            </a>
+                        </li>
+                    ))}
 
                     </ul>
                 </nav>
