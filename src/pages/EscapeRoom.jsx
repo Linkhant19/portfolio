@@ -1,5 +1,7 @@
 // src/pages/EscapeRoom.jsx
 
+import { Link } from "react-router-dom";
+
 import EscapeRoomNavigation from "../components/escape-room/EscapeRoomNavigation";
 
 import EscapeRoomHero from "../components/escape-room/EscapeRoomHero";
@@ -30,8 +32,15 @@ export default function EscapeRoom() {
                 <EscapeRoomBuilding />
                 <EscapeRoomPlaytesting />
                 <EscapeRoomReflection />
+
+                <Link
+                    to="/?character=puzzle-designer#projects"
+                    className="font-major-mono text-sm cursor-pointer hover:opacity-60"
+                >
+                    ← Explore More Projects
+                </Link>
             </div>
-            
+
         </main>
     );
 }

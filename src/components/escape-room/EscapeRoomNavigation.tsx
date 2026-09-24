@@ -2,6 +2,7 @@
 // this should handle my sidebar and navigation
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const sections = [
@@ -182,6 +183,15 @@ export default function EscapeRoomNavigation() {
 
                     </ul>
                 </nav>
+
+                <div className="mt-12 border-t pt-8">
+                    <Link
+                        to="/?character=puzzle-designer#projects"
+                        className="font-major-mono text-sm cursor-pointer hover:opacity-60"
+                    >
+                        ← back to character select
+                    </Link>
+                </div>
 
             </aside>
         </>
