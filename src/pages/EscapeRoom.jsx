@@ -1,6 +1,7 @@
 // src/pages/EscapeRoom.jsx
 
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 import EscapeRoomNavigation from "../components/escape-room/EscapeRoomNavigation";
 
@@ -16,6 +17,11 @@ import EscapeRoomPlaytesting from "../components/escape-room/EscapeRoomPlaytesti
 import EscapeRoomReflection from "../components/escape-room/EscapeRoomReflection";
 
 export default function EscapeRoom() {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <main className="min-h-screen px-6 py-20">
 

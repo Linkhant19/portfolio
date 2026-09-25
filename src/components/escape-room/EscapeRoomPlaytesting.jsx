@@ -1,5 +1,8 @@
 // src/components/escape-room/EscapeRoomPlaytesting.jsx
 
+import TesterVideo1 from "../../assets/images/escaperoom/tester_video_1.mp4";
+import TesterVideo2 from "../../assets/images/escaperoom/tester_video_2.mp4";
+
 export default function EscapeRoomPlaytesting() {
     return (
         <section id="playtesting" className="mt-32 scroll-mt-20">
@@ -21,17 +24,39 @@ export default function EscapeRoomPlaytesting() {
 
             <div className="mt-16 grid gap-6 md:grid-cols-2">
 
-                <div className="flex aspect-video items-center justify-center bg-neutral-200 text-neutral-600">
-                    <p className="font-major-mono text-sm">
-                        playtesting photo / video
-                    </p>
-                </div>
+                <figure>
+                    <div className="aspect-video overflow-hidden">
+                        <video
+                            src={TesterVideo1}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
 
-                <div className="flex aspect-video items-center justify-center bg-neutral-200 text-neutral-600">
-                    <p className="font-major-mono text-sm">
-                        playtesting photo / video
-                    </p>
-                </div>
+                    <figcaption className="mt-3 font-caslon text-sm italic">
+                        Cave lights turned on by laser pointer.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <div className="aspect-video overflow-hidden">
+                        <video
+                            src={TesterVideo2}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
+
+                    <figcaption className="mt-3 font-caslon text-sm italic text-end">
+                        Making shapes out of ropes.
+                    </figcaption>
+                </figure>
 
             </div>
 

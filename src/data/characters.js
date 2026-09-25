@@ -34,10 +34,10 @@ export const characters = [
         description: "writer",
     },
     {
-        id: "human",
-        title: "Human",
-        projectHeading: "Human",
+        id: "villager",
+        title: "Villager",
+        projectHeading: "Villager",
         image: HumanImage,
-        description: "human",
+        description: "villager",
     },
 ]

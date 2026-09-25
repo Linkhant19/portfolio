@@ -1,6 +1,7 @@
 // src/components/escape-room/EscapeRoomBranchesPuzzle.tsx
 
 import React from "react";
+import BranchesPuzzleImage1 from "../../assets/images/escaperoom/banches_puzzle_1.jpg";
 
 export default function EscapeRoomBranchesPuzzle() {
     return (
@@ -25,17 +26,17 @@ export default function EscapeRoomBranchesPuzzle() {
             <div className="mt-12 grid gap-6 md:grid-cols-2">
 
                 <figure>
-
-                    <div className="flex aspect-[4/3] items-center justify-center bg-neutral-200 text-neutral-600">
-                        <p className="font-major-mono text-sm">
-                            photograph of the branches
-                        </p>
+                    <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                            src={BranchesPuzzleImage1}
+                            alt="Two 3D-printed branch pieces used in the Hidden Branches puzzle"
+                            className="h-full w-full object-cover"
+                        />
                     </div>
 
                     <figcaption className="mt-3 font-caslon text-sm italic">
-                        The original physical puzzle.
+                        The original branches puzzle being tested by players.
                     </figcaption>
-
                 </figure>
 
                 <figure>

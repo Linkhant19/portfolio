@@ -1,8 +1,41 @@
 // src/components/escape-room/EscapeRoomTreePuzzle.tsx
 
 import React from "react";
+import { useEffect, useRef } from "react";
+
+import TreePuzzleImage1 from "../../assets/images/escaperoom/tree_puzzle_1.jpg";
+import MainTreeVideo from "../../assets/images/escaperoom/main_tree_video.mp4";
 
 export default function EscapeRoomTreePuzzle() {
+
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+
+        if (!video) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    video.currentTime = 0;
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        observer.observe(video);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
     return (
         <article className="mt-24">
 
@@ -23,12 +56,12 @@ export default function EscapeRoomTreePuzzle() {
                 surroundings all along.
             </p>
 
-            <div className="mt-12 flex aspect-video items-center justify-center bg-neutral-200 text-neutral-600">
-
-                <p className="font-major-mono text-sm">
-                    tree puzzle photograph
-                </p>
-
+            <div className="mt-12 aspect-video overflow-hidden">
+                <img
+                    src={TreePuzzleImage1}
+                    alt="Testers solving the tree puzzle"
+                    className="h-full w-full object-cover"
+                />
             </div>
 
             <div className="mt-20">
@@ -144,12 +177,16 @@ export default function EscapeRoomTreePuzzle() {
                     The Answer All Along
                 </h4>
 
-                <div className="mt-12 flex aspect-video items-center justify-center bg-neutral-200 text-neutral-600">
-
-                    <p className="font-major-mono text-sm">
-                        photograph of the final tree
-                    </p>
-
+                { /* one thing i added is the video not auto playing in the background and playing from the start whenever the user scrolls to the section */}
+                <div className="mt-12 aspect-video overflow-hidden">
+                    <video
+                        ref={videoRef}
+                        src={MainTreeVideo}
+                        muted
+                        loop
+                        playsInline
+                        className="h-full w-full object-cover"
+                    />
                 </div>
 
                 <div className="mt-12 grid gap-12 md:grid-cols-2">

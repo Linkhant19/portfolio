@@ -2,7 +2,7 @@
 // how it all started part of my project
 
 import React from "react";
-
+import EscapeRoomProgress from "./EscapeRoomProgress";
 
 export default function EscapeRoomBeginnings() {
     return (
@@ -54,15 +54,7 @@ export default function EscapeRoomBeginnings() {
 
                 </div>
 
-                {/* I put my image here soon */}
-
-                <div className="flex aspect-[4/5] items-center justify-center bg-neutral-200 text-neutral-600">
-
-                    <p className="font-major-mono text-sm">
-                        basement before photo
-                    </p>
-
-                </div>
+                <EscapeRoomProgress />
 
             </div>
 
