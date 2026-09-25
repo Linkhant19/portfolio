@@ -2,6 +2,7 @@
 
 import TesterVideo1 from "../../assets/images/escaperoom/tester_video_1.mp4";
 import TesterVideo2 from "../../assets/images/escaperoom/tester_video_2.mp4";
+import AutoPlayVideo from "../ui/AutoPlayVideo";
 
 export default function EscapeRoomPlaytesting() {
     return (
@@ -26,14 +27,7 @@ export default function EscapeRoomPlaytesting() {
 
                 <figure>
                     <div className="aspect-video overflow-hidden">
-                        <video
-                            src={TesterVideo1}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="h-full w-full object-cover"
-                        />
+                        <AutoPlayVideo src={TesterVideo1} />
                     </div>
 
                     <figcaption className="mt-3 font-caslon text-sm italic">
@@ -43,14 +37,7 @@ export default function EscapeRoomPlaytesting() {
 
                 <figure>
                     <div className="aspect-video overflow-hidden">
-                        <video
-                            src={TesterVideo2}
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="h-full w-full object-cover"
-                        />
+                        <AutoPlayVideo src={TesterVideo2} />
                     </div>
 
                     <figcaption className="mt-3 font-caslon text-sm italic text-end">

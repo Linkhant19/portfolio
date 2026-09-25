@@ -17,7 +17,7 @@ import EscapeRoomPlaytesting from "../components/escape-room/EscapeRoomPlaytesti
 import EscapeRoomReflection from "../components/escape-room/EscapeRoomReflection";
 
 export default function EscapeRoom() {
-    
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);

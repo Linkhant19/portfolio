@@ -1,6 +1,8 @@
 // src/components/escape-room/EscapeRoomBuilding.tsx
 
 import React from "react";
+import EscapeRoomProgress from "./EscapeRoomProgress";
+
 export default function EscapeRoomBuilding() {
     return (
         <section id="building" className="mt-32 scroll-mt-20">
@@ -20,37 +22,7 @@ export default function EscapeRoomBuilding() {
                 environment where we could integrate our puzzles.
             </p>
 
-            <div className="mt-16 grid gap-6 md:grid-cols-2">
-
-                <figure>
-                    <div className="flex aspect-[4/3] items-center justify-center bg-neutral-200 text-neutral-600">
-
-                        <p className="font-major-mono text-sm">
-                            basement before construction
-                        </p>
-
-                    </div>
-
-                    <figcaption className="mt-3 font-caslon text-sm italic">
-                        The basement before our transformation.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <div className="flex aspect-[4/3] items-center justify-center bg-neutral-200 text-neutral-600">
-
-                        <p className="font-major-mono text-sm">
-                            construction in progress
-                        </p>
-
-                    </div>
-
-                    <figcaption className="mt-3 font-caslon text-sm italic">
-                        Building the physical structure of the escape room.
-                    </figcaption>
-                </figure>
-
-            </div>
+            <EscapeRoomProgress />
 
             <div className="mt-20 grid gap-12 md:grid-cols-2">
 

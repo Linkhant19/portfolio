@@ -2,9 +2,33 @@
 // how it all started part of my project
 
 import React from "react";
-import EscapeRoomProgress from "./EscapeRoomProgress";
+
+import EscapeRoomPhoto1 from "../../assets/images/escaperoom/escape_room_general_1.jpg";
+import EscapeRoomPhoto2 from "../../assets/images/escaperoom/escape_room_general_2.jpg";
+import EscapeRoomPhoto3 from "../../assets/images/escaperoom/escape_room_general_3.jpg";
+import EscapeRoomPhoto4 from "../../assets/images/escaperoom/escape_room_general_4.jpg";
 
 export default function EscapeRoomBeginnings() {
+
+    const roomPhotos = [
+        {
+            src: EscapeRoomPhoto1,
+            alt: "Escape Room General Photo One",
+        },
+        {
+            src: EscapeRoomPhoto2,
+            alt: "Escape Room General Photo Two",
+        },
+        {
+            src: EscapeRoomPhoto4,
+            alt: "Escape Room General Photo Four",
+        },
+        {
+            src: EscapeRoomPhoto3,
+            alt: "Escape Room General Photo Three",
+        },
+    ]
+
     return (
         <section id="beginning" className="mt-32 scroll-mt-20">
 
@@ -54,7 +78,26 @@ export default function EscapeRoomBeginnings() {
 
                 </div>
 
-                <EscapeRoomProgress />
+                <div className="grid grid-cols-2 content-start gap-3">
+
+                    {roomPhotos.map((photo) => (
+
+                        <div
+                            key={photo.src}
+                            className="aspect-square overflow-hidden"
+                        >
+
+                            <img
+                                src={photo.src}
+                                alt={photo.alt}
+                                className="h-full w-full object-cover"
+                            />
+
+                        </div>
+
+                    ))}
+
+                </div>
 
             </div>
 

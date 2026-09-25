@@ -1,40 +1,12 @@
 // src/components/escape-room/EscapeRoomTreePuzzle.tsx
 
 import React from "react";
-import { useEffect, useRef } from "react";
 
 import TreePuzzleImage1 from "../../assets/images/escaperoom/tree_puzzle_1.jpg";
 import MainTreeVideo from "../../assets/images/escaperoom/main_tree_video.mp4";
+import AutoPlayVideo from "../ui/AutoPlayVideo";
 
 export default function EscapeRoomTreePuzzle() {
-
-    const videoRef = useRef<HTMLVideoElement | null>(null);
-
-    useEffect(() => {
-        const video = videoRef.current;
-
-        if (!video) return;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    video.currentTime = 0;
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            },
-            {
-                threshold: 0.5,
-            }
-        );
-
-        observer.observe(video);
-
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
 
     return (
         <article className="mt-24">
@@ -179,14 +151,7 @@ export default function EscapeRoomTreePuzzle() {
 
                 { /* one thing i added is the video not auto playing in the background and playing from the start whenever the user scrolls to the section */}
                 <div className="mt-12 aspect-video overflow-hidden">
-                    <video
-                        ref={videoRef}
-                        src={MainTreeVideo}
-                        muted
-                        loop
-                        playsInline
-                        className="h-full w-full object-cover"
-                    />
+                    <AutoPlayVideo src={MainTreeVideo} />
                 </div>
 
                 <div className="mt-12 grid gap-12 md:grid-cols-2">
