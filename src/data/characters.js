@@ -17,27 +17,30 @@ export const characters = [
         title: "Software Developer",
         projectHeading: "Software Development & Consulting Experiences",
         image: writerImage,
-        description: "developer",
+        description: "with his combined knowledge in Computer Science and Psychology, \
+        he develops and implements software solutions that create different ways people could enjoy this world.",
     },
     {
         id: "puzzle-designer",
         title: "Events and Puzzles/Games Designer",
         projectHeading: "Puzzle and Game Design Experiences",
         image: puzzleDesignerImage,
-        description: "puzzle designer",
+        description: "once the President of the Board Games Club, he found his passion in \
+        hosting various interactive events, and designing puzzles and games. ",
     },
     {
         id: "writer",
         title: "Creative Writer",
         projectHeading: "Creative Writing Pieces",
         image: writerImage,
-        description: "writer",
+        description: "he saddles up the wildest things whenever and wherever they come. \
+        their footprints are marked in all forms. poetry. short stories. plays.",
     },
     {
         id: "villager",
         title: "Villager",
         projectHeading: "Villager",
         image: HumanImage,
-        description: "villager",
+        description: "just a normal townsperson who built all of this and more",
     },
 ]
