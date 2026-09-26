@@ -3,6 +3,7 @@
 import CharacterDisplay from "../components/character/CharacterDisplay";
 import CharacterSelector from "../components/character/CharacterSelector";
 import ProjectsSection from "../components/project/ProjectsSection";
+import VillagerSection from "../components/villager/VillagerSection";
 import { characters } from "../data/characters";
 import { projects } from "../data/projects";
 import { useSearchParams } from "react-router-dom";
@@ -48,10 +49,14 @@ export default function Home() {
                 />
             </div>
 
-            <ProjectsSection
-                projects={selectedProjects}
-                character={selectedCharacter}
-            />
+            {selectedCharacterId === "villager" ? (
+                <VillagerSection />
+            ) : (
+                <ProjectsSection
+                    projects={selectedProjects}
+                    character={selectedCharacter}
+                />
+            )}
 
             
         </main>

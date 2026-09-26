@@ -8,7 +8,7 @@ export const projects = [
     {
         id: "portfolio",
         title: "Interactive Portfolio",
-        characterIds: ["developer", "human"],
+        characterIds: ["developer"],
         description: "THIS WEBSITE!!!!!",
         image: CommuteBeatGif,
     },
@@ -25,7 +25,7 @@ export const projects = [
         id: "escape-room",
         title: "Escape Room",
         slug: "escape-room",
-        characterIds: ["puzzle-designer", "human"],
+        characterIds: ["puzzle-designer"],
         description: "escape room I did with Nyrein",
         image: CommuteBeatGif,
     },

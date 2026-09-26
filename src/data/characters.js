@@ -9,7 +9,6 @@ import developerImage from "../assets/images/characters/testing.gif"
 import writerImage from "../assets/images/characters/writer.gif"
 import puzzleDesignerImage from "../assets/images/characters/puzzle_designer.gif"
 import HumanImage from "../assets/images/characters/human.gif"
-import { Puzzle } from "iconoir-react"
 
 export const characters = [
     {
@@ -26,7 +25,7 @@ export const characters = [
         projectHeading: "Puzzle and Game Design Experiences",
         image: puzzleDesignerImage,
         description: "once the President of the Board Games Club, he found his passion in \
-        hosting various interactive events, and designing puzzles and games. ",
+        hosting various interactive events, and designing puzzles and games, including escape rooms.",
     },
     {
         id: "writer",
