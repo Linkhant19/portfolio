@@ -11,3 +11,6 @@
 # CVA
 
 # Radix Toast 
+
+## websites that helped me with design/color choices
+https://www.media.io/color-palette/home-office-color-palette.html

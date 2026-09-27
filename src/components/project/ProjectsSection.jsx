@@ -2,6 +2,7 @@
 
 import ProjectCard from "./ProjectCard";
 import RetroComputer from "../portfolio/RetroComputer";
+import WorkBadge from "../portfolio/WorkBadge";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -33,20 +34,33 @@ export default function ProjectsSection({ projects, character }) {
 
                 </div>
             
-                <div className="mt-17 grid gap-16 md:grid-cols-2">
-                    {projects.map((project) =>
-                        project.category === "project" ? (
+                <div className="mt-17 grid gap-25 md:grid-cols-2 text-end">
+                {projects.map((project) => {
+                    if (project.category === "project") {
+                        return (
                             <RetroComputer
                                 key={project.id}
                                 project={project}
                             />
-                        ) : (
-                            <ProjectCard
+                        );
+                    }
+
+                    if (project.category === "work") {
+                        return (
+                            <WorkBadge
                                 key={project.id}
                                 project={project}
                             />
-                        )
-                    )}
+                        );
+                    }
+
+                    return (
+                        <ProjectCard
+                            key={project.id}
+                            project={project}
+                        />
+                    );
+                })}
                 </div>
     
             </div>

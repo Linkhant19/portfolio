@@ -11,6 +11,10 @@
 import CommuteBeatGif from "../assets/images/projects/commutebeat.gif";
 import LivableStreetsGif from "../assets/images/projects/livablestreets.gif";
 import FullStackGif from "../assets/images/projects/fullstackjourney.gif";
+import FastLogo from "../assets/images/projects/fast_enterprises.jpg";
+import The360edLogo from "../assets/images/projects/360ed.jpg";
+import BoardGamesClubLogo from "../assets/images/projects/board_games_club.jpg";
+import BostonUniversityLogo from "../assets/images/projects/boston_university.jpg";
 
 export const projects = [
     {
@@ -24,11 +28,11 @@ export const projects = [
 
     {
         id: "implementation-consultant",
-        title: "Implementation Consultant - Fast Enterprises",
+        title: "Implementation Consultant -\nFast Enterprises",
         characterIds: ["developer"],
         category: "work",
         description: "adding later",
-        image: CommuteBeatGif,
+        image: FastLogo,
     },
   
     {
@@ -124,7 +128,7 @@ export const projects = [
     },
     {
         id: "teaching-assistant",
-        title: "Teaching Assistant - Computer Science",
+        title: "CS Teaching Assistant -\nBoston University",
         characterIds: ["developer"],
         category: "work",
         description:
@@ -139,11 +143,11 @@ export const projects = [
             "debugging",
             "Connect Four AI player",
         ],
-        image: LivableStreetsGif,
+        image: BostonUniversityLogo,
     },
     {
         id: "board-games-club",
-        title: "President - Boston University Board Games Club",
+        title: "President -\nBoston University Board Games Club",
         characterIds: ["puzzle-designer"],
         category: "work",
         description: `As the first elected Asian President of Boston University's
@@ -168,11 +172,11 @@ export const projects = [
             "Escape Rooms",
             "Murder Mysteries",
         ],
-        image: LivableStreetsGif,
+        image: BoardGamesClubLogo,
     },
     {
         id: "360ed-internship",
-        title: "Application Development Intern - 360ed",
+        title: "Application Development Intern -\n360ed",
         characterIds: ["developer", "puzzle-designer"],
         category: "work",
         description:
@@ -186,7 +190,7 @@ export const projects = [
             "game-like features",
             "interactive and engaging",
         ],
-        image: LivableStreetsGif,
+        image: The360edLogo,
     },
     {
         id: "shadows-of-you",
