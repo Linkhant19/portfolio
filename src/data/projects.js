@@ -82,7 +82,7 @@ export const projects = [
     },
     {
         id: "full-stack-journey",
-        title: "My Full-Stack Development Journey - Fall 2024 Semester",
+        title: "My Full-Stack Development Journey - Fall 2024",
         characterIds: ["developer"],
         category: "project",
         description:

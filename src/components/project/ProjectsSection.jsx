@@ -1,6 +1,7 @@
 // src/components/project/ProjectsSection.jsx
 
 import ProjectCard from "./ProjectCard";
+import RetroComputer from "../portfolio/RetroComputer";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -33,12 +34,19 @@ export default function ProjectsSection({ projects, character }) {
                 </div>
             
                 <div className="mt-17 grid gap-16 md:grid-cols-2">
-                    {projects.map((project) => (
-                        <ProjectCard
-                            key={project.id}
-                            project={project}
-                        />
-                    ))}
+                    {projects.map((project) =>
+                        project.category === "project" ? (
+                            <RetroComputer
+                                key={project.id}
+                                project={project}
+                            />
+                        ) : (
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                            />
+                        )
+                    )}
                 </div>
     
             </div>
