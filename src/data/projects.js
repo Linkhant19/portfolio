@@ -254,6 +254,8 @@ export const projects = [
         category: "writing",
         description: "- written as a class assignment in Spring 2025. This is different from The Midnight Friendship Service poetry collection (even though they have the same title). This is a story set in a distopian future with an Artificial Intelligence company called 'The Midnight Friendship Service'.",
         image: LivableStreetsGif,
+        excerpt: "the midnight friendship service",
+        format: "SHORT STORY",
         links: [
             {
                 label: "PDF",
@@ -271,6 +273,8 @@ export const projects = [
         Their treatments offer a new way of changing and reliving past situations with the help of generative AI. \
         Will Dick be able to change his past successfully?",
         image: LivableStreetsGif,
+        excerpt: "phoenix.inc",
+        format: "SHORT PLAY",
         links: [
             {
                 label: "PDF",

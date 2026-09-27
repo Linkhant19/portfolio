@@ -73,7 +73,7 @@ export default function PoetryBook({ project }) {
 
             {/* RIGHT SIDE: PAPER NOTE + POEM EXCERPT */}
 
-            <div className="md:-translate-y-0.5">
+            <div>
 
                 {/* TYPEWRITTEN NOTE */}
 
@@ -156,6 +156,16 @@ export default function PoetryBook({ project }) {
                             "
                         >
                             “{project.quote}”
+                        </p>
+
+                        <p
+                            className="
+                                mt-5 font-major-mono
+                                text-[10px] tracking-[0.2em]
+                                text-[#C8A26D]
+                            "
+                        >
+                            — FROM THE COLLECTION —
                         </p>
                     </blockquote>
                 )}

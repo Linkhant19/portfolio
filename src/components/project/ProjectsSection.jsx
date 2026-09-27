@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import RetroComputer from "../portfolio/RetroComputer";
 import WorkBadge from "../portfolio/WorkBadge";
 import PoetryBook from "../portfolio/PoetryBook";
+import WritingManuscript from "../portfolio/WritingManuscript";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -36,41 +37,50 @@ export default function ProjectsSection({ projects, character }) {
                 </div>
             
                 <div className="mt-17 grid gap-25 md:grid-cols-2 text-end">
-                {projects.map((project) => {
-                    if (project.category === "project") {
+                    {projects.map((project) => {
+                        if (project.category === "project") {
+                            return (
+                                <RetroComputer
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+
+                        if (project.category === "work") {
+                            return (
+                                <WorkBadge
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+
+                        if (project.category === "poem-collection") {
+                            return (
+                                <PoetryBook
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+
+                        if (project.category === "writing") {
+                            return (
+                                <WritingManuscript
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+
                         return (
-                            <RetroComputer
+                            <ProjectCard
                                 key={project.id}
                                 project={project}
                             />
                         );
-                    }
-
-                    if (project.category === "work") {
-                        return (
-                            <WorkBadge
-                                key={project.id}
-                                project={project}
-                            />
-                        );
-                    }
-
-                    if (project.category === "poem-collection") {
-                        return (
-                            <PoetryBook
-                                key={project.id}
-                                project={project}
-                            />
-                        );
-                    }
-
-                    return (
-                        <ProjectCard
-                            key={project.id}
-                            project={project}
-                        />
-                    );
-                })}
+                    })}
                 </div>
     
             </div>
