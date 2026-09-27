@@ -15,6 +15,9 @@ import FastLogo from "../assets/images/projects/fast_enterprises.jpg";
 import The360edLogo from "../assets/images/projects/360ed.jpg";
 import BoardGamesClubLogo from "../assets/images/projects/board_games_club.jpg";
 import BostonUniversityLogo from "../assets/images/projects/boston_university.jpg";
+import ShadowsOfYouCover from "../assets/images/projects/shadows_of_you.jpg";
+import SevenHeavenCover from "../assets/images/projects/seven_heaven.jpg";
+import MidnightFriendshipCover from "../assets/images/projects/midnight_friendship_3.jpg";
 
 export const projects = [
     {
@@ -198,7 +201,9 @@ export const projects = [
         characterIds: ["writer"],
         category: "poem-collection",
         description: "- written in March 2024",
-        image: LivableStreetsGif,
+        spineColor: "#242424",
+        image: ShadowsOfYouCover,
+        quote: "Peter lost his shadow to fly away, but now you are falling again.",
         links: [
             {
                 label: "Website",
@@ -212,7 +217,9 @@ export const projects = [
         characterIds: ["writer"],
         category: "poem-collection",
         description: "- written in January 2025",
-        image: LivableStreetsGif,
+        spineColor: "#2f0d0a",
+        image: SevenHeavenCover,
+        quote: "two friends, tangled, with legs up against the wall. there’s been nothing I needed more.",
         links: [
             {
                 label: "Website",
@@ -226,7 +233,9 @@ export const projects = [
         characterIds: ["writer"],
         category: "poem-collection",
         description: "- written in June 2025",
-        image: LivableStreetsGif,
+        spineColor: "#5b6767",
+        image: MidnightFriendshipCover,
+        quote: "how heavy is the world you pretend you've been carrying?",
         links: [
             {
                 label: "Website",

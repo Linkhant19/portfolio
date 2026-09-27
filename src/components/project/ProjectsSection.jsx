@@ -3,6 +3,7 @@
 import ProjectCard from "./ProjectCard";
 import RetroComputer from "../portfolio/RetroComputer";
 import WorkBadge from "../portfolio/WorkBadge";
+import PoetryBook from "../portfolio/PoetryBook";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -48,6 +49,15 @@ export default function ProjectsSection({ projects, character }) {
                     if (project.category === "work") {
                         return (
                             <WorkBadge
+                                key={project.id}
+                                project={project}
+                            />
+                        );
+                    }
+
+                    if (project.category === "poem-collection") {
+                        return (
+                            <PoetryBook
                                 key={project.id}
                                 project={project}
                             />
