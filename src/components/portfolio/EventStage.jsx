@@ -1,5 +1,5 @@
 // src/components/portfolio/EventStage.jsx
-// I did use AI in this component to research and help me implement the structure of the writing manuscript
+// I did use AI in this component to research and help me implement the structure of the Event Stage
 // The idea of the component designs are my own
 // I tried to change the desgin to my liking and added some details myself
 
@@ -325,7 +325,7 @@ export default function EventStage({ project }) {
                                     text-[#F5E8D3]/60
                                 "
                             >
-                                EVENT EXPERIENCE
+                                soon
                             </span>
                         )}
                     </div>

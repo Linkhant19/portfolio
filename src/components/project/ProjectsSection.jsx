@@ -6,6 +6,7 @@ import WorkBadge from "../portfolio/WorkBadge";
 import PoetryBook from "../portfolio/PoetryBook";
 import WritingManuscript from "../portfolio/WritingManuscript";
 import EventStage from "../portfolio/EventStage";
+import EventPhotoStack from "../portfolio/EventPhotoStack";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -75,7 +76,22 @@ export default function ProjectsSection({ projects, character }) {
                             );
                         }
 
-                        if (project.category === "event") {
+                        if (
+                            project.category === "event" &&
+                            project.presentation === "photo-stack"
+                        ) {
+                            return (
+                                <EventPhotoStack
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+                        
+                        if (
+                            project.category === "event" &&
+                            project.presentation === "stage"
+                        ) {
                             return (
                                 <EventStage
                                     key={project.id}

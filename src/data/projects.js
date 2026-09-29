@@ -20,6 +20,53 @@ import SevenHeavenCover from "../assets/images/projects/seven_heaven.jpg";
 import MidnightFriendshipCover from "../assets/images/projects/midnight_friendship_3.jpg";
 import EscapeRoomPic from "../assets/images/escaperoom/branches_puzzle_1.jpg";
 
+// General Meetings BGC
+import BGCMeetingPic1 from "../assets/images/projects/Meeting_1.jpg";
+import BGCMeetingPic2 from "../assets/images/projects/Meeting_2.jpg";
+import BGCMeetingPic3 from "../assets/images/projects/Meeting_3.jpg";
+import BGCMeetingPic4 from "../assets/images/projects/Meeting_4.jpg";
+import BGCMeetingPic5 from "../assets/images/projects/Meeting_5.jpg";
+import BGCMeetingPic6 from "../assets/images/projects/Meeting_6.jpg";
+import BGCMeetingPic7 from "../assets/images/projects/Meeting_7.jpg";
+import BGCMeetingPic8 from "../assets/images/projects/Meeting_8.jpg";
+
+// Trivia Night 2022
+import Trivia22Pic1 from "../assets/images/projects/Trivia22_1.jpg";
+import Trivia22Pic2 from "../assets/images/projects/Trivia22_2.jpg";
+import Trivia22Pic3 from "../assets/images/projects/Trivia22_3.jpg";
+import Trivia22Pic4 from "../assets/images/projects/Trivia22_4.jpg";
+import Trivia22Pic5 from "../assets/images/projects/Trivia22_5.jpg";
+import Trivia22Pic6 from "../assets/images/projects/Trivia22_6.jpg";
+import Trivia22Pic7 from "../assets/images/projects/Trivia22_7.jpg";
+import Trivia22Pic8 from "../assets/images/projects/Trivia22_8.jpg";
+import Trivia22Pic9 from "../assets/images/projects/Trivia22_9.jpg";
+import Trivia22Pic10 from "../assets/images/projects/Trivia22_10.jpg";
+
+// Escape Room 2022
+import EscapeRoom22Pic1 from "../assets/images/projects/Escape22_1.jpg";
+import EscapeRoom22Pic2 from "../assets/images/projects/Escape22_2.jpg";
+import EscapeRoom22Pic3 from "../assets/images/projects/Escape22_3.jpg";
+import EscapeRoom22Pic4 from "../assets/images/projects/Escape22_4.jpg";
+import EscapeRoom22Pic5 from "../assets/images/projects/Escape22_5.jpg";
+import EscapeRoom22Pic6 from "../assets/images/projects/Escape22_6.jpg";
+import EscapeRoom22Pic7 from "../assets/images/projects/Escape22_7.jpg";
+import EscapeRoom22Pic8 from "../assets/images/projects/Escape22_8.jpg";
+import EscapeRoom22Pic9 from "../assets/images/projects/Escape22_9.jpg";
+import EscapeRoom22Pic10 from "../assets/images/projects/Escape22_10.jpg";
+
+// Murder Mystery 2024
+import MurderMystery24Pic1 from "../assets/images/projects/Mystery24_1.jpg";
+import MurderMystery24Pic2 from "../assets/images/projects/Mystery24_2.jpg";
+import MurderMystery24Pic3 from "../assets/images/projects/Mystery24_3.jpg";
+import MurderMystery24Pic4 from "../assets/images/projects/Mystery24_4.jpg";
+import MurderMystery24Pic5 from "../assets/images/projects/Mystery24_5.jpg";
+import MurderMystery24Pic6 from "../assets/images/projects/Mystery24_6.jpg";
+import MurderMystery24Pic7 from "../assets/images/projects/Mystery24_7.jpg";
+import MurderMystery24Pic8 from "../assets/images/projects/Mystery24_8.jpg";
+import MurderMystery24Pic9 from "../assets/images/projects/Mystery24_9.jpg";
+import MurderMystery24Pic10 from "../assets/images/projects/Mystery24_10.jpg";
+import MurderMystery24Pic11 from "../assets/images/projects/Mystery24_11.jpg";
+
 export const projects = [
     {
         id: "portfolio",
@@ -38,6 +85,7 @@ export const projects = [
         description: "adding later",
         image: FastLogo,
     },
+
   
     {
         id: "escape-room-2026",
@@ -45,6 +93,7 @@ export const projects = [
         slug: "escape-room",
         characterIds: ["puzzle-designer"],
         category: "event",
+        presentation: "stage",
         description: "I designed and built an escape room in a basement in Charleston, WV    \
         with the help of a good friend and coworker, Nyrein. We included 9 original puzzles that \
         make use of perception and of the environment that we created. We also integrated some \
@@ -52,6 +101,18 @@ export const projects = [
         Click below to see more of our project!",
         image: EscapeRoomPic,
     },
+
+    // I want to make an escape room out of this website, hiding codes and letters on the webpage and lead somewhere
+    {
+        id: "coming-soon",
+        title: "Coming Soon (Escape Portfolio)",
+        characterIds: ["puzzle-designer", "developer"],
+        category: "event",
+        presentation: "stage",
+        description: "This portfolio website is not as it seems 👀. I am in progress of adding escape room puzzle elements to this website.",
+        image: EscapeRoomPic,
+    },
+
     {
         id: "commute-beat",
         title: "Commute Beat - Full Stack Web App",
@@ -286,5 +347,144 @@ export const projects = [
                 url: "/writings/Phoenix.Inc-Playwriting.pdf",
             },
         ]
-    }
+    },
+    {
+        id: "murder-mystery-2023",
+        title: "Murder Mystery 2023",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            ShadowsOfYouCover,
+            SevenHeavenCover,
+            MidnightFriendshipCover
+        ],
+        description: "Murder Mystery 2023",
+    },
+    {
+        id: "murder-mystery-2024",
+        title: "Murder Mystery 2024",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            MurderMystery24Pic1,
+            MurderMystery24Pic2,
+            MurderMystery24Pic3,
+            MurderMystery24Pic4,
+            MurderMystery24Pic5,
+            MurderMystery24Pic6,
+            MurderMystery24Pic7,
+            MurderMystery24Pic8,
+            MurderMystery24Pic11,
+            MurderMystery24Pic9,
+            MurderMystery24Pic10,
+        ],
+        description: "Murder Mystery 2024",
+    },
+    {
+        id: "trivia-night-2022",
+        title: "Trivia Night 2022",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            Trivia22Pic1,
+            Trivia22Pic2,
+            Trivia22Pic3,
+            Trivia22Pic4,
+            Trivia22Pic5,
+            Trivia22Pic6,
+            Trivia22Pic7,
+            Trivia22Pic8,
+            Trivia22Pic9,
+            Trivia22Pic10
+        ],
+        description: "Trivia Night 2022",
+    },
+    {
+        id: "trivia-night-2023",
+        title: "Trivia Night 2023",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            ShadowsOfYouCover,
+            SevenHeavenCover,
+            MidnightFriendshipCover
+        ],
+        description: "Trivia Night 2023",
+    },
+    {
+        id: "trivia-night-2024",
+        title: "Trivia Night 2024",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            ShadowsOfYouCover,
+            SevenHeavenCover,
+            MidnightFriendshipCover
+        ],
+        description: "Trivia Night 2024",
+    },
+    {
+        id: "escape-room-2022",
+        title: "Escape Room 2022",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            EscapeRoom22Pic1,
+            EscapeRoom22Pic2,
+            EscapeRoom22Pic3,
+            EscapeRoom22Pic4,
+            EscapeRoom22Pic5,
+            EscapeRoom22Pic6,
+            EscapeRoom22Pic7,
+            EscapeRoom22Pic8,
+            EscapeRoom22Pic9,
+            EscapeRoom22Pic10
+        ],
+        description: "Escape Room 2022",
+    },
+    {
+        id: "escape-room-2023",
+        title: "Escape Room 2023",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            ShadowsOfYouCover,
+            SevenHeavenCover,
+            MidnightFriendshipCover
+        ],
+        description: "Escape Room 2023",
+    },
+    {
+        id: "general-meeting-BGC",
+        title: "Board Games Club - Weekly Meetings",
+        characterIds: ["puzzle-designer"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            BGCMeetingPic1,
+            BGCMeetingPic2,
+            BGCMeetingPic3,
+            BGCMeetingPic4,
+            BGCMeetingPic5,
+            BGCMeetingPic6,
+            BGCMeetingPic7,
+            BGCMeetingPic8
+        ],
+        description: "Board Games Club - Weekly Meetings",
+    },
 ];
