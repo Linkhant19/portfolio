@@ -18,6 +18,7 @@ import BostonUniversityLogo from "../assets/images/projects/boston_university.jp
 import ShadowsOfYouCover from "../assets/images/projects/shadows_of_you.jpg";
 import SevenHeavenCover from "../assets/images/projects/seven_heaven.jpg";
 import MidnightFriendshipCover from "../assets/images/projects/midnight_friendship_3.jpg";
+import EscapeRoomPic from "../assets/images/escaperoom/branches_puzzle_1.jpg";
 
 export const projects = [
     {
@@ -39,13 +40,17 @@ export const projects = [
     },
   
     {
-        id: "escape-room",
-        title: "Escape Room",
+        id: "escape-room-2026",
+        title: "Escape Room: A World Below",
         slug: "escape-room",
         characterIds: ["puzzle-designer"],
         category: "event",
-        description: "escape room I did with Nyrein",
-        image: CommuteBeatGif,
+        description: "I designed and built an escape room in a basement in Charleston, WV    \
+        with the help of a good friend and coworker, Nyrein. We included 9 original puzzles that \
+        make use of perception and of the environment that we created. We also integrated some \
+        of our 3d printed objects and Arduino to make the puzzles more interactive. \
+        Click below to see more of our project!",
+        image: EscapeRoomPic,
     },
     {
         id: "commute-beat",

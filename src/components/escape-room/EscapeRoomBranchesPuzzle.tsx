@@ -1,7 +1,7 @@
 // src/components/escape-room/EscapeRoomBranchesPuzzle.tsx
 
 import React from "react";
-import BranchesPuzzleImage1 from "../../assets/images/escaperoom/banches_puzzle_1.jpg";
+import BranchesPuzzleImage1 from "../../assets/images/escaperoom/branches_puzzle_1.jpg";
 
 export default function EscapeRoomBranchesPuzzle() {
     return (

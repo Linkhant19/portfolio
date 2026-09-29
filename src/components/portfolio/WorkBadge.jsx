@@ -1,5 +1,6 @@
 // src/components/portfolio/WorkBadge.jsx
 // I did use AI in this component to research and help me implement the structure of the work badge
+// The idea of the component designs are my own
 // I tried to change the desgin to my liking and added some details myself
 
 import { useState } from "react";

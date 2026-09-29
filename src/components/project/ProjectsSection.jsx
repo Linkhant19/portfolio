@@ -5,6 +5,7 @@ import RetroComputer from "../portfolio/RetroComputer";
 import WorkBadge from "../portfolio/WorkBadge";
 import PoetryBook from "../portfolio/PoetryBook";
 import WritingManuscript from "../portfolio/WritingManuscript";
+import EventStage from "../portfolio/EventStage";
 
 export default function ProjectsSection({ projects, character }) {
     return (
@@ -68,6 +69,15 @@ export default function ProjectsSection({ projects, character }) {
                         if (project.category === "writing") {
                             return (
                                 <WritingManuscript
+                                    key={project.id}
+                                    project={project}
+                                />
+                            );
+                        }
+
+                        if (project.category === "event") {
+                            return (
+                                <EventStage
                                     key={project.id}
                                     project={project}
                                 />
