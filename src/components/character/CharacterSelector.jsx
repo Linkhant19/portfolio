@@ -63,29 +63,34 @@ export default function CharacterSelector({
 
                 <div
                     className="
-                        grid
-                        grid-cols-[repeat(2,210px)]
-                        justify-center
-                        gap-6
+                        w-full
                         rounded-xl
                         border border-stone-300
                         bg-stone-100/40
                         px-8 py-8
                     "
                 >
-
-                    {characters.map((character, index) => (
-                        <CharacterOption
-                            key={character.id}
-                            character={character}
-                            index={index}
-                            isSelected={
-                                character.id === selectedCharacterId
-                            }
-                            onSelect={onSelect}
-                        />
-                    ))}
-
+                    <div
+                        className="
+                            mx-auto
+                            grid
+                            w-fit
+                            grid-cols-2
+                            gap-x-10 gap-y-8
+                        "
+                    >
+                        {characters.map((character, index) => (
+                            <CharacterOption
+                                key={character.id}
+                                character={character}
+                                index={index}
+                                isSelected={
+                                    character.id === selectedCharacterId
+                                }
+                                onSelect={onSelect}
+                            />
+                        ))}
+                    </div>
                 </div>
 
                 <a

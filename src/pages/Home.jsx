@@ -4,6 +4,7 @@ import CharacterDisplay from "../components/character/CharacterDisplay";
 import CharacterSelector from "../components/character/CharacterSelector";
 import ProjectsSection from "../components/project/ProjectsSection";
 import VillagerSection from "../components/villager/VillagerSection";
+import SideSignature from "../components/ui/SideSignature";
 import { characters } from "../data/characters";
 import { projects } from "../data/projects";
 import { useSearchParams } from "react-router-dom";
@@ -38,7 +39,8 @@ export default function Home() {
     );
 
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen lg:pr-4">
+            <SideSignature />
             <div
                 className="
                     mx-auto grid
@@ -49,7 +51,7 @@ export default function Home() {
                     px-8 py-14
 
                     lg:grid-cols-2
-                    lg:gap-20
+                    lg:gap-25
                 "
             >
                 <CharacterSelector
