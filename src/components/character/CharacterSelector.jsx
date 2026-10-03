@@ -12,9 +12,9 @@ export default function CharacterSelector({
     );
 
     return (
-        <section className="flex flex-1 items-center px-8 py-16 lg:px-15">
+        <section className="w-full">
 
-            <div className="w-full max-w-[550px]">
+            <div className="w-full max-w-[550px] lg:ml-auto">
 
                 <div className="mb-8">
 

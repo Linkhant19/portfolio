@@ -39,14 +39,30 @@ export default function Home() {
 
     return (
         <main className="min-h-screen">
-            <div className="flex min-h-screen flex-col lg:flex-row">
-                <CharacterDisplay character={selectedCharacter} />
+            <div
+                className="
+                    mx-auto grid
+                    min-h-screen
+                    w-full max-w-[1500px]
+                    items-start
+                    gap-16
+                    px-8 py-14
 
+                    lg:grid-cols-2
+                    lg:gap-20
+                "
+            >
                 <CharacterSelector
                     characters={characters}
                     selectedCharacterId={selectedCharacterId}
                     onSelect={handleCharacterSelect}
                 />
+                
+                <CharacterDisplay
+                    character={selectedCharacter}
+                />
+
+                
             </div>
 
             {selectedCharacterId === "villager" ? (
