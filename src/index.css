@@ -26,3 +26,35 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* animation for my lin approved sticker */
+@keyframes sticker-slap {
+    0% {
+        opacity: 0;
+        transform: scale(1.45) translateY(-10px);
+    }
+
+    55% {
+        opacity: 1;
+        transform: scale(0.9) translateY(2px);
+    }
+
+    75% {
+        transform: scale(1.06) translateY(-1px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.animate-sticker-slap {
+    animation: sticker-slap 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-sticker-slap {
+        animation: none;
+    }
+}
