@@ -11,9 +11,9 @@ export default function VillagerSection() {
     return (
         <section
             id="projects"
-            className="min-h-screen scroll-mt-16 px-6 py-20"
+            className="min-h-screen scroll-mt-16 px-4 py-16"
         >
-            <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-7xl">
 
                 <p className="font-major-mono text-sm">
                     character 04 / The Villager

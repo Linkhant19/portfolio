@@ -20,7 +20,7 @@ export const characters = [
         he develops and implements software solutions that create different ways people could enjoy this world.",
     },
     {
-        id: "puzzle-designer",
+        id: "puzzleDesigner",
         title: "Events and Puzzles/Games Designer",
         projectHeading: "Puzzle and Game Design Experiences",
         image: puzzleDesignerImage,

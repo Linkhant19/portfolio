@@ -9,6 +9,15 @@ import EventStage from "../portfolio/EventStage";
 import EventPhotoStack from "../portfolio/EventPhotoStack";
 
 export default function ProjectsSection({ projects, character }) {
+
+    // 999. this should handle if I forgot to add order to a project
+    const sortedProjects = [...projects].sort((a, b) => {
+        const orderA = a.order?.[character.id] ?? 999;
+        const orderB = b.order?.[character.id] ?? 999;
+    
+        return orderA - orderB;
+    });
+
     return (
         <section
             id="projects"
@@ -39,7 +48,7 @@ export default function ProjectsSection({ projects, character }) {
                 </div>
             
                 <div className="mt-17 grid gap-25 md:grid-cols-2 text-end">
-                    {projects.map((project) => {
+                    {sortedProjects.map((project) => {
                         if (project.category === "project") {
                             return (
                                 <RetroComputer

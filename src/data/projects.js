@@ -73,6 +73,10 @@ export const projects = [
         title: "Interactive Portfolio",
         characterIds: ["developer"],
         category: "project",
+        order: 
+        {
+            developer: 3,
+        },
         description: "THIS WEBSITE!!!!!",
         image: CommuteBeatGif,
     },
@@ -82,6 +86,10 @@ export const projects = [
         title: "Implementation Consultant -\nFast Enterprises",
         characterIds: ["developer"],
         category: "work",
+        order: 
+        {
+            developer: 1,
+        },
         description: "adding later",
         image: FastLogo,
     },
@@ -91,8 +99,12 @@ export const projects = [
         id: "escape-room-2026",
         title: "Escape Room: A World Below",
         slug: "escape-room",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
+        order: 
+        {
+            puzzleDesigner: 1
+        },
         presentation: "stage",
         description: "I designed and built an escape room in a basement in Charleston, WV    \
         with the help of a good friend and coworker, Nyrein. We included 9 original puzzles that \
@@ -106,8 +118,13 @@ export const projects = [
     {
         id: "coming-soon",
         title: "Coming Soon (Escape Portfolio)",
-        characterIds: ["puzzle-designer", "developer"],
+        characterIds: ["puzzleDesigner", "developer"],
         category: "event",
+        order:
+        {
+            developer: 9,
+            puzzleDesigner: 4,
+        },
         presentation: "stage",
         description: "This portfolio website is not as it seems 👀. I am in progress of adding escape room puzzle elements to this website.",
         image: EscapeRoomPic,
@@ -118,6 +135,10 @@ export const projects = [
         title: "Commute Beat - Full Stack Web App",
         characterIds: ["developer"],
         category: "project",
+        order:
+        {
+            developer: 7,
+        },
         description:
             "My team and I developed a user-centric web application that provides personalized travel route and music recommendations based on a user's preferred mode of transportation and the distance of the trip. We built the application with Flask and React and integrated Spotify, weather, and geolocation APIs to create recommendations tailored to each user's journey.",
 
@@ -136,6 +157,10 @@ export const projects = [
         title: "Livable Streets - Data Analysis and Visualization",
         characterIds: ["developer"],
         category: "project",
+        order:
+        {
+            developer: 4,
+        },
         description:
             "As Team Representative for a data science project with the Massachusetts Bay Transportation Authority (MBTA), I helped lead my team in analyzing potential relationships between displacement and bike-lane development. We cleaned and analyzed data from multiple sources using Python, pandas, NumPy, Matplotlib, and Seaborn, transforming raw datasets into visualizations and identifying potential correlations for our final client report.",
 
@@ -158,6 +183,10 @@ export const projects = [
         title: "My Full-Stack Development Journey - Fall 2024",
         characterIds: ["developer"],
         category: "project",
+        order:
+        {
+            developer: 8,
+        },
         description:
             "During my Full-Stack Development class at Boston University, I created multiple full-stack web applications \
         as I learned Python, JavaScript, and HTML/CSS, and learned about APIs, Django framework, Git, Heroku, Databases, Data Visualization, and more.",
@@ -181,6 +210,10 @@ export const projects = [
         title: "AI Tetris Agent - Neural Network",
         characterIds: ["developer"],
         category: "project",
+        order: 
+        {
+            developer: 5,
+        },
         description:
             "I developed an AI learning agent in Java that learns to play Tetris through iterative training and improves its decision-making over time. I designed five features to represent game states and guide the agent's behavior, incorporating reward signals, state-action representations, and Q-value predictions.",
         
@@ -200,6 +233,10 @@ export const projects = [
         title: "CS Teaching Assistant -\nBoston University",
         characterIds: ["developer"],
         category: "work",
+        order:
+        {
+            developer: 2,
+        },
         description:
             "As a Teaching Assistant, I supported approximately 100 students across three lab sections and held office hours to provide individualized guidance. I taught Python, algorithms, problem-solving and debugging techniques, helping students build the skills needed to develop a Connect Four AI player as their final project.",
 
@@ -217,8 +254,12 @@ export const projects = [
     {
         id: "board-games-club",
         title: "President -\nBoston University Board Games Club",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "work",
+        order:
+        {
+            puzzleDesigner: 2,
+        },
         description: `As the first elected Asian President of Boston University's
             Board Games Club, I led a team of 10 executive board members
             and organized weekly gatherings for 70–110 members. Alongside
@@ -246,8 +287,13 @@ export const projects = [
     {
         id: "360ed-internship",
         title: "Application Development Intern -\n360ed",
-        characterIds: ["developer", "puzzle-designer"],
+        characterIds: ["developer", "puzzleDesigner"],
         category: "work",
+        order:
+        {
+            developer: 6,
+            puzzleDesigner: 3,
+        },
         description:
             "As an Application Development Intern at 360ed, I collaborated remotely with a cross-functional team to enhance two existing Augmented Reality (AR) educational applications for children affected by educational disruptions in Myanmar. I researched educational data and user engagement, contributed ideas for game-like features, and helped explore ways to make the applications more interactive and engaging for young learners.",
         highlights: [
@@ -266,6 +312,10 @@ export const projects = [
         title: "Shadows of You",
         characterIds: ["writer"],
         category: "poem-collection",
+        order:
+        {
+            writer: 5,
+        },
         description: "- written in March 2024",
         spineColor: "#242424",
         image: ShadowsOfYouCover,
@@ -282,6 +332,10 @@ export const projects = [
         title: "Seven Ways To Heaven",
         characterIds: ["writer"],
         category: "poem-collection",
+        order:
+        {
+            writer: 4,
+        },
         description: "- written in January 2025",
         spineColor: "#2f0d0a",
         image: SevenHeavenCover,
@@ -298,6 +352,10 @@ export const projects = [
         title: "The Midnight Friendship Service",
         characterIds: ["writer"],
         category: "poem-collection",
+        order:
+        {
+            writer: 3,
+        },
         description: "- written in June 2025",
         spineColor: "#5b6767",
         image: MidnightFriendshipCover,
@@ -318,6 +376,10 @@ export const projects = [
         title: "The Midnight Friendship Service - A Short Story",
         characterIds: ["writer"],
         category: "writing",
+        order:
+        {
+            writer: 1,
+        },
         description: "- written as a class assignment in Spring 2025. This is different from The Midnight Friendship Service poetry collection (even though they have the same title). This is a story set in a distopian future with an Artificial Intelligence company called 'The Midnight Friendship Service'.",
         image: LivableStreetsGif,
         excerpt: "the midnight friendship service",
@@ -334,6 +396,10 @@ export const projects = [
         title: "Phoenix.Inc - A Short Play",
         characterIds: ["writer"],
         category: "writing",
+        order: 
+        {
+            writer: 2,
+        },
         description: "- written in Fall 2024 for a PlayWriting class. Haunted by regrets and bad memories, \
         the old man Dick visits a healthcare company called Phoenix.Inc. \
         Their treatments offer a new way of changing and reliving past situations with the help of generative AI. \
@@ -351,7 +417,7 @@ export const projects = [
     {
         id: "murder-mystery-2023",
         title: "Murder Mystery 2023",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -365,7 +431,7 @@ export const projects = [
     {
         id: "murder-mystery-2024",
         title: "Murder Mystery 2024",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -387,7 +453,7 @@ export const projects = [
     {
         id: "trivia-night-2022",
         title: "Trivia Night 2022",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -408,7 +474,7 @@ export const projects = [
     {
         id: "trivia-night-2023",
         title: "Trivia Night 2023",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -422,7 +488,7 @@ export const projects = [
     {
         id: "trivia-night-2024",
         title: "Trivia Night 2024",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -436,7 +502,7 @@ export const projects = [
     {
         id: "escape-room-2022",
         title: "Escape Room 2022",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -457,7 +523,7 @@ export const projects = [
     {
         id: "escape-room-2023",
         title: "Escape Room 2023",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
@@ -471,7 +537,7 @@ export const projects = [
     {
         id: "general-meeting-BGC",
         title: "Board Games Club - Weekly Meetings",
-        characterIds: ["puzzle-designer"],
+        characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
