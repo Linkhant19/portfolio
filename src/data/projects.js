@@ -8,6 +8,7 @@
 // 5. writing
 // maybe more if I need later.
 
+import PortfolioGif from "../assets/images/projects/portfolio_website.gif";
 import CommuteBeatGif from "../assets/images/projects/commutebeat.gif";
 import LivableStreetsGif from "../assets/images/projects/livablestreets.gif";
 import FullStackGif from "../assets/images/projects/fullstackjourney.gif";
@@ -77,8 +78,18 @@ export const projects = [
         {
             developer: 3,
         },
-        description: "THIS WEBSITE!!!!!",
-        image: CommuteBeatGif,
+        description: "I designed and developed this interactive portfolio to bring together the different sides of my work in software development, puzzle and event design, and creative writing. Instead of organizing everything as a traditional project gallery, I built the experience around a character-selection system where visitors can choose a path and explore projects through interfaces inspired by games and physical objects. Built with React, Vite, and Tailwind CSS, the site combines custom illustrations, animated interactions, responsive UI components, and visual storytelling.",
+        highlights: [
+            "React",
+            "Vite",
+            "Tailwind CSS",
+            "interaction design",
+            "character-selection system",
+            "custom illustrations",
+            "responsive design",
+            "visual storytelling",
+        ],
+        image: PortfolioGif,
     },
 
     {

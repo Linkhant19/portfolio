@@ -9,6 +9,7 @@ import {
     Group,
     Puzzle,
 } from "iconoir-react";
+import { useState } from "react";
 
 const traitIcons = {
     technical: Code,
@@ -124,8 +125,6 @@ export default function CharacterProjectIntro({ character }) {
                     </div>
                 </div>
 
-                {/* TRAITS */}
-
                 <div className="mt-12">
 
                     <p
@@ -159,8 +158,6 @@ export default function CharacterProjectIntro({ character }) {
                     </div>
 
                 </div>
-
-                {/* SCROLL TO PROJECTS */}
 
                 <a
                     href="#project-list"
@@ -233,14 +230,20 @@ function Trait({
     label,
     description,
 }) {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className="group relative">
 
-            {/* TRAIT ICON */}
-
-            <div
+            <button
+                type="button"
+                onClick={() => setIsOpen((open) => !open)}
+                onBlur={() => setIsOpen(false)}
+                aria-expanded={isOpen}
+                aria-label={`${label}: ${description}`}
                 className="
                     flex h-14 w-14
+                    cursor-pointer
                     items-center justify-center
 
                     rounded-md
@@ -252,7 +255,14 @@ function Trait({
                     transition-transform
                     duration-150
 
-                    group-hover:-translate-y-1
+                    hover:-translate-y-1
+
+                    focus-visible:outline-2
+                    focus-visible:outline-offset-4
+                    focus-visible:outline-stone-500
+
+                    active:translate-x-[2px]
+                    active:translate-y-[2px]
                 "
             >
                 <Icon
@@ -260,12 +270,10 @@ function Trait({
                     height={26}
                     strokeWidth={1.4}
                 />
-            </div>
-
-            {/* TOOLTIP */}
+            </button>
 
             <div
-                className="
+                className={`
                     pointer-events-none
                     absolute
                     bottom-[calc(100%+14px)]
@@ -274,21 +282,27 @@ function Trait({
 
                     w-48
                     -translate-x-1/2
-                    translate-y-2
 
                     border border-stone-400
                     bg-[#F5F1E8]
                     p-3
 
-                    opacity-0
                     shadow-md
 
                     transition-all
                     duration-150
 
-                    group-hover:translate-y-0
-                    group-hover:opacity-100
-                "
+                    ${
+                        isOpen
+                            ? "translate-y-0 opacity-100"
+                            : `
+                                translate-y-2
+                                opacity-0
+                                group-hover:translate-y-0
+                                group-hover:opacity-100
+                            `
+                    }
+                `}
             >
                 <p
                     className="

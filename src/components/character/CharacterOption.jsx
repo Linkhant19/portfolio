@@ -15,7 +15,7 @@ export default function CharacterOption({
             aria-pressed={isSelected}
             className={`
                 group relative
-                w-[180px]
+                w-full min-w-0 sm:w-[180px]
                 cursor-pointer
                 text-left
 

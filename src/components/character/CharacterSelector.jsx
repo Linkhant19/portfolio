@@ -102,7 +102,8 @@ export default function CharacterSelector({
                         rounded-xl
                         border border-stone-300
                         bg-stone-100/40
-                        px-8 py-8
+                        px-8 py-5
+                        sm:px-8 sm:py-8
                     "
                 >
                     {/* text moving thingy. opposite from rightside one. */}
@@ -143,7 +144,6 @@ export default function CharacterSelector({
                                         font-major-mono
                                         text-[7px]
                                         tracking-[0.18em]
-                                        text-stone-400/60
 
                                         [writing-mode:vertical-rl]
                                     "
@@ -161,9 +161,14 @@ export default function CharacterSelector({
                             relative z-10
                             mx-auto
                             grid
-                            w-fit
+                            w-full
                             grid-cols-2
-                            gap-x-10 gap-y-8
+
+                            gap-x-3 gap-y-5
+
+                            sm:w-fit
+                            sm:gap-x-10
+                            sm:gap-y-8
                         "
                     >
                         {characters.map((character, index) => (
