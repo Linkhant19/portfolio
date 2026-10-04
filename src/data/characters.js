@@ -5,7 +5,7 @@
 // 3. image
 // 4. description
 
-import developerImage from "../assets/images/characters/testing.gif"
+import developerImage from "../assets/images/characters/developer.gif"
 import writerImage from "../assets/images/characters/writer.gif"
 import puzzleDesignerImage from "../assets/images/characters/puzzle_designer.gif"
 import villagerImage from "../assets/images/characters/human.gif"
@@ -21,8 +21,10 @@ export const characters = [
         title: "Software Developer",
         selectLabel: "software developer",
         projectHeading: "Software Development & Consulting Experiences",
-        image: writerImage,
+        image: developerImage,
         selectorImage: developerCharacterImage,
+        streamColor: "#647D8A",
+        streamLabel: "developer",
         stats: {
             experience: 7,
             technical: 9,
@@ -40,6 +42,8 @@ export const characters = [
         projectHeading: "Puzzle and Game Design Experiences",
         image: puzzleDesignerImage,
         selectorImage: puzzleDesignerCharacterImage,
+        streamColor: "#A26B62",
+        streamLabel: "puzzles",
         stats: {
             experience: 6,
             technical: 5,
@@ -57,6 +61,8 @@ export const characters = [
         projectHeading: "Creative Writing Pieces",
         image: writerImage,
         selectorImage: writerCharacterImage,
+        streamColor: "#7B6D88",
+        streamLabel: "writer",
         stats: {
             experience: 8,
             technical: 4,
@@ -74,6 +80,8 @@ export const characters = [
         projectHeading: "Villager",
         image: villagerImage,
         selectorImage: villagerCharacterImage,
+        streamColor: "#9A8464",
+        streamLabel: "linix",
         stats: {
             experience: 10,
             technical: 3,

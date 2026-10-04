@@ -58,3 +58,101 @@ html {
         animation: none;
     }
 }
+
+/* animation for my side scrolling stuff */
+@keyframes character-stream {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0.9;
+    }
+
+    92% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translate(
+            -50%,
+            calc(-100dvh - 100%)
+        );
+
+        opacity: 0;
+    }
+}
+
+.animate-character-stream {
+    animation:
+        character-stream
+        15s
+        linear
+        forwards;
+}
+
+@keyframes selector-stream-item {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.95;
+    }
+
+    90% {
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: translate(
+            -50%,
+            calc(-100% - 650px)
+        );
+        opacity: 0;
+    }
+}
+
+.animate-selector-stream-item {
+    animation:
+        selector-stream-item
+        15s
+        linear
+        forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-selector-stream-item {
+        display: none;
+    }
+}
+
+/* holding little guy */
+
+@keyframes holder-idle {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    35% {
+        transform: translateY(2px) rotate(-0.4deg);
+    }
+
+    70% {
+        transform: translateY(-1px) rotate(0.35deg);
+    }
+}
+
+.animate-holder-idle {
+    animation: holder-idle 3.5s ease-in-out infinite;
+    transform-origin: top center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-holder-idle {
+        animation: none;
+    }
+}

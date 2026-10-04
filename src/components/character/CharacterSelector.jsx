@@ -1,6 +1,8 @@
 // src/components/character/CharacterSelector.jsx
 
 import CharacterOption from "./CharacterOption";
+import HoldingCharacter from "../../assets/images/ui/holdingman.png";
+import { useEffect, useRef, useState } from "react";
 
 export default function CharacterSelector({
     characters,
@@ -10,6 +12,37 @@ export default function CharacterSelector({
     const selectedIndex = characters.findIndex(
         (character) => character.id === selectedCharacterId
     );
+
+    const [tickerItems, setTickerItems] = useState([]);
+    const nextTickerId = useRef(0);
+
+    useEffect(() => {
+        function addTickerItem() {
+            setTickerItems((currentItems) => [
+                ...currentItems,
+                {
+                    id: nextTickerId.current++,
+                    label: "Play",
+                },
+            ]);
+        }
+
+        addTickerItem();
+
+        const interval = setInterval(() => {
+            addTickerItem();
+        }, 1500);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
+    function removeTickerItem(id) {
+        setTickerItems((currentItems) =>
+            currentItems.filter((item) => item.id !== id)
+        );
+    }
 
     return (
         <section className="w-full">
@@ -63,15 +96,69 @@ export default function CharacterSelector({
 
                 <div
                     className="
+                        relative
                         w-full
+                        overflow-visible
                         rounded-xl
                         border border-stone-300
                         bg-stone-100/40
                         px-8 py-8
                     "
                 >
+                    {/* text moving thingy. opposite from rightside one. */}
+
+                    <div
+                        aria-hidden="true"
+                        className="
+                            pointer-events-none
+                            absolute
+                            left-2
+                            top-3
+                            bottom-3
+                            z-0
+                            w-5
+                            overflow-hidden
+                        "
+                    >
+                        {tickerItems.map((item) => (
+                            <div
+                                key={item.id}
+                                onAnimationEnd={() =>
+                                    removeTickerItem(item.id)
+                                }
+                                className="
+                                    absolute
+                                    bottom-[-80px]
+                                    left-1/2
+
+                                    animate-selector-stream-item
+                                "
+                            >
+                                <span
+                                    className="
+                                        block
+                                        rotate-180
+                                        whitespace-nowrap
+
+                                        font-major-mono
+                                        text-[7px]
+                                        tracking-[0.18em]
+                                        text-stone-400/60
+
+                                        [writing-mode:vertical-rl]
+                                    "
+                                >
+                                    {item.label}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* four characters for now. I might want more later */}
+
                     <div
                         className="
+                            relative z-10
                             mx-auto
                             grid
                             w-fit
@@ -91,6 +178,27 @@ export default function CharacterSelector({
                             />
                         ))}
                     </div>
+
+                    {/* man holding the panel up! */}
+
+                    <img
+                        src={HoldingCharacter}
+                        alt=""
+                        aria-hidden="true"
+                        className="
+                            pointer-events-none
+                            absolute
+                            -bottom-[130px]
+                            -right-[95px]
+                            -z-2
+                            rotate-17
+                            hidden
+                            w-[150px]
+                            select-none
+                            lg:block
+                            animate-holder-idle
+                        "
+                    />
                 </div>
 
                 <a

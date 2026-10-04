@@ -40,7 +40,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen lg:pr-4">
-            <SideSignature />
+            <SideSignature selectedCharacter={selectedCharacter} />
             <div
                 className="
                     mx-auto grid

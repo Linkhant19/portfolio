@@ -98,7 +98,7 @@ export default function CharacterDisplay({ character }) {
                         src={character.image}
                         alt=""
                         className="
-                            h-full w-full
+                            h-full w-400px
                             object-contain
                             p-4
                         "
