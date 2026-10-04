@@ -5,6 +5,7 @@ import CharacterSelector from "../components/character/CharacterSelector";
 import ProjectsSection from "../components/project/ProjectsSection";
 import VillagerSection from "../components/villager/VillagerSection";
 import SideSignature from "../components/ui/SideSignature";
+import Footer from "../components/ui/Footer";
 import { characters } from "../data/characters";
 import { projects } from "../data/projects";
 import { useSearchParams } from "react-router-dom";
@@ -75,6 +76,8 @@ export default function Home() {
                     character={selectedCharacter}
                 />
             )}
+
+            <Footer />
 
             
         </main>
