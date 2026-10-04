@@ -34,6 +34,37 @@ export const characters = [
         },
         description: "with his combined knowledge in Computer Science and Psychology, \
         he develops and implements software solutions that create different ways people could enjoy this world.",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/linkhantko/",
+            github: "https://github.com/Linkhant19/",
+            email: "mailto:linix.linkhant19@gmail.com",
+        },
+        traits: [
+            {
+                icon: "technical",
+                label: "Technical Builder",
+                description:
+                    "Enjoys turning ideas and requirements into working software systems.",
+            },
+            {
+                icon: "creative",
+                label: "Problem Solver",
+                description:
+                    "Likes exploring different approaches instead of stopping at the first solution.",
+            },
+            {
+                icon: "collaboration",
+                label: "Collaborator",
+                description:
+                    "Works closely with teammates, testers, and users throughout the development process.",
+            },
+            {
+                icon: "playful",
+                label: "Human-Centered",
+                description:
+                    "Often thinks about how technology feels to the person actually using it.",
+            },
+        ],
     },
     {
         id: "puzzleDesigner",
@@ -53,6 +84,37 @@ export const characters = [
         },
         description: "once the President of the Board Games Club, he found his passion in \
         hosting various interactive events, and designing puzzles and games, including escape rooms.",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/linkhantko/",
+            github: "https://github.com/Linkhant19/",
+            email: "mailto:linix.linkhant19@gmail.com",
+        },
+        traits: [
+            {
+                icon: "technical",
+                label: "Technical Builder",
+                description:
+                    "Enjoys turning ideas and requirements into working software systems.",
+            },
+            {
+                icon: "creative",
+                label: "Problem Solver",
+                description:
+                    "Likes exploring different approaches instead of stopping at the first solution.",
+            },
+            {
+                icon: "collaboration",
+                label: "Collaborator",
+                description:
+                    "Works closely with teammates, testers, and users throughout the development process.",
+            },
+            {
+                icon: "playful",
+                label: "Human-Centered",
+                description:
+                    "Often thinks about how technology feels to the person actually using it.",
+            },
+        ],
     },
     {
         id: "writer",
@@ -72,6 +134,37 @@ export const characters = [
         },
         description: "he saddles up the wildest things whenever and wherever they come. \
         their footprints are marked in all forms. poetry. short stories. plays.",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/linkhantko/",
+            github: "https://github.com/Linkhant19/",
+            email: "mailto:linix.linkhant19@gmail.com",
+        },
+        traits: [
+            {
+                icon: "technical",
+                label: "Technical Builder",
+                description:
+                    "Enjoys turning ideas and requirements into working software systems.",
+            },
+            {
+                icon: "creative",
+                label: "Problem Solver",
+                description:
+                    "Likes exploring different approaches instead of stopping at the first solution.",
+            },
+            {
+                icon: "collaboration",
+                label: "Collaborator",
+                description:
+                    "Works closely with teammates, testers, and users throughout the development process.",
+            },
+            {
+                icon: "playful",
+                label: "Human-Centered",
+                description:
+                    "Often thinks about how technology feels to the person actually using it.",
+            },
+        ],
     },
     {
         id: "villager",
@@ -90,5 +183,36 @@ export const characters = [
             teamwork: 4, 
         },
         description: "just a normal townsperson who built all of this and more",
+        socials: {
+            linkedin: "https://www.linkedin.com/in/linkhantko/",
+            github: "https://github.com/Linkhant19/",
+            email: "mailto:linix.linkhant19@gmail.com",
+        },
+        traits: [
+            {
+                icon: "technical",
+                label: "Technical Builder",
+                description:
+                    "Enjoys turning ideas and requirements into working software systems.",
+            },
+            {
+                icon: "creative",
+                label: "Problem Solver",
+                description:
+                    "Likes exploring different approaches instead of stopping at the first solution.",
+            },
+            {
+                icon: "collaboration",
+                label: "Collaborator",
+                description:
+                    "Works closely with teammates, testers, and users throughout the development process.",
+            },
+            {
+                icon: "playful",
+                label: "Human-Centered",
+                description:
+                    "Often thinks about how technology feels to the person actually using it.",
+            },
+        ],
     },
 ]

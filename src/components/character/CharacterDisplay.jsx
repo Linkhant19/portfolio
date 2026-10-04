@@ -57,7 +57,7 @@ export default function CharacterDisplay({ character }) {
     return (
         <section className="w-full">
 
-            <div className="w-full max-w-[550px] lg:mr-auto">
+            <div className="w-full max-w-[500px] lg:mr-auto">
 
                 <div className="mb-5 flex items-center justify-between">
 

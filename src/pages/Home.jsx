@@ -51,7 +51,7 @@ export default function Home() {
                     px-8 py-14
 
                     lg:grid-cols-2
-                    lg:gap-25
+                    lg:gap-35
                 "
             >
                 <CharacterSelector

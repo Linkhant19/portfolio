@@ -7,6 +7,7 @@ import PoetryBook from "../portfolio/PoetryBook";
 import WritingManuscript from "../portfolio/WritingManuscript";
 import EventStage from "../portfolio/EventStage";
 import EventPhotoStack from "../portfolio/EventPhotoStack";
+import ProjectIntro from "./ProjectIntro";
 
 export default function ProjectsSection({ projects, character }) {
 
@@ -25,29 +26,19 @@ export default function ProjectsSection({ projects, character }) {
         >
             <div className="mx-auto max-w-7xl">
     
-                <div className="grid gap-8 md:grid-cols-2">
+                <ProjectIntro character={character} />
             
-                    {/* Left side will include my current path: x */}
-                    <div>
-                        <p className="font-major-mono text-sm">
-                            current path:
-                        </p>
-
-                        <p className="mt-2 font-major-mono text-lg">
-                            {character.title}
-                        </p>
-                    </div>
-
-                    {/* Right side will have the experience title */}
-                    <div>
-                        <h2 className="font-major-mono text-lg italic lowercase text-end">
-                        {character.projectHeading}
-                        </h2>
-                    </div>
-
-                </div>
-            
-                <div className="mt-17 grid gap-25 md:grid-cols-2 text-end">
+                <div
+                    id="project-list"
+                    className="
+                        mt-24
+                        grid
+                        gap-25 gap-y-15
+                        md:grid-cols-2
+                        text-end
+                        scroll-mt-16
+                    "
+                >
                     {sortedProjects.map((project) => {
                         if (project.category === "project") {
                             return (
