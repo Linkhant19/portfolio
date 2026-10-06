@@ -197,6 +197,7 @@ export default function RetroComputer({ project }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
+                            mb-10
                             cursor-pointer
                             font-major-mono text-sm
                             underline underline-offset-4

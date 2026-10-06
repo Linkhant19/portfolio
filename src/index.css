@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* cutting off scrolling, mainly for my small screen users */
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 /* Major Mono Display */
 @font-face {
     font-family: "Major Mono Display";

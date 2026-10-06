@@ -75,11 +75,9 @@ export default function SideSignature({ selectedCharacter }) {
                 top-0
                 z-50
 
-                hidden
+                
                 h-dvh
                 w-16
-
-                lg:block
             "
         >
 
@@ -92,6 +90,8 @@ export default function SideSignature({ selectedCharacter }) {
                     right-8
                     w-5
                     overflow-hidden
+                    hidden
+                    lg:block
                 "
             >
                 {streamItems.map((item) => (
@@ -131,7 +131,8 @@ export default function SideSignature({ selectedCharacter }) {
             <div
                 className="
                     absolute
-                    right-0
+                    -right-3.5
+                    lg:right-0
                     top-1/2
 
                     flex
@@ -141,9 +142,12 @@ export default function SideSignature({ selectedCharacter }) {
                     whitespace-nowrap
 
                     font-major-mono
-                    text-[9px]
+                    text-[8.5px]
+                    lg:text-[9px]
                     tracking-[0.3em]
                     text-stone-500/70
+
+                    
 
                     [writing-mode:vertical-rl]
                 "

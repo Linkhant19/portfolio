@@ -90,6 +90,12 @@ export const projects = [
             "responsive design",
             "visual storytelling",
         ],
+        links: [
+            {
+                label: "github",
+                url: "https://linkhant19.github.io/ShadowsOfYou",
+            },
+        ],
         image: PortfolioGif,
     },
 
