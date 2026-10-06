@@ -159,6 +159,48 @@ export default function CharacterDisplay({ character }) {
 
                 </div>
 
+                <a
+                    href="#projects"
+                    className="
+                        relative mt-10
+                        cursor-pointer
+
+                        rounded-md
+                        border-2 border-[#6D685F]
+
+                        bg-gradient-to-b
+                        from-[#D8D0C3]
+                        via-[#BDB5A8]
+                        to-[#958D82]
+
+                        px-7 py-3
+
+                        font-major-mono
+                        text-xs text-stone-800
+
+                        shadow-[
+                            inset_0_3px_0_rgba(255,255,255,0.3),
+                            inset_0_-4px_0_rgba(0,0,0,0.18),
+                            5px_6px_0_#3B3834
+                        ]
+
+                        transition-transform
+                        duration-100
+
+                        hover:-translate-y-1
+
+                        active:translate-x-[3px]
+                        active:translate-y-[3px]
+
+                        motion-reduce:transition-none
+
+                        inline-block
+                        lg:hidden
+                    "
+                >
+                    start ↓
+                </a>
+
             </div>
 
         </section>

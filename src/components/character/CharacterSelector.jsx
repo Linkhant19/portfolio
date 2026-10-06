@@ -210,7 +210,6 @@ export default function CharacterSelector({
                     href="#projects"
                     className="
                         relative mt-10
-                        inline-block
                         cursor-pointer
 
                         rounded-md
@@ -241,6 +240,9 @@ export default function CharacterSelector({
                         active:translate-y-[3px]
 
                         motion-reduce:transition-none
+
+                        hidden
+                        lg:inline-block
                     "
                 >
                     start ↓

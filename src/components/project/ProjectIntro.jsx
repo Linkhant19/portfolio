@@ -277,11 +277,15 @@ function Trait({
                     pointer-events-none
                     absolute
                     bottom-[calc(100%+14px)]
-                    left-1/2
+                    right-0
                     z-40
 
                     w-48
-                    -translate-x-1/2
+                    max-w-[calc(100vw-2rem)]
+
+                    sm:left-1/2
+                    sm:right-auto
+                    sm:-translate-x-1/2
 
                     border border-stone-400
                     bg-[#F5F1E8]
