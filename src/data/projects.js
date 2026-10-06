@@ -12,6 +12,7 @@ import PortfolioGif from "../assets/images/projects/portfolio_website.gif";
 import CommuteBeatGif from "../assets/images/projects/commutebeat.gif";
 import LivableStreetsGif from "../assets/images/projects/livablestreets.gif";
 import FullStackGif from "../assets/images/projects/fullstackjourney.gif";
+import TetrisPhoto from "../assets/images/projects/tetris_code.png";
 import FastLogo from "../assets/images/projects/fast_enterprises.jpg";
 import The360edLogo from "../assets/images/projects/360ed.jpg";
 import BoardGamesClubLogo from "../assets/images/projects/board_games_club.jpg";
@@ -237,7 +238,7 @@ export const projects = [
             "state-action representations",
             "Q-value predictions",
         ],
-        image: LivableStreetsGif,
+        image: TetrisPhoto,
     },
     {
         id: "teaching-assistant",

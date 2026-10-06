@@ -136,26 +136,39 @@ export default function RetroComputer({ project }) {
                 </button>
 
                 {/* COMPUTER DETAILS */}
+                
+                    <div className="mt-4 flex items-center justify-between gap-4">
 
-                <div className="mt-4 flex items-center justify-between gap-4">
-
-                    <h3
-                        className="
-                            font-major-mono text-xs
-                            text-[#565A55] sm:text-sm
-                        "
-                    >
-                        {project.title}
-                    </h3>
-
-                    <span
-                        aria-hidden="true"
-                        className="shrink-0 text-2xl text-[#565A55]"
-                    >
-                        ⏻
-                    </span>
-
-                </div>
+                        <h3
+                            className="
+                                font-major-mono text-xs
+                                text-[#565A55] sm:text-sm
+                            "
+                        >
+                            {project.title}
+                        </h3>
+                        <button 
+                            type="button"
+                            onClick={() => setIsOpen(!isOpen)}
+                            aria-expanded={isOpen}
+                            aria-label={
+                                isOpen
+                                    ? `Hide details for ${project.title}`
+                                    : `Show details for ${project.title}`
+                            }
+                            className="
+                                cursor-pointer
+                                "
+                        >
+                            <span
+                                aria-hidden="true"
+                                className="shrink-0 text-2xl text-[#565A55]"
+                            >
+                                ⏻
+                            </span>
+                        </button>
+                    </div>
+                
 
             </div>
 
