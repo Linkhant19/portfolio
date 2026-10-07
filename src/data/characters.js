@@ -44,25 +44,25 @@ export const characters = [
                 icon: "technical",
                 label: "Technical Builder",
                 description:
-                    "Enjoys turning ideas and requirements into working software systems.",
+                    "Turns ideas and requirements into working software systems.",
             },
             {
                 icon: "creative",
                 label: "Problem Solver",
                 description:
-                    "Likes exploring different approaches instead of stopping at the first solution.",
+                    "Explores multiple solutions and perspectives for a given problem.",
             },
             {
                 icon: "collaboration",
-                label: "Collaborator",
+                label: "Team Player",
                 description:
-                    "Works closely with teammates, testers, and users throughout the development process.",
+                    "Works closely with teammates, leads, testers, and users throughout the development process.",
             },
             {
-                icon: "playful",
+                icon: "brain",
                 label: "Human-Centered",
                 description:
-                    "Often thinks about how technology feels to the person actually using it.",
+                    "Implements a deep understanding of Social Psychology and perception in the development process.",
             },
         ],
     },
@@ -91,28 +91,28 @@ export const characters = [
         },
         traits: [
             {
-                icon: "technical",
-                label: "Technical Builder",
+                icon: "build",
+                label: "The Artificer",
                 description:
-                    "Enjoys turning ideas and requirements into working software systems.",
+                    "Designs puzzles around logic, discovery, sequencing, and satisfying aha moments.",
             },
             {
-                icon: "creative",
-                label: "Problem Solver",
+                icon: "magic",
+                label: "The Sorcerer",
                 description:
-                    "Likes exploring different approaches instead of stopping at the first solution.",
+                    "Creates moments of surprise and wonder through reveals, interactive effects, and unexpected ways for players to influence the experience.",
             },
             {
-                icon: "collaboration",
-                label: "Collaborator",
+                icon: "host",
+                label: "The Bard",
                 description:
-                    "Works closely with teammates, testers, and users throughout the development process.",
+                    "Enjoys planning and hosting large events and gameshows with interactive elements.",
             },
             {
-                icon: "playful",
-                label: "Human-Centered",
+                icon: "tree",
+                label: "The Druid",
                 description:
-                    "Often thinks about how technology feels to the person actually using it.",
+                    "Uses space, atmosphere, props, and environmental storytelling to make each experience feel grounded in its own world.",
             },
         ],
     },
@@ -141,28 +141,28 @@ export const characters = [
         },
         traits: [
             {
-                icon: "technical",
-                label: "Technical Builder",
+                icon: "potion",
+                label: "The Alchemist",
                 description:
-                    "Enjoys turning ideas and requirements into working software systems.",
+                    "Transforms memories, feelings, and seemingly ordinary experiences into imagery, metaphor, and story.",
             },
             {
-                icon: "creative",
-                label: "Problem Solver",
+                icon: "lights",
+                label: "All The Lights",
                 description:
-                    "Likes exploring different approaches instead of stopping at the first solution.",
+                    "Experiments with new voice, perspective, tone, and form to find the theme and style that best fits each piece.",
             },
             {
-                icon: "collaboration",
-                label: "Collaborator",
+                icon: "laptop",
+                label: "The Raven",
                 description:
-                    "Works closely with teammates, testers, and users throughout the development process.",
+                    "Integrate software engineering skills to create websites that further supports the vision of a project.",
             },
             {
-                icon: "playful",
-                label: "Human-Centered",
+                icon: "arrow",
+                label: "Labyrinth",
                 description:
-                    "Often thinks about how technology feels to the person actually using it.",
+                    "Explores small moments, emotions, and details lost in the corner of the mind, and turns them into something worth remembering.",
             },
         ],
     },

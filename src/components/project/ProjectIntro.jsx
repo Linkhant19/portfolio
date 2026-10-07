@@ -7,7 +7,16 @@ import {
     Code,
     LightBulb,
     Group,
-    Puzzle,
+    CubeDots,
+    OpenBook,
+    Tree,
+    MagicWand,
+    CircleSpark,
+    BrainElectricity,
+    Potion,
+    AirplaneHelix45deg,
+    LaptopDevMode,
+    PathArrow,
 } from "iconoir-react";
 import { useState } from "react";
 
@@ -15,7 +24,21 @@ const traitIcons = {
     technical: Code,
     creative: LightBulb,
     collaboration: Group,
-    playful: Puzzle,
+    brain: BrainElectricity,
+
+    build: CubeDots,
+    magic: MagicWand,
+    host: CircleSpark,
+    tree: Tree,
+
+    potion: Potion,
+    lights: AirplaneHelix45deg,
+    laptop: LaptopDevMode,
+    arrow: PathArrow,
+
+
+    book: OpenBook,
+
 };
 
 export default function CharacterProjectIntro({ character }) {
@@ -250,7 +273,7 @@ function Trait({
                     border-2 border-stone-500
                     bg-stone-100
 
-                    shadow-[4px_4px_0_#78716c]
+                    shadow-[0px_0px_4=0px_#78716c]
 
                     transition-transform
                     duration-150
