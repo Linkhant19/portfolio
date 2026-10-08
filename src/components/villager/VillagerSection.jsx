@@ -72,20 +72,19 @@ export default function VillagerSection() {
                     ">
 
                         <h3 className="font-caslon text-4xl">
-                            Hi, I'm Lin!
+                            Hey, this is Lin!
                         </h3>
 
                         <p>
-                            I'm a Computer Science and Psychology graduate from 
-                            Boston University who enjoys creating things that bring people
-                            together in some way. My interests take many forms, from
-                            building software and web applications and designing puzzles to
-                            writing poetry and organizing interactive experiences.
+                            I am a Software Developer and Consultant at Fast Enterprises. I graduated from Boston University in May 2025 with a double major in Computer Science and Psychology. 
                         </p>
 
                         <p>
-                            I grew up in Myanmar (Burma) and moved to Boston for college.
-                            I 
+                            I’m intrigued by how technology and design shape the way people think, feel, and interact, and I’m motivated by finding ways to apply what I learn to build systems that are both helpful and enjoyable to use.
+                        </p>
+
+                        <p>
+                            Outside of software, I enjoy designing puzzles, hosting large events, playing board games, writing, and building interactive experiences.
                         </p>
 
                     </div>
