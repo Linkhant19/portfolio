@@ -163,20 +163,22 @@ export default function CharacterProjectIntro({ character }) {
 
                     <div className="mt-5 flex flex-wrap gap-4">
 
-                        {character.traits?.map((trait) => {
-                            const Icon =
-                                traitIcons[trait.icon] ??
-                                LightBulb;
+                    {character.traits?.map((trait, index) => {
+                        const Icon =
+                            traitIcons[trait.icon] ??
+                            LightBulb;
 
-                            return (
-                                <Trait
-                                    key={trait.label}
-                                    icon={Icon}
-                                    label={trait.label}
-                                    description={trait.description}
-                                />
-                            );
-                        })}
+                        return (
+                            <Trait
+                                key={trait.label}
+                                icon={Icon}
+                                label={trait.label}
+                                description={trait.description}
+                                color={trait.color}
+                                index={index}
+                            />
+                        );
+                    })}
 
                     </div>
 
@@ -252,6 +254,7 @@ function Trait({
     icon: Icon,
     label,
     description,
+    index,
 }) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -300,7 +303,7 @@ function Trait({
                     pointer-events-none
                     absolute
                     bottom-[calc(100%+14px)]
-                    right-0
+                    ${index < 2 ? "left-0" : "right-0"}
                     z-40
 
                     w-48
