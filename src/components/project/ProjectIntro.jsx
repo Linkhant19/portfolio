@@ -41,6 +41,36 @@ const traitIcons = {
 
 };
 
+const traitColors = {
+    amber: {
+        light: "#FFE89A",
+        main: "#E8A21A",
+        dark: "#8D5700",
+        glow: "rgba(232, 162, 26, 0.35)",
+    },
+
+    violet: {
+        light: "#E8B6FF",
+        main: "#A64CE6",
+        dark: "#66228F",
+        glow: "rgba(166, 76, 230, 0.35)",
+    },
+
+    blue: {
+        light: "#BEEBFF",
+        main: "#4F9EDB",
+        dark: "#28658C",
+        glow: "rgba(79, 158, 219, 0.35)",
+    },
+
+    green: {
+        light: "#D1F78A",
+        main: "#78B82A",
+        dark: "#426B13",
+        glow: "rgba(120, 184, 42, 0.35)",
+    },
+};
+
 export default function CharacterProjectIntro({ character }) {
     return (
         <div
@@ -254,49 +284,113 @@ function Trait({
     icon: Icon,
     label,
     description,
+    color = "blue",
     index,
 }) {
     const [isOpen, setIsOpen] = useState(false);
+    const gem = traitColors[color] ?? traitColors.blue;
 
     return (
         <div className="group relative">
 
-            <button
-                type="button"
-                onClick={() => setIsOpen((open) => !open)}
-                onBlur={() => setIsOpen(false)}
-                aria-expanded={isOpen}
-                aria-label={`${label}: ${description}`}
+        <button
+            type="button"
+            onClick={() => setIsOpen((open) => !open)}
+            onBlur={() => setIsOpen(false)}
+            aria-expanded={isOpen}
+            aria-label={`${label}: ${description}`}
+            className="
+                relative
+                flex h-14 w-14
+                cursor-pointer
+                items-center justify-center
+                overflow-hidden
+
+                rounded-[10px]
+                border-2
+
+                transition-all
+                duration-150
+
+                hover:-translate-y-1
+                hover:scale-[1.04]
+
+                active:translate-y-[2px]
+                active:scale-[0.98]
+
+                focus-visible:outline-2
+                focus-visible:outline-offset-4
+                focus-visible:outline-stone-500
+            "
+            style={{
+                borderColor: gem.dark,
+
+                background: `
+                    linear-gradient(
+                        145deg,
+                        ${gem.light} 0%,
+                        ${gem.main} 45%,
+                        ${gem.dark} 100%
+                    )
+                `,
+
+                boxShadow: `
+                    inset 0 3px 2px rgba(255,255,255,0.75),
+                    inset 3px 0 2px rgba(255,255,255,0.28),
+                    inset 0 -5px 3px rgba(0,0,0,0.22),
+                    inset -3px 0 3px rgba(0,0,0,0.14),
+                    0 0 10px ${gem.glow},
+                    3px 4px 0 rgba(68,64,60,0.75)
+                `,
+            }}
+        >
+
+            <span
                 className="
-                    flex h-14 w-14
-                    cursor-pointer
-                    items-center justify-center
+                    pointer-events-none
+                    absolute
+                    left-[7px]
+                    right-[7px]
+                    top-[5px]
+                    h-[35%]
 
-                    rounded-md
-                    border-2 border-stone-500
-                    bg-stone-100
-
-                    shadow-[0px_0px_4=0px_#78716c]
-
-                    transition-transform
-                    duration-150
-
-                    hover:-translate-y-1
-
-                    focus-visible:outline-2
-                    focus-visible:outline-offset-4
-                    focus-visible:outline-stone-500
-
-                    active:translate-x-[2px]
-                    active:translate-y-[2px]
+                    rounded-[7px]
+                    bg-gradient-to-b
+                    from-white/55
+                    to-white/5
                 "
-            >
-                <Icon
-                    width={26}
-                    height={26}
-                    strokeWidth={1.4}
-                />
-            </button>
+            />
+
+            <span
+                className="
+                    pointer-events-none
+                    absolute
+                    inset-[7px]
+
+                    rounded-[6px]
+                    border border-black/15
+
+                    bg-black/10
+
+                    shadow-[
+                        inset_0_2px_4px_rgba(0,0,0,0.18),
+                        inset_0_-1px_2px_rgba(255,255,255,0.25)
+                    ]
+                "
+            />
+
+            <Icon
+                width={25}
+                height={25}
+                strokeWidth={1.7}
+                className="
+                    relative
+                    z-10
+                    text-stone-900
+                    drop-shadow-[0_1px_0_rgba(255,255,255,0.35)]
+                "
+            />
+        </button>
 
             <div
                 className={`

@@ -70,17 +70,41 @@ export default function EventStage({ project }) {
                     {/* EVENT DESCRIPTION ON PHOTO */}
 
                     <div
+                        onClick={(event) => event.stopPropagation()}
                         className={`
-                            pointer-events-none
-                            absolute inset-x-[12%] bottom-0 z-20
-                            p-6 text-center text-white
+                            absolute
+                            inset-x-[8%]
+                            bottom-4
+                            z-20
+
+                            max-h-[70%]
+                            overflow-y-auto
+                            overscroll-contain
+                            touch-pan-y
+
+                            px-3 py-4
+                            text-center text-white
+
+                            sm:inset-x-[12%]
+                            sm:p-6
 
                             transition-all duration-500
 
                             ${
                                 isOpen
-                                    ? "translate-y-0 opacity-100"
-                                    : "translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+                                    ? `
+                                        pointer-events-auto
+                                        translate-y-0
+                                        opacity-100
+                                    `
+                                    : `
+                                        pointer-events-none
+                                        translate-y-4
+                                        opacity-0
+
+                                        group-hover:translate-y-0
+                                        group-hover:opacity-100
+                                    `
                             }
                         `}
                     >
@@ -97,8 +121,12 @@ export default function EventStage({ project }) {
 
                         <h3
                             className="
-                                mt-2 font-caslon
-                                text-3xl leading-tight
+                                mt-2
+                                font-caslon
+                                text-xl
+                                leading-tight
+
+                                sm:text-3xl
                             "
                         >
                             {project.title}
@@ -107,8 +135,12 @@ export default function EventStage({ project }) {
                         <p
                             className="
                                 mx-auto mt-3 max-w-md
-                                font-caslon text-base
-                                leading-relaxed text-white/90
+                                font-caslon
+                                text-sm
+                                leading-relaxed
+                                text-white/90
+
+                                sm:text-base
                             "
                         >
                             {project.description}

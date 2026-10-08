@@ -5,6 +5,13 @@
 // 3. image
 // 4. description
 
+
+// trait colors avaiable right now 
+// blue 
+// violet
+// green
+// amber
+
 import developerImage from "../assets/images/characters/developer.gif"
 import writerImage from "../assets/images/characters/writer.gif"
 import puzzleDesignerImage from "../assets/images/characters/puzzle_designer.gif"
@@ -43,24 +50,28 @@ export const characters = [
             {
                 icon: "technical",
                 label: "Technical Builder",
+                color: "amber",
                 description:
                     "Turns ideas and requirements into working software systems.",
             },
             {
                 icon: "creative",
                 label: "Problem Solver",
+                color: "violet",
                 description:
                     "Explores multiple solutions and perspectives for a given problem.",
             },
             {
                 icon: "collaboration",
                 label: "Team Player",
+                color: "blue",
                 description:
                     "Works closely with teammates, leads, testers, and users throughout the development process.",
             },
             {
                 icon: "brain",
                 label: "Human-Centered",
+                color: "violet",
                 description:
                     "Implements a deep understanding of Social Psychology and perception in the development process.",
             },
@@ -93,24 +104,28 @@ export const characters = [
             {
                 icon: "build",
                 label: "The Artificer",
+                color: "blue",
                 description:
                     "Designs puzzles around logic, discovery, sequencing, and satisfying aha moments.",
             },
             {
                 icon: "magic",
                 label: "The Sorcerer",
+                color: "violet",
                 description:
                     "Creates moments of surprise and wonder through reveals, interactive effects, and unexpected ways for players to influence the experience.",
             },
             {
                 icon: "host",
                 label: "The Bard",
+                color: "green",
                 description:
                     "Enjoys planning and hosting large events and gameshows with interactive elements.",
             },
             {
                 icon: "tree",
                 label: "The Druid",
+                color: "green",
                 description:
                     "Uses space, atmosphere, props, and environmental storytelling to make each experience feel grounded in its own world.",
             },
@@ -143,24 +158,28 @@ export const characters = [
             {
                 icon: "potion",
                 label: "The Alchemist",
+                color: "amber",
                 description:
                     "Transforms memories, feelings, and seemingly ordinary experiences into imagery, metaphor, and story.",
             },
             {
                 icon: "lights",
                 label: "All The Lights",
+                color: "blue",
                 description:
                     "Experiments with new voice, perspective, tone, and form to find the theme and style that best fits each piece.",
             },
             {
                 icon: "laptop",
                 label: "The Raven",
+                color: "violet",
                 description:
                     "Integrate software engineering skills to create websites that further supports the vision of a project.",
             },
             {
                 icon: "arrow",
                 label: "Labyrinth",
+                color: "blue",
                 description:
                     "Explores small moments, emotions, and details lost in the corner of the mind, and turns them into something worth remembering.",
             },
