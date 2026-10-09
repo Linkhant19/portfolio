@@ -20,6 +20,7 @@ export default function RetroComputer({ project }) {
                     rounded-[20px]
                     bg-[#E2DDD1]
                     p-5
+                    border
                 "
             >
 
@@ -143,6 +144,7 @@ export default function RetroComputer({ project }) {
                             className="
                                 font-major-mono text-xs
                                 text-[#565A55] sm:text-sm
+                                text-start
                             "
                         >
                             {project.title}

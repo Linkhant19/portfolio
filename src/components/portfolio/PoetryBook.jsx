@@ -153,7 +153,7 @@ export default function PoetryBook({ project }) {
                                 font-caslon text-xl italic
                                 leading-relaxed text-stone-600
                                 md:text-[0.95rem]
-                                text-end
+                                text-start
                             "
                         >
                             “{project.quote}”

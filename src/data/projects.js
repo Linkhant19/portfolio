@@ -44,6 +44,29 @@ import Trivia22Pic8 from "../assets/images/projects/Trivia22_8.jpg";
 import Trivia22Pic9 from "../assets/images/projects/Trivia22_9.jpg";
 import Trivia22Pic10 from "../assets/images/projects/Trivia22_10.jpg";
 
+// Trivia Night 2023
+import Trivia23Pic1 from "../assets/images/projects/Trivia23_1.jpg";
+import Trivia23Pic2 from "../assets/images/projects/Trivia23_2.jpg";
+import Trivia23Pic3 from "../assets/images/projects/Trivia23_3.jpg";
+import Trivia23Pic4 from "../assets/images/projects/Trivia23_4.jpg";
+import Trivia23Pic5 from "../assets/images/projects/Trivia23_5.jpg";
+import Trivia23Pic6 from "../assets/images/projects/Trivia23_6.jpg";
+import Trivia23Pic7 from "../assets/images/projects/Trivia23_7.jpg";
+import Trivia23Pic8 from "../assets/images/projects/Trivia23_8.jpg";
+
+// Trivia Night 2024
+import Trivia24Pic1 from "../assets/images/projects/Trivia24_1.jpg";
+import Trivia24Pic2 from "../assets/images/projects/Trivia24_2.jpg";
+import Trivia24Pic3 from "../assets/images/projects/Trivia24_3.jpg";
+import Trivia24Pic4 from "../assets/images/projects/Trivia24_4.jpg";
+import Trivia24Pic5 from "../assets/images/projects/Trivia24_5.jpg";
+import Trivia24Pic6 from "../assets/images/projects/Trivia24_6.jpg";
+import Trivia24Pic7 from "../assets/images/projects/Trivia24_7.jpg";
+import Trivia24Pic8 from "../assets/images/projects/Trivia24_8.jpg";
+import Trivia24Pic9 from "../assets/images/projects/Trivia24_9.jpg";
+import Trivia24Pic10 from "../assets/images/projects/Trivia24_10.jpg";
+import Trivia24Pic11 from "../assets/images/projects/Trivia24_11.jpg";
+
 // Escape Room 2022
 import EscapeRoom22Pic1 from "../assets/images/projects/Escape22_1.jpg";
 import EscapeRoom22Pic2 from "../assets/images/projects/Escape22_2.jpg";
@@ -55,6 +78,45 @@ import EscapeRoom22Pic7 from "../assets/images/projects/Escape22_7.jpg";
 import EscapeRoom22Pic8 from "../assets/images/projects/Escape22_8.jpg";
 import EscapeRoom22Pic9 from "../assets/images/projects/Escape22_9.jpg";
 import EscapeRoom22Pic10 from "../assets/images/projects/Escape22_10.jpg";
+
+// Escape Room 2023
+import EscapeRoom23Pic1 from "../assets/images/projects/Escape24_1.jpg";
+import EscapeRoom23Pic2 from "../assets/images/projects/Escape24_2.jpg";
+import EscapeRoom23Pic3 from "../assets/images/projects/Escape24_3.jpg";
+import EscapeRoom23Pic4 from "../assets/images/projects/Escape24_4.jpg";
+import EscapeRoom23Pic5 from "../assets/images/projects/Escape24_5.jpg";
+import EscapeRoom23Pic6 from "../assets/images/projects/Escape24_6.jpg";
+import EscapeRoom23Pic7 from "../assets/images/projects/Escape24_7.jpg";
+import EscapeRoom23Pic8 from "../assets/images/projects/Escape24_8.jpg";
+import EscapeRoom23Pic9 from "../assets/images/projects/Escape24_9.jpg";
+import EscapeRoom23Pic10 from "../assets/images/projects/Escape24_10.jpg";
+import EscapeRoom23Pic11 from "../assets/images/projects/Escape24_11.jpg";
+
+// Escape Room 2026 - Charleston, WV
+import EscapeRoom26Pic1 from "../assets/images/projects/EscapeWV_1.jpg";
+import EscapeRoom26Pic2 from "../assets/images/projects/EscapeWV_2.jpg";
+import EscapeRoom26Pic3 from "../assets/images/projects/EscapeWV_3.jpg";
+import EscapeRoom26Pic4 from "../assets/images/projects/EscapeWV_4.jpg";
+import EscapeRoom26Pic5 from "../assets/images/projects/EscapeWV_5.jpg";
+import EscapeRoom26Pic6 from "../assets/images/projects/EscapeWV_6.jpg";
+import EscapeRoom26Pic7 from "../assets/images/projects/EscapeWV_7.jpg";
+
+// Murder Mystery 2022
+import Murdermystery22Pic1 from "../assets/images/projects/Mystery22_1.jpg";
+import Murdermystery22Pic2 from "../assets/images/projects/Mystery22_2.jpg";
+import Murdermystery22Pic3 from "../assets/images/projects/Mystery22_3.jpg";
+import Murdermystery22Pic4 from "../assets/images/projects/Mystery22_4.jpg";
+import Murdermystery22Pic5 from "../assets/images/projects/Mystery22_5.jpg";
+import Murdermystery22Pic6 from "../assets/images/projects/Mystery22_6.jpg";
+
+// Murder Mystery 2023
+import MurderMystery23Pic1 from "../assets/images/projects/Mystery23_1.jpg";
+import MurderMystery23Pic2 from "../assets/images/projects/Mystery23_2.jpg";
+import MurderMystery23Pic3 from "../assets/images/projects/Mystery23_3.jpg";
+import MurderMystery23Pic4 from "../assets/images/projects/Mystery23_4.jpg";
+import MurderMystery23Pic5 from "../assets/images/projects/Mystery23_5.jpg";
+import MurderMystery23Pic6 from "../assets/images/projects/Mystery23_6.jpg";
+import MurderMystery23Pic7 from "../assets/images/projects/Mystery23_7.jpg";
 
 // Murder Mystery 2024
 import MurderMystery24Pic1 from "../assets/images/projects/Mystery24_1.jpg";
@@ -68,6 +130,13 @@ import MurderMystery24Pic8 from "../assets/images/projects/Mystery24_8.jpg";
 import MurderMystery24Pic9 from "../assets/images/projects/Mystery24_9.jpg";
 import MurderMystery24Pic10 from "../assets/images/projects/Mystery24_10.jpg";
 import MurderMystery24Pic11 from "../assets/images/projects/Mystery24_11.jpg";
+
+// Game Design Competition
+import GameDesign1 from "../assets/images/projects/Game_1.jpg";
+import GameDesign2 from "../assets/images/projects/Game_2.jpg";
+import GameDesign3 from "../assets/images/projects/Game_3.jpg";
+import GameDesign4 from "../assets/images/projects/Game_4.jpg";
+import GameDesign5 from "../assets/images/projects/Game_5.jpg";
 
 export const projects = [
     {
@@ -433,6 +502,23 @@ export const projects = [
         ]
     },
     {
+        id: "murder-mystery-2022",
+        title: "Murder Mystery 2022",
+        characterIds: ["puzzleDesigner"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            Murdermystery22Pic1,
+            Murdermystery22Pic2,
+            Murdermystery22Pic3,
+            Murdermystery22Pic4,
+            Murdermystery22Pic5,
+            Murdermystery22Pic6,
+        ],
+        description: "Murder Mystery 2022",
+    },
+    {
         id: "murder-mystery-2023",
         title: "Murder Mystery 2023",
         characterIds: ["puzzleDesigner"],
@@ -440,9 +526,13 @@ export const projects = [
         presentation: "photo-stack",
 
         photos: [
-            ShadowsOfYouCover,
-            SevenHeavenCover,
-            MidnightFriendshipCover
+            MurderMystery23Pic1,
+            MurderMystery23Pic2,
+            MurderMystery23Pic3,
+            MurderMystery23Pic4,
+            MurderMystery23Pic5,
+            MurderMystery23Pic6,
+            MurderMystery23Pic7,
         ],
         description: "Murder Mystery 2023",
     },
@@ -470,7 +560,7 @@ export const projects = [
     },
     {
         id: "trivia-night-2022",
-        title: "Trivia Night 2022",
+        title: "Trivia Night 2022 Fall",
         characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
@@ -487,35 +577,48 @@ export const projects = [
             Trivia22Pic9,
             Trivia22Pic10
         ],
-        description: "Trivia Night 2022",
+        description: "Trivia Night 2022 Fall",
     },
     {
         id: "trivia-night-2023",
-        title: "Trivia Night 2023",
+        title: "Trivia Night 2024 Spring",
         characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
         photos: [
-            ShadowsOfYouCover,
-            SevenHeavenCover,
-            MidnightFriendshipCover
+            Trivia23Pic1,
+            Trivia23Pic2,
+            Trivia23Pic3,
+            Trivia23Pic4,
+            Trivia23Pic5,
+            Trivia23Pic6,
+            Trivia23Pic7,
+            Trivia23Pic8,
         ],
-        description: "Trivia Night 2023",
+        description: "Trivia Night 2024 Spring",
     },
     {
         id: "trivia-night-2024",
-        title: "Trivia Night 2024",
+        title: "Trivia Night 2024 Fall",
         characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
 
         photos: [
-            ShadowsOfYouCover,
-            SevenHeavenCover,
-            MidnightFriendshipCover
+            Trivia24Pic1,
+            Trivia24Pic2,
+            Trivia24Pic3,
+            Trivia24Pic4,
+            Trivia24Pic5,
+            Trivia24Pic6,
+            Trivia24Pic7,
+            Trivia24Pic8,
+            Trivia24Pic9,
+            Trivia24Pic10,
+            Trivia24Pic11,
         ],
-        description: "Trivia Night 2024",
+        description: "Trivia Night 2024 Fall",
     },
     {
         id: "escape-room-2022",
@@ -546,11 +649,52 @@ export const projects = [
         presentation: "photo-stack",
 
         photos: [
-            ShadowsOfYouCover,
-            SevenHeavenCover,
-            MidnightFriendshipCover
+            EscapeRoom23Pic1,
+            EscapeRoom23Pic2,
+            EscapeRoom23Pic3,
+            EscapeRoom23Pic4,
+            EscapeRoom23Pic5,
+            EscapeRoom23Pic6,
+            EscapeRoom23Pic7,
+            EscapeRoom23Pic8,
+            EscapeRoom23Pic9,
+            EscapeRoom23Pic10,
+            EscapeRoom23Pic11,
         ],
         description: "Escape Room 2023",
+    },
+    {
+        id: "escape-room-wv",
+        title: "Escape Room 2026 - Charleston, WV",
+        characterIds: ["puzzleDesigner"],
+        category: "event",
+        presentation: "photo-stack",
+        photos: [
+            EscapeRoom26Pic1,
+            EscapeRoom26Pic2,
+            EscapeRoom26Pic3,
+            EscapeRoom26Pic4,
+            EscapeRoom26Pic5,
+            EscapeRoom26Pic6,
+            EscapeRoom26Pic7,
+        ],
+        description: "Escape Room 2026 - Charleston, WV",
+    },
+    {
+        id: "game-design",
+        title: "Game Design Competition",
+        characterIds: ["puzzleDesigner"],
+        category: "event",
+        presentation: "photo-stack",
+
+        photos: [
+            GameDesign1,
+            GameDesign2,
+            GameDesign3,
+            GameDesign4,
+            GameDesign5,
+        ],
+        description: "Game Design Competition",
     },
     {
         id: "general-meeting-BGC",

@@ -6,8 +6,8 @@ import WorkBadge from "../portfolio/WorkBadge";
 import PoetryBook from "../portfolio/PoetryBook";
 import WritingManuscript from "../portfolio/WritingManuscript";
 import EventStage from "../portfolio/EventStage";
-import EventPhotoStack from "../portfolio/EventPhotoStack";
 import ProjectIntro from "./ProjectIntro";
+import EventPhotosSection from "../portfolio/EventPhotosSection";
 
 export default function ProjectsSection({ projects, character }) {
 
@@ -18,6 +18,20 @@ export default function ProjectsSection({ projects, character }) {
     
         return orderA - orderB;
     });
+
+    const photoStackEvents = sortedProjects.filter(
+        (project) =>
+            project.category === "event" &&
+            project.presentation === "photo-stack"
+    );
+    
+    const mainProjects = sortedProjects.filter(
+        (project) =>
+            !(
+                project.category === "event" &&
+                project.presentation === "photo-stack"
+            )
+    );
 
     return (
         <section
@@ -39,7 +53,7 @@ export default function ProjectsSection({ projects, character }) {
                         scroll-mt-16
                     "
                 >
-                    {sortedProjects.map((project) => {
+                    {mainProjects.map((project) => {
                         if (project.category === "project") {
                             return (
                                 <RetroComputer
@@ -75,18 +89,6 @@ export default function ProjectsSection({ projects, character }) {
                                 />
                             );
                         }
-
-                        if (
-                            project.category === "event" &&
-                            project.presentation === "photo-stack"
-                        ) {
-                            return (
-                                <EventPhotoStack
-                                    key={project.id}
-                                    project={project}
-                                />
-                            );
-                        }
                         
                         if (
                             project.category === "event" &&
@@ -107,7 +109,9 @@ export default function ProjectsSection({ projects, character }) {
                             />
                         );
                     })}
+
                 </div>
+                <EventPhotosSection projects={photoStackEvents} />
     
             </div>
         </section>

@@ -17,11 +17,11 @@ export default function WorkBadge({ project }) {
 
             <div className="flex flex-col items-center">
 
-                <div className="h-8 w-1.5 bg-[#9FB7C2]" />
+                <div className="h-8 w-1.5 bg-black" />
 
                 <div className="
                     h-4 w-10 rounded-t-lg
-                    border-2 border-stone-500
+                    border
                     bg-stone-300
                 " />
 
@@ -69,10 +69,10 @@ export default function WorkBadge({ project }) {
                             absolute inset-0
                             flex w-full cursor-pointer
                             flex-col rounded-xl
-                            border-2 border-stone-400
+                            border
                             bg-[#D9E2E6] p-6
                             text-left text-[#292D2B]
-                            shadow-[6px_8px_0px_#1F2A30]
+                            shadow-[2px_2px_0px_#1F2A30]
                             focus-visible:outline-2
                             focus-visible:outline-offset-4
                             focus-visible:outline-[#F6F7F5]
@@ -192,6 +192,7 @@ export default function WorkBadge({ project }) {
                             bg-[#4F6D7A] p-6
                             text-[#E7F5E9]
                             shadow-[6px_8px_0px_#1F2A30]
+                            text-start
                         "
                         style={{
                             backfaceVisibility: "hidden",

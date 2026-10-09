@@ -35,7 +35,7 @@ export default function EventPhotoStack({ project }) {
     if (photos.length === 0) return null;
 
     return (
-        <article className="mx-auto w-full max-w-xl py-10">
+        <article className="mx-auto w-full max-w-xl py-5">
 
             {/* PHOTO STACK */}
 
@@ -64,6 +64,7 @@ export default function EventPhotoStack({ project }) {
                             overflow-hidden
                             bg-white p-2
                             shadow-md
+                            border
                         "
                     >
                         <img
@@ -73,6 +74,7 @@ export default function EventPhotoStack({ project }) {
                                 h-full w-full
                                 object-cover
                                 opacity-70
+                                border
                             "
                         />
                     </div>
@@ -89,6 +91,7 @@ export default function EventPhotoStack({ project }) {
                             overflow-hidden
                             bg-white p-2
                             shadow-md
+                            border
                         "
                     >
                         <img
@@ -98,6 +101,7 @@ export default function EventPhotoStack({ project }) {
                                 h-full w-full
                                 object-cover
                                 opacity-80
+                                border
                             "
                         />
                     </div>
@@ -117,6 +121,7 @@ export default function EventPhotoStack({ project }) {
                         group-hover:-translate-y-2
                         group-hover:-rotate-1
                         motion-reduce:transition-none
+                        border
                     "
                 >
                     <img
@@ -125,6 +130,7 @@ export default function EventPhotoStack({ project }) {
                         className="
                             h-full w-full
                             object-cover
+                            border
                         "
                     />
 
@@ -158,7 +164,7 @@ export default function EventPhotoStack({ project }) {
                     <p
                         className="
                             font-major-mono
-                            text-[12px]
+                            text-[10px]
                             tracking-[0.18em]
                             text-stone-400
                         "
@@ -170,7 +176,7 @@ export default function EventPhotoStack({ project }) {
                         <p
                             className="
                                 font-major-mono
-                                text-[9px]
+                                text-[8px]
                                 text-stone-400
                             "
                         >
@@ -183,20 +189,11 @@ export default function EventPhotoStack({ project }) {
                 <h3
                     className="
                         mt-3 font-caslon
-                        text-3xl
+                        text-2xl
                     "
                 >
                     {project.title}
                 </h3>
-
-                <p
-                    className="
-                        mt-4 font-caslon
-                        text-[14px] leading-relaxed
-                    "
-                >
-                    {project.description}
-                </p>
 
             </div>
 

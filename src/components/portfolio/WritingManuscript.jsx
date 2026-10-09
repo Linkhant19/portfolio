@@ -97,7 +97,7 @@ export default function WritingManuscript({ project }) {
 
                         {/* TITLE */}
 
-                        <h3 className="font-caslon text-3xl leading-tight">
+                        <h3 className="font-caslon text-3xl leading-tight text-start">
                             {project.title}
                         </h3>
 
@@ -107,6 +107,7 @@ export default function WritingManuscript({ project }) {
                             className="
                                 mt-5 font-caslon text-lg
                                 leading-relaxed text-[#675B50]
+                                text-start
                             "
                         >
                             {project.description}
@@ -141,6 +142,7 @@ export default function WritingManuscript({ project }) {
                                 className="
                                     mb-5 font-mono text-[10px]
                                     tracking-widest text-[#827669]
+                                    text-start
                                 "
                             >
                                 LIN KHANT KO / MANUSCRIPT
