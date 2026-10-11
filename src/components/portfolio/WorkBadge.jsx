@@ -22,7 +22,7 @@ export default function WorkBadge({ project }) {
                 <div className="
                     h-4 w-10 rounded-t-lg
                     border
-                    bg-stone-300
+                    bg-[#ece4db]
                 " />
 
             </div>
@@ -70,7 +70,7 @@ export default function WorkBadge({ project }) {
                             flex w-full cursor-pointer
                             flex-col rounded-xl
                             border
-                            bg-[#D9E2E6] p-6
+                            bg-[#ece4db] p-6
                             text-left text-[#292D2B]
                             shadow-[2px_2px_0px_#1F2A30]
                             focus-visible:outline-2
@@ -88,7 +88,7 @@ export default function WorkBadge({ project }) {
                             mx-auto mb-8 block
                             h-2 w-12 rounded-full
                             border border-stone-500
-                            bg-white
+                            bg-[#e8e8e4]
                         " />
 
                         {/* HEADER */}
@@ -189,8 +189,7 @@ export default function WorkBadge({ project }) {
                             flex flex-col
                             rounded-xl border-2
                             border-[#F6F7F5]
-                            bg-[#4F6D7A] p-6
-                            text-[#E7F5E9]
+                            bg-[#ece4db] p-6
                             shadow-[6px_8px_0px_#1F2A30]
                             text-start
                         "
@@ -200,8 +199,8 @@ export default function WorkBadge({ project }) {
                         }}
                     >
 
-                        <p className="font-major-mono text-xs text-[#A9D4BA]">
-                            EXPERIENCE DETAILS
+                        <p className="font-major-mono text-xs text-[#aaaaaa]">
+                            Experience Details
                         </p>
 
                         <h3 className="
@@ -231,7 +230,6 @@ export default function WorkBadge({ project }) {
                                 border-t border-[#F6F7F5]
                                 pt-4 text-center
                                 font-major-mono text-xs
-                                text-[#A9D4BA]
                                 hover:opacity-60
                                 focus-visible:outline-2
                             "

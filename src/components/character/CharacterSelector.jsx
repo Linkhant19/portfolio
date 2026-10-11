@@ -213,12 +213,12 @@ export default function CharacterSelector({
                         cursor-pointer
 
                         rounded-md
-                        border-2 border-[#6D685F]
+                        border-1 border-[#dddddd]
 
                         bg-gradient-to-b
-                        from-[#D8D0C3]
-                        via-[#BDB5A8]
-                        to-[#958D82]
+                        from-[#edf2fb]
+                        via-[#ccdbfd]
+                        to-[#abc4ff]
 
                         px-7 py-3
 
@@ -234,7 +234,8 @@ export default function CharacterSelector({
                         transition-transform
                         duration-100
 
-                        hover:-translate-y-1
+                        hover:-translate-y-0.5
+                        hover:border-[#000000]
 
                         active:translate-x-[3px]
                         active:translate-y-[3px]

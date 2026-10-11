@@ -45,13 +45,13 @@ export default function CharacterOption({
 
                     ${
                         isSelected
-                            ? "border-[#476857]"
-                            : "border-[#77736B]"
+                            ? "border-[#000000]"
+                            : "border-[#e2eafc]"
                     }
                 `}
             >
 
-                <div className="aspect-[5/4] overflow-hidden bg-stone-200">
+                <div className="aspect-[5/4] overflow-hidden bg-[#ffd7ba]">
 
                     <img
                         src={
@@ -70,9 +70,9 @@ export default function CharacterOption({
                                 isSelected
                                     ? "scale-[1.03] saturate-100"
                                     : `
-                                        saturate-[0.55]
-                                        brightness-95
-                                        group-hover:saturate-90
+                                        saturate-[0.15]
+                                        brightness-75
+                                        group-hover:saturate-80
                                     `
                             }
                         `}
@@ -97,8 +97,8 @@ export default function CharacterOption({
                         className="
                             pointer-events-none
                             absolute
-                            right-[-20%]
-                            top-[30%]
+                            right-[-10%]
+                            top-[40%]
                             z-30
                             rotate-[-10deg]
                         "
@@ -108,9 +108,9 @@ export default function CharacterOption({
                             alt=""
                             aria-hidden="true"
                             className="
-                                w-50
+                                w-35
                                 animate-sticker-slap
-                                drop-shadow-[0_6px_10px_rgba(0,0,0,0.22)]
+                                sticker-outline
                             "
                         />
                     </div>
@@ -127,18 +127,18 @@ export default function CharacterOption({
                         ${
                             isSelected
                                 ? `
-                                    border-[#799982]
+                                    border-[#edf2fb]
                                     bg-gradient-to-b
-                                    from-[#769A82]
-                                    via-[#5E806B]
-                                    to-[#456453]
+                                    from-[#abc4ff]
+                                    via-[#000000]
+                                    to-[#000000]
                                 `
                                 : `
-                                    border-[#E8E1D5]
+                                    border-[#ffffff]
                                     bg-gradient-to-b
-                                    from-[#D8D0C3]
-                                    via-[#BDB5A8]
-                                    to-[#958D82]
+                                    from-[#edf2fb]
+                                    via-[#edf2fb]
+                                    to-[#edf2fb]
                                 `
                         }
 
@@ -168,8 +168,8 @@ export default function CharacterOption({
 
                                 ${
                                     isSelected
-                                        ? "text-[#F3F7F1]"
-                                        : "text-stone-800"
+                                        ? "text-[#ffffff]"
+                                        : "text-[#000000]"
                                 }
                             `}
                         >

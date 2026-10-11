@@ -18,7 +18,7 @@ export default function RetroComputer({ project }) {
             <div
                 className="
                     rounded-[20px]
-                    bg-[#E2DDD1]
+                    bg-[#d8e2dc]
                     p-5
                     border
                 "

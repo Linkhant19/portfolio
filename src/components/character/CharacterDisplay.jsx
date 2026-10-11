@@ -22,14 +22,14 @@ function CharacterStat({ label, value }) {
                     overflow-hidden
                     rounded-sm
                     border border-stone-500
-                    bg-stone-300
+                    bg-[#edf2fb]
                 "
             >
 
                 <div
                     className="
                         h-full
-                        bg-[#5E806B]
+                        bg-[#abc4ff]
                         transition-[width]
                         duration-500
                         ease-out
@@ -90,8 +90,9 @@ export default function CharacterDisplay({ character }) {
                         items-center justify-center
                         overflow-hidden
                         rounded-lg
-                        border-2 border-stone-500
-                        bg-stone-100
+                        border-1 black
+                        bg-[#ffffff]
+                        shadow-[0px_4px_0_#57534e]
                     "
                 >
                     <img
