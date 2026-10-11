@@ -69,7 +69,9 @@ export default function Home() {
             </div>
 
             {selectedCharacterId === "villager" ? (
-                <VillagerSection />
+                <VillagerSection
+                    character={selectedCharacter}
+                />
             ) : (
                 <ProjectsSection
                     projects={selectedProjects}

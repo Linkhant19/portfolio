@@ -1,12 +1,15 @@
 // src/components/villager/VillagerSection.jsx
 
-import { useState } from "react";
+import {
+    Github,
+    Linkedin,
+    Mail,
+} from "iconoir-react";
+
 import LinProfessionalPhoto from "../../assets/images/villager/lin_professional.jpg";
 import LinGradPhoto from "../../assets/images/villager/lin_grad.jpg";
 
-export default function VillagerSection() {
-
-    const [isStoryOpen, setIsStoryOpen] = useState(false);
+export default function VillagerSection({ character }) {
 
     return (
         <section
@@ -19,11 +22,11 @@ export default function VillagerSection() {
                     character 04 / The Villager
                 </p>
 
-                <h2 className="mt-6 font-caslon text-5xl md:text-7xl">
+                <h2 className="mt-6 font-caslon text-5xl md:text-[50px]">
                     Just Another Townsfolk,
                 </h2>
 
-                <p className="mt-6 max-w-3xl font-caslon text-xl italic">
+                <p className="mt-6 max-w-3xl font-caslon text-[15px] italic text-stone-600">
                     making a living out of loving the living
                 </p>
 
@@ -36,9 +39,9 @@ export default function VillagerSection() {
                     xl:grid-cols-[320px_320px_minmax(0,1fr)]
                 ">
 
-                    <figure className="w-full max-w-80">
+                    <figure className="w-full max-w-80 hidden lg:block">
 
-                        <div className="aspect-[4/5] overflow-hidden rounded-lg">
+                        <div className="aspect-[4/5] overflow-hidden rounded-lg border border-black">
 
                             <img
                                 src={LinProfessionalPhoto}
@@ -52,7 +55,7 @@ export default function VillagerSection() {
 
                     <figure className="w-full max-w-80">
 
-                        <div className="aspect-[4/5] overflow-hidden rounded-lg">
+                        <div className="lg:aspect-[4/5] overflow-hidden rounded-lg border border-black">
 
                             <img
                                 src={LinGradPhoto}
@@ -91,87 +94,86 @@ export default function VillagerSection() {
 
                 </div>
 
-                {/* if users are interested, they can expanddddd to see more of my story */}
-
-                <div className="mt-16">
-
-                <button
-                    type="button"
-                    onClick={() => setIsStoryOpen(!isStoryOpen)}
-                    aria-expanded={isStoryOpen}
-                    aria-controls="villager-story"
-                    className="
-                        cursor-pointer
-                        border-b pb-2
-                        font-major-mono text-sm
-                        transition-opacity hover:opacity-60
-                    "
-                >
-                    {isStoryOpen ? "Less Of The Story ↑" : "Unlock The Full Story ↓"}
-                </button>
-
-                {isStoryOpen && (
-                    <div
-                        id="villager-story"
-                        className="mt-12"
+                <div>
+                    <p
+                        className="
+                            font-major-mono
+                            text-xs
+                            tracking-[0.15em]
+                            text-stone-500
+                            text-center
+                            mt-16
+                        "
                     >
+                        More ways to interact
+                    </p>
 
-                        <h3 className="font-caslon text-4xl">
-                            The Beginning
-                        </h3>
+                    <div className="mt-5 flex justify-center gap-4">
 
-                        <div className="mt-8 space-y-6 font-caslon text-lg leading-relaxed">
+                        <SocialButton
+                            href={character.socials?.linkedin}
+                            label="LinkedIn"
+                            icon={Linkedin}
+                        />
 
-                            <p>
-                                blah
-                            </p>
+                        <SocialButton
+                            href={character.socials?.github}
+                            label="GitHub"
+                            icon={Github}
+                        />
 
-                            <p>
-                                blah blah
-                            </p>
-
-                            <p>
-                                ahhh
-                            </p>
-
-                            <p>
-                                more lore
-                            </p>
-
-                        </div>
-
-                        { /* another section. maybe I put this on the right side to balance things out */}
-
-                        <h3 className="font-caslon text-4xl text-end">
-                            The Middle
-                        </h3>
-
-                        <div className="mt-8 space-y-6 font-caslon text-lg leading-relaxed text-end">
-
-                            <p>
-                                blah
-                            </p>
-
-                            <p>
-                                blah blah
-                            </p>
-
-                            <p>
-                                ahhh
-                            </p>
-
-                            <p>
-                                more lore
-                            </p>
-
-                        </div>
+                        <SocialButton
+                            href={character.socials?.email}
+                            label="Email"
+                            icon={Mail}
+                        />
 
                     </div>
-                )}
-
                 </div>
 
             </div>
         </section>
+    );
+}
+
+function SocialButton({
+    href,
+    label,
+    icon: Icon,
+}) {
+    if (!href) return null;
+
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="
+                flex h-12 w-12
+                items-center justify-center
+
+                bg-[#CCDBFD]
+
+                border border-[#EDF2FB]
+                rounded-full
+
+                hover:shadow-[0px_5px_0_#CCDBFD]
+
+                transition-transform
+                duration-100
+
+                hover:-translate-y-1
+
+                active:translate-x-[2px]
+                active:translate-y-[2px]
+            "
+        >
+            <Icon
+                width={24}
+                height={24}
+                strokeWidth={1.5}
+            />
+        </a>
     );
 }
