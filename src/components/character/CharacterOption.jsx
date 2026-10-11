@@ -173,8 +173,10 @@ export default function CharacterOption({
                         className="
                             pointer-events-none
                             absolute
-                            right-[-10%]
-                            top-[40%]
+                            right-[-5%]
+                            top-[50%]
+                            lg:right-[-10%]
+                            lg:top-[40%]
                             z-30
                             rotate-[-10deg]
                         "
@@ -184,7 +186,8 @@ export default function CharacterOption({
                             alt=""
                             aria-hidden="true"
                             className="
-                                w-35
+                                w-25
+                                lg:w-35
                                 animate-sticker-slap
                             "
                         />
