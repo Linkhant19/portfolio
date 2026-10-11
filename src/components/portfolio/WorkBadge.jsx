@@ -22,7 +22,7 @@ export default function WorkBadge({ project }) {
                 <div className="
                     h-4 w-10 rounded-t-lg
                     border
-                    bg-[#ece4db]
+                    bg-[#f1f4fb]
                 " />
 
             </div>
@@ -70,7 +70,7 @@ export default function WorkBadge({ project }) {
                             flex w-full cursor-pointer
                             flex-col rounded-xl
                             border
-                            bg-[#ece4db] p-6
+                            bg-[#f1f4fb] p-6
                             text-left text-[#292D2B]
                             shadow-[2px_2px_0px_#1F2A30]
                             focus-visible:outline-2
@@ -88,7 +88,7 @@ export default function WorkBadge({ project }) {
                             mx-auto mb-8 block
                             h-2 w-12 rounded-full
                             border border-stone-500
-                            bg-[#e8e8e4]
+                            bg-[#ffffff]
                         " />
 
                         {/* HEADER */}
@@ -148,20 +148,21 @@ export default function WorkBadge({ project }) {
                         {/* DATE */}
 
                         <span className="
-                            mt-8 block border-t
+                            mt-12 block border-t
                             border-stone-400 pt-5
                         ">
 
                             <span className="
+                                mt-2
                                 block font-major-mono
-                                text-xs text-stone-500
+                                text-[10px] text-stone-500
                             ">
-                                Duration
+                                Duration:
                             </span>
 
                             <span className="
                                 mt-2 block font-caslon
-                                text-lg
+                                text-[17px]
                             ">
                                 {project.dates}
                             </span>
@@ -187,10 +188,10 @@ export default function WorkBadge({ project }) {
                         className="
                             absolute inset-0
                             flex flex-col
-                            rounded-xl border-2
-                            border-[#F6F7F5]
-                            bg-[#ece4db] p-6
-                            shadow-[6px_8px_0px_#1F2A30]
+                            rounded-xl border-1
+                            border-[#000000]
+                            bg-[#f1f4fb] p-6
+                            shadow-[2px_2px_0px_#1F2A30]
                             text-start
                         "
                         style={{
@@ -199,13 +200,13 @@ export default function WorkBadge({ project }) {
                         }}
                     >
 
-                        <p className="font-major-mono text-xs text-[#aaaaaa]">
+                        <p className="font-major-mono text-xs text-[#aaaaaa] mt-2">
                             Experience Details
                         </p>
 
                         <h3 className="
-                            mt-4 font-caslon
-                            text-3xl
+                            mt-6 font-caslon
+                            text-2xl
                         ">
                             {project.title}
                         </h3>
@@ -213,7 +214,7 @@ export default function WorkBadge({ project }) {
                         <div className="
                             mt-6 min-h-0 flex-1
                             overflow-y-auto
-                            font-caslon text-lg
+                            font-caslon text-[17px]
                             leading-relaxed
                         ">
                             {project.description}
@@ -226,9 +227,9 @@ export default function WorkBadge({ project }) {
                             onClick={() => setIsFlipped(false)}
                             tabIndex={isFlipped ? 0 : -1}
                             className="
-                                mt-5 w-full cursor-pointer
+                                mt-0 w-full cursor-pointer
                                 border-t border-[#F6F7F5]
-                                pt-4 text-center
+                                pt-0 text-center
                                 font-major-mono text-xs
                                 hover:opacity-60
                                 focus-visible:outline-2

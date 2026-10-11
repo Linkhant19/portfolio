@@ -181,13 +181,13 @@ html {
 /* my sticker outline to not have a rectangle outline for my png sticker */
 .sticker-outline {
     filter:
-        drop-shadow(.5px 0 0 #000000)
-        drop-shadow(-.5px 0 0 #000000)
-        drop-shadow(0 .5px 0 #000000)
-        drop-shadow(0 -.5px 0 #000000)
-        drop-shadow(.5px .5px 0 #000000)
-        drop-shadow(-.5px .5px 0 #000000)
-        drop-shadow(.5px -.5px 0 #000000)
-        drop-shadow(-.5px -.5px 0 #000000)
-        drop-shadow(0 2px 5px rgba(0, 0, 0, 0.22));
+        drop-shadow(0.1px 0 0 #ffffff)
+        drop-shadow(-0.1px 0 0 #ffffff)
+        drop-shadow(0 0.1px 0 #ffffff)
+        drop-shadow(0 -0.1px 0 #ffffff)
+        drop-shadow(0.1px 0.1px 0 #ffffff)
+        drop-shadow(-0.1px 0.1px 0 #ffffff)
+        drop-shadow(0.1px -0.1px 0 #ffffff)
+        drop-shadow(-0.1px -0.1px 0 #ffffff)
+        drop-shadow(0 0.1px 0.1px rgba(0, 0, 0, 0.22));
 }

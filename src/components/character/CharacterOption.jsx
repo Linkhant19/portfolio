@@ -1,6 +1,7 @@
 // src/components/character/CharacterOption.jsx
 
 import LinApprovedSticker from "../../assets/images/ui/lin-approved-sticker.png";
+import LinApprovedStickerTransparent from "../../assets/images/ui/lin-approved-transparent.png";
 
 export default function CharacterOption({
     character,
@@ -39,7 +40,7 @@ export default function CharacterOption({
             <div
                 className={`
                     relative
-                    overflow-hidden
+                    overflow-visible
                     rounded-lg
                     border-2
 
@@ -51,7 +52,15 @@ export default function CharacterOption({
                 `}
             >
 
-                <div className="aspect-[5/4] overflow-hidden bg-[#ffd7ba]">
+                <div
+                    className="
+                        relative
+                        aspect-[5/4]
+                        overflow-hidden
+                        rounded-t-[6px]
+                        bg-[#ffd7ba]
+                    "
+                >
 
                     <img
                         src={
@@ -87,34 +96,11 @@ export default function CharacterOption({
                             from-white/10
                             via-transparent
                             to-black/10
+                            overflow-hidden
                         "
                     />
 
                 </div>
-
-                {isSelected && (
-                    <div
-                        className="
-                            pointer-events-none
-                            absolute
-                            right-[-10%]
-                            top-[40%]
-                            z-30
-                            rotate-[-10deg]
-                        "
-                    >
-                        <img
-                            src={LinApprovedSticker}
-                            alt=""
-                            aria-hidden="true"
-                            className="
-                                w-35
-                                animate-sticker-slap
-                                sticker-outline
-                            "
-                        />
-                    </div>
-                )}
 
                 <div
                     className={`
@@ -181,6 +167,29 @@ export default function CharacterOption({
                 </div>
 
             </div>
+
+            {isSelected && (
+                    <div
+                        className="
+                            pointer-events-none
+                            absolute
+                            right-[-10%]
+                            top-[40%]
+                            z-30
+                            rotate-[-10deg]
+                        "
+                    >
+                        <img
+                            src={LinApprovedStickerTransparent}
+                            alt=""
+                            aria-hidden="true"
+                            className="
+                                w-35
+                                animate-sticker-slap
+                            "
+                        />
+                    </div>
+                )}
 
         </button>
     );

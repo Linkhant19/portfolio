@@ -18,7 +18,7 @@ export default function RetroComputer({ project }) {
             <div
                 className="
                     rounded-[20px]
-                    bg-[#d8e2dc]
+                    bg-[#e3ecf3]
                     p-5
                     border
                 "
@@ -176,7 +176,7 @@ export default function RetroComputer({ project }) {
 
             {/* PROJECT LINKS */}
 
-            <div className="mt-6 flex flex-wrap gap-5">
+            <div className="mt-6 flex flex-wrap gap-5 ml-5">
 
                 {project.slug && (
                     <Link

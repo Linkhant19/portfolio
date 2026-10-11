@@ -57,21 +57,21 @@ export const characters = [
             {
                 icon: "creative",
                 label: "Problem Solver",
-                color: "violet",
+                color: "amber",
                 description:
                     "Explores multiple solutions and perspectives for a given problem.",
             },
             {
                 icon: "collaboration",
                 label: "Team Player",
-                color: "blue",
+                color: "amber",
                 description:
                     "Works closely with teammates, leads, testers, and users throughout the development process.",
             },
             {
                 icon: "brain",
                 label: "Human-Centered",
-                color: "violet",
+                color: "amber",
                 description:
                     "Implements a deep understanding of Social Psychology and perception in the development process.",
             },
@@ -104,28 +104,28 @@ export const characters = [
             {
                 icon: "build",
                 label: "The Artificer",
-                color: "blue",
+                color: "amber",
                 description:
                     "Designs puzzles around logic, discovery, sequencing, and satisfying aha moments.",
             },
             {
                 icon: "magic",
                 label: "The Sorcerer",
-                color: "violet",
+                color: "amber",
                 description:
                     "Creates moments of surprise and wonder through reveals, interactive effects, and unexpected ways for players to influence the experience.",
             },
             {
                 icon: "host",
                 label: "The Bard",
-                color: "green",
+                color: "amber",
                 description:
                     "Enjoys planning and hosting large events and gameshows with interactive elements.",
             },
             {
                 icon: "tree",
                 label: "The Druid",
-                color: "green",
+                color: "amber",
                 description:
                     "Uses space, atmosphere, props, and environmental storytelling to make each experience feel grounded in its own world.",
             },
@@ -165,21 +165,21 @@ export const characters = [
             {
                 icon: "lights",
                 label: "All The Lights",
-                color: "blue",
+                color: "amber",
                 description:
                     "Experiments with new voice, perspective, tone, and form to find the theme and style that best fits each piece.",
             },
             {
                 icon: "laptop",
                 label: "The Raven",
-                color: "violet",
+                color: "amber",
                 description:
                     "Integrate software engineering skills to create websites that further supports the vision of a project.",
             },
             {
                 icon: "arrow",
                 label: "Labyrinth",
-                color: "blue",
+                color: "amber",
                 description:
                     "Explores small moments, emotions, and details lost in the corner of the mind, and turns them into something worth remembering.",
             },

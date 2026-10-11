@@ -43,10 +43,10 @@ const traitIcons = {
 
 const traitColors = {
     amber: {
-        light: "#FFE89A",
-        main: "#E8A21A",
-        dark: "#8D5700",
-        glow: "rgba(232, 162, 26, 0.35)",
+        light: "#E2EAFC",
+        main: "#E2EAFC",
+        dark: "#E2EAFC",
+        glow: "rgba(171, 196, 255, 0.35)",
     },
 
     violet: {
@@ -86,7 +86,7 @@ export default function CharacterProjectIntro({ character }) {
                 className="
                     min-h-[350px]
                     rounded-xl
-                    border border-stone-400
+                    border 1px
                     bg-stone-50/50
                     p-8
                 "
@@ -225,9 +225,8 @@ export default function CharacterProjectIntro({ character }) {
 
                         transition-all
                         duration-300
-                        hover:translate-x-1
-                        hover:text-[#B65F59]
-                        hover:border-b-2
+                        hover:text-[#333333]
+                        hover:border-b-2 border-[#ABC4FF]
                     "
                 >
                     Work Experiences & Projects ↓
@@ -256,10 +255,12 @@ function SocialButton({
                 flex h-12 w-12
                 items-center justify-center
 
-                border-2 border-stone-500
-                bg-stone-100
+                bg-[#CCDBFD]
 
-                shadow-[4px_4px_0_#57534e]
+                border border-[#EDF2FB]
+                rounded-full
+
+                hover:shadow-[0px_5px_0_#CCDBFD]
 
                 transition-transform
                 duration-100
@@ -340,7 +341,7 @@ function Trait({
                     inset 0 -5px 3px rgba(0,0,0,0.22),
                     inset -3px 0 3px rgba(0,0,0,0.14),
                     0 0 10px ${gem.glow},
-                    3px 4px 0 rgba(68,64,60,0.75)
+                    1.5px 1.5px 0 rgba(171, 196, 255,0.75)
                 `,
             }}
         >
@@ -368,9 +369,9 @@ function Trait({
                     inset-[7px]
 
                     rounded-[6px]
-                    border border-black/15
+                    border border-white
 
-                    bg-black/10
+                    bg-[#EDF2FB]
 
                     shadow-[
                         inset_0_2px_4px_rgba(0,0,0,0.18),
@@ -407,8 +408,8 @@ function Trait({
                     sm:right-auto
                     sm:-translate-x-1/2
 
-                    border border-stone-400
-                    bg-[#F5F1E8]
+                    border border-white
+                    bg-[#E2EAFC]
                     p-3
 
                     shadow-md

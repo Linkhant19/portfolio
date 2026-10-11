@@ -125,7 +125,7 @@ export default function WritingManuscript({ project }) {
                                 <p
                                     className="
                                         whitespace-pre-line
-                                        font-caslon text-lg italic
+                                        font-caslon text-[15px] italic
                                         leading-relaxed text-[#76695C]
                                     "
                                 >

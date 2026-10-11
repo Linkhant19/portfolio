@@ -177,7 +177,8 @@ export const projects = [
         {
             developer: 1,
         },
-        description: "adding later",
+        dates: "August 2025 - Present",
+        description: "As an implementation consultant for Fast Enterprises, I work with the West Virginia State Tax Division to maintain and improve our tax software. My responsibilities range from monitoring production, investigating logs and system interventions, and resolving issues to consulting with state employees on new requirements and implementing annual changes, bug fixes, code conversions, and version upgrades. The role combines software development, production support, client communication, and problem solving within a large system used in real government operations.",
         image: FastLogo,
     },
 
@@ -209,12 +210,12 @@ export const projects = [
         category: "event",
         order:
         {
-            developer: 9,
+            developer: 10,
             puzzleDesigner: 4,
         },
         presentation: "stage",
         description: "This portfolio website is not as it seems 👀. I am in progress of adding escape room puzzle elements to this website.",
-        image: EscapeRoomPic,
+        image: PortfolioGif,
     },
 
     {
@@ -228,7 +229,12 @@ export const projects = [
         },
         description:
             "My team and I developed a user-centric web application that provides personalized travel route and music recommendations based on a user's preferred mode of transportation and the distance of the trip. We built the application with Flask and React and integrated Spotify, weather, and geolocation APIs to create recommendations tailored to each user's journey.",
-
+        links: [
+            {
+                label: "github",
+                url: "https://github.com/Linkhant19/CommuteBeat",
+            },
+        ],
         highlights: [
             "personalized travel and music recommendations",
             "Flask",
@@ -250,7 +256,12 @@ export const projects = [
         },
         description:
             "As Team Representative for a data science project with the Massachusetts Bay Transportation Authority (MBTA), I helped lead my team in analyzing potential relationships between displacement and bike-lane development. We cleaned and analyzed data from multiple sources using Python, pandas, NumPy, Matplotlib, and Seaborn, transforming raw datasets into visualizations and identifying potential correlations for our final client report.",
-
+        links: [
+            {
+                label: "github",
+                url: "https://github.com/Linkhant19/ds-livable-streets-infra/tree/team-a",
+            },
+        ],
         highlights: [
             "Team Representative",
             "MBTA",
@@ -277,7 +288,12 @@ export const projects = [
         description:
             "During my Full-Stack Development class at Boston University, I created multiple full-stack web applications \
         as I learned Python, JavaScript, and HTML/CSS, and learned about APIs, Django framework, Git, Heroku, Databases, Data Visualization, and more.",
-
+        links: [
+            {
+                label: "github",
+                url: "https://github.com/Linkhant19/Full-Stack-Application-Design-and-Development",
+            },
+        ],
         highlights: [
             "Python",
             "JavaScript",
@@ -303,7 +319,12 @@ export const projects = [
         },
         description:
             "I developed an AI learning agent in Java that learns to play Tetris through iterative training and improves its decision-making over time. I designed five features to represent game states and guide the agent's behavior, incorporating reward signals, state-action representations, and Q-value predictions.",
-        
+        links: [
+            {
+                label: "github",
+                url: "https://github.com/Linkhant19/AI-Neural-Network-Tetris",
+            },
+        ],
         highlights: [
             "AI learning agent",
             "Java",
@@ -324,6 +345,7 @@ export const projects = [
         {
             developer: 2,
         },
+        dates: "September 2023 - May 2025",
         description:
             "As a Teaching Assistant, I supported approximately 100 students across three lab sections and held office hours to provide individualized guidance. I taught Python, algorithms, problem-solving and debugging techniques, helping students build the skills needed to develop a Connect Four AI player as their final project.",
 
@@ -347,6 +369,7 @@ export const projects = [
         {
             puzzleDesigner: 2,
         },
+        dates: "Spring 2022 - Spring 2024",
         description: `As the first elected Asian President of Boston University's
             Board Games Club, I led a team of 10 executive board members
             and organized weekly gatherings for 70–110 members. Alongside
@@ -381,6 +404,7 @@ export const projects = [
             developer: 6,
             puzzleDesigner: 3,
         },
+        dates: "August 2023 - October 2023",
         description:
             "As an Application Development Intern at 360ed, I collaborated remotely with a cross-functional team to enhance two existing Augmented Reality (AR) educational applications for children affected by educational disruptions in Myanmar. I researched educational data and user engagement, contributed ideas for game-like features, and helped explore ways to make the applications more interactive and engaging for young learners.",
         highlights: [
@@ -401,7 +425,7 @@ export const projects = [
         category: "poem-collection",
         order:
         {
-            writer: 5,
+            writer: 6,
         },
         description: "- written in March 2024",
         spineColor: "#242424",
@@ -421,7 +445,7 @@ export const projects = [
         category: "poem-collection",
         order:
         {
-            writer: 4,
+            writer: 5,
         },
         description: "- written in January 2025",
         spineColor: "#2f0d0a",
@@ -437,11 +461,12 @@ export const projects = [
     {
         id: "the-midnight-friendship-service",
         title: "The Midnight Friendship Service",
-        characterIds: ["writer"],
+        characterIds: ["writer", "developer"],
         category: "poem-collection",
         order:
         {
-            writer: 3,
+            writer: 4,
+            developer: 9,
         },
         description: "- written in June 2025",
         spineColor: "#5b6767",
@@ -469,7 +494,7 @@ export const projects = [
         },
         description: "- written as a class assignment in Spring 2025. This is different from The Midnight Friendship Service poetry collection (even though they have the same title). This is a story set in a distopian future with an Artificial Intelligence company called 'The Midnight Friendship Service'.",
         image: LivableStreetsGif,
-        excerpt: "the midnight friendship service",
+        excerpt: "Your very own midnight friendship service!",
         format: "SHORT STORY",
         links: [
             {
@@ -491,13 +516,31 @@ export const projects = [
         the old man Dick visits a healthcare company called Phoenix.Inc. \
         Their treatments offer a new way of changing and reliving past situations with the help of generative AI. \
         Will Dick be able to change his past successfully?",
-        image: LivableStreetsGif,
-        excerpt: "phoenix.inc",
+        excerpt: "I am going to change my life!",
         format: "SHORT PLAY",
         links: [
             {
                 label: "PDF",
                 url: "/writings/Phoenix.Inc-Playwriting.pdf",
+            },
+        ]
+    },
+    {
+        id: "red-thread-ties",
+        title: "Red Thread Ties",
+        characterIds: ["writer"],
+        category: "writing",
+        order:
+        {
+            writer: 3,
+        },
+        description: "- written in Fall 2022 for a Research and Writing class. It is a narrative non-fiction on the indirect influence of puzzles and escape rooms on anxiety and stress.",
+        excerpt: "Reality is not a great place to be stuck in right now. I choose to be stuck in my puzzles instead.",
+        format: "NARRATIVE NON-FICTION",
+        links: [
+            {
+                label: "PDF",
+                url: "/writings/Red-Thread-Ties.pdf",
             },
         ]
     },

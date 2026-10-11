@@ -154,7 +154,7 @@ export default function EventStage({ project }) {
                         className={`
                             absolute inset-y-0 left-0 z-30
                             w-[52%]
-                            bg-[#B65F59]
+                            bg-[#a7c2e0]
 
                             shadow-[inset_-20px_0_30px_rgba(65,20,20,0.22)]
 
@@ -192,7 +192,7 @@ export default function EventStage({ project }) {
                         className={`
                             absolute inset-y-0 right-0 z-30
                             w-[52%]
-                            bg-[#B65F59]
+                            bg-[#a7c2e0]
 
                             shadow-[inset_20px_0_30px_rgba(65,20,20,0.22)]
 
@@ -230,8 +230,9 @@ export default function EventStage({ project }) {
                         className="
                             pointer-events-none
                             absolute inset-x-0 top-0 z-40
-                            h-14
-                            bg-[#9D4C47]
+                            h-3
+                            bg-[#dddddd]
+                            opacity-30
                             shadow-[0_5px_10px_rgba(0,0,0,0.2)]
                         "
                     />
@@ -259,7 +260,7 @@ export default function EventStage({ project }) {
                                 className="
                                     font-major-mono text-[9px]
                                     tracking-[0.2em]
-                                    text-[#F5E8D3]
+                                    text-[#3333333]
                                 "
                             >
                                 events and puzzles/games
@@ -268,7 +269,7 @@ export default function EventStage({ project }) {
                             <h3
                                 className="
                                     mt-5 font-caslon
-                                    text-3xl text-[#FFF8EA]
+                                    text-3xl text-[#000000]
                                 "
                             >
                                 {project.title}
@@ -278,10 +279,10 @@ export default function EventStage({ project }) {
                                 className="
                                     mt-6 font-major-mono
                                     text-[9px]
-                                    text-[#F5E8D3]/70
+                                    text-[#333333]/70
                                 "
                             >
-                                OPEN CURTAIN
+                                open curtain
                             </p>
                         </div>
                     </div>
@@ -299,7 +300,7 @@ export default function EventStage({ project }) {
                         className="
                             relative z-10
                             h-12
-                            bg-[#6E4035]
+                            bg-[#666666]
                         "
                         style={{
                             clipPath: "polygon(5% 0, 95% 0, 100% 100%, 0 100%)",
@@ -313,9 +314,9 @@ export default function EventStage({ project }) {
                                     repeating-linear-gradient(
                                         90deg,
                                         transparent 0px,
-                                        transparent 70px,
-                                        rgba(30, 10, 5, 0.4) 71px,
-                                        transparent 72px
+                                        transparent 72px,
+                                        rgba(30, 10, 0, 0.15) 71px,
+                                        transparent70px
                                     )
                                 `,
                             }}
@@ -330,7 +331,7 @@ export default function EventStage({ project }) {
                             -mt-px
                             flex min-h-16
                             items-center justify-center
-                            bg-[#4F2B25]
+                            bg-[#444444]
                             px-6
                         "
                     >
