@@ -277,12 +277,12 @@ export default function EventStage({ project }) {
 
                             <p
                                 className="
-                                    mt-6 font-major-mono
+                                    mt-10 font-major-mono
                                     text-[9px]
-                                    text-[#333333]/70
+                                    text-black
                                 "
                             >
-                                open curtain
+                                click to open curtain / <br /> click below to enter experience
                             </p>
                         </div>
                     </div>
@@ -340,7 +340,7 @@ export default function EventStage({ project }) {
                                 to={`/projects/${project.slug}`}
                                 className="
                                     font-major-mono
-                                    text-[12px]
+                                    text-[17px]
                                     tracking-[0.16em]
                                     text-[#F5E8D3]
                                     transition-opacity

@@ -162,7 +162,7 @@ export const projects = [
         links: [
             {
                 label: "github",
-                url: "https://linkhant19.github.io/ShadowsOfYou",
+                url: "https://github.com/Linkhant19/portfolio",
             },
         ],
         image: PortfolioGif,
@@ -203,20 +203,20 @@ export const projects = [
     },
 
     // I want to make an escape room out of this website, hiding codes and letters on the webpage and lead somewhere
-    {
-        id: "coming-soon",
-        title: "Coming Soon (Escape Portfolio)",
-        characterIds: ["puzzleDesigner", "developer"],
-        category: "event",
-        order:
-        {
-            developer: 10,
-            puzzleDesigner: 4,
-        },
-        presentation: "stage",
-        description: "This portfolio website is not as it seems 👀. I am in progress of adding escape room puzzle elements to this website.",
-        image: PortfolioGif,
-    },
+    // {
+    //     id: "coming-soon",
+    //     title: "Coming Soon (Escape Portfolio)",
+    //     characterIds: ["puzzleDesigner", "developer"],
+    //     category: "event",
+    //     order:
+    //     {
+    //         developer: 10,
+    //         puzzleDesigner: 4,
+    //     },
+    //     presentation: "stage",
+    //     description: "This portfolio website is not as it seems 👀. I am in progress of adding escape room puzzle elements to this website.",
+    //     image: PortfolioGif,
+    // },
 
     {
         id: "commute-beat",
