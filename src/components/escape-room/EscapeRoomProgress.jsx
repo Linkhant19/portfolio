@@ -1,8 +1,7 @@
-// src/components/escape-room/EscapeRoomProgress.tsx
+// src/components/escape-room/EscapeRoomProgress.jsx
 // the progress slideshow to show the gradual progression of our project
 
 import { useEffect, useState } from "react";
-import React from "react";
 
 import EmptyOne from "../../assets/images/escaperoom/empty_room_1.jpg";
 import EmptyTwo from "../../assets/images/escaperoom/empty_room_2.jpg";

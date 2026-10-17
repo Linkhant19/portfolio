@@ -193,7 +193,7 @@ export const characters = [
         image: villagerImage,
         selectorImage: villagerCharacterImage,
         streamColor: "#9A8464",
-        streamLabel: "linix",
+        streamLabel: "villager",
         stats: {
             experience: 10,
             technical: 3,
@@ -201,7 +201,7 @@ export const characters = [
             leadership: 4, 
             teamwork: 4, 
         },
-        description: "just a normal townsperson who built all of this and more",
+        description: "just a normal townsperson who built all of this. his role has no special abilities or powers, but his contributions often make a difference.",
         socials: {
             linkedin: "https://www.linkedin.com/in/linkhantko/",
             github: "https://github.com/Linkhant19/",
@@ -209,28 +209,32 @@ export const characters = [
         },
         traits: [
             {
-                icon: "technical",
-                label: "Technical Builder",
+                icon: "curious",
+                label: "Curious",
+                color: "amber",
                 description:
-                    "Enjoys turning ideas and requirements into working software systems.",
+                    "Frequently responsible for starting multiple side quests.",
             },
             {
-                icon: "creative",
-                label: "Problem Solver",
+                icon: "sunshine",
+                label: "Sunshine",
+                color: "amber",
                 description:
-                    "Likes exploring different approaches instead of stopping at the first solution.",
+                    "Wears a positive attitude to every situation and group he encounters.",
             },
             {
-                icon: "collaboration",
-                label: "Collaborator",
+                icon: "communicate",
+                label: "Communicator",
+                color: "amber",
                 description:
-                    "Works closely with teammates, testers, and users throughout the development process.",
+                    "Communicates effectively with other townspeople and villagers.",
             },
             {
-                icon: "playful",
-                label: "Human-Centered",
+                icon: "heart",
+                label: "Heart",
+                color: "amber",
                 description:
-                    "Often thinks about how technology feels to the person actually using it.",
+                    "Builds things with kindess and heart.",
             },
         ],
     },

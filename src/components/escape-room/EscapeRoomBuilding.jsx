@@ -1,4 +1,4 @@
-// src/components/escape-room/EscapeRoomBuilding.tsx
+// src/components/escape-room/EscapeRoomBuilding.jsx
 
 import React from "react";
 import EscapeRoomProgress from "./EscapeRoomProgress";

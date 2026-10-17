@@ -1,8 +1,7 @@
-// src/components/escape-room/EscapeRoomFeaturedPuzzles.tsx
+// src/components/escape-room/EscapeRoomFeaturedPuzzles.jsx
 
 import EscapeRoomTreePuzzle from "./EscapeRoomTreePuzzle";
 import EscapeRoomBranchesPuzzle from "./EscapeRoomBranchesPuzzle";
-import React from "react";
 
 export default function EscapeRoomFeaturedPuzzles() {
     return (

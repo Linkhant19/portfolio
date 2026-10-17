@@ -1,6 +1,4 @@
-// src/components/escape-room/EscapeRoomTreePuzzle.tsx
-
-import React from "react";
+// src/components/escape-room/EscapeRoomTreePuzzle.jsx
 
 import TreePuzzleImage1 from "../../assets/images/escaperoom/tree_puzzle_1.jpg";
 import MainTreeVideo from "../../assets/images/escaperoom/main_tree_video.mp4";

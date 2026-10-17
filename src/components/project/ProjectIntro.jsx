@@ -17,6 +17,10 @@ import {
     AirplaneHelix45deg,
     LaptopDevMode,
     PathArrow,
+    Donate,
+    ChatBubble,
+    SunLight,
+    CurveArray,
 } from "iconoir-react";
 import { useState } from "react";
 
@@ -36,9 +40,10 @@ const traitIcons = {
     laptop: LaptopDevMode,
     arrow: PathArrow,
 
-
-    book: OpenBook,
-
+    curious: CurveArray,
+    sunshine: SunLight,
+    communicate: ChatBubble,
+    heart: Donate,
 };
 
 const traitColors = {
@@ -213,24 +218,43 @@ export default function CharacterProjectIntro({ character }) {
                     </div>
 
                 </div>
+                
+                {/* let's not show this when my users have villager selected since i got no projects for that */}
+                {character.id !== "villager" && (
+                    <a
+                        href="#project-list"
+                        className="
+                            mt-auto
+                            pt-12
+                            font-major-mono
+                            text-sm
+                            tracking-[0.12em]
 
-                <a
-                    href="#project-list"
-                    className="
-                        mt-auto
-                        pt-12
-                        font-major-mono
-                        text-sm
-                        tracking-[0.12em]
+                            transition-all
+                            duration-300
+                            hover:text-[#333333]
+                            hover:border-b-2 border-[#ABC4FF]
+                        "
+                    >
+                        Work Experiences & Projects ↓
+                    </a>
+                )}
 
-                        transition-all
-                        duration-300
-                        hover:text-[#333333]
-                        hover:border-b-2 border-[#ABC4FF]
-                    "
-                >
-                    Work Experiences & Projects ↓
-                </a>
+                {character.id === "villager" && (
+                    <p
+                        className="
+                            mt-auto
+                            pt-12
+                            font-major-mono
+                            text-sm
+                            tracking-[0.12em]
+                        "
+                    >
+                        More About Villager ↓
+                    </p>
+                )}
+                
+                
 
             </div>
         </div>

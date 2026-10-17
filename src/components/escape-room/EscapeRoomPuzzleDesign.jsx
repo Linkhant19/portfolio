@@ -1,7 +1,5 @@
-// src/components/escape-room/EscapeRoomPuzzleDesign.tsx
+// src/components/escape-room/EscapeRoomPuzzleDesign.jsx
 // the puzzle design portion
-
-import React from "react";
 
 // my images
 import PuzzleDraftOneImage from "../../assets/images/escaperoom/puzzle_draft_1.jpg";

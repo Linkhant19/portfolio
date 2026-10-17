@@ -347,7 +347,7 @@ export const projects = [
         },
         dates: "September 2023 - May 2025",
         description:
-            "As a Teaching Assistant, I supported approximately 100 students across three lab sections and held office hours to provide individualized guidance. I taught Python, algorithms, problem-solving and debugging techniques, helping students build the skills needed to develop a Connect Four AI player as their final project.",
+            "As a Teaching Assistant, I supported approximately 100 students across three lab sections and held office hours (~5 hr/week) to provide individualized guidance. I taught Python, algorithms, problem-solving and debugging techniques, helping students build the skills needed to develop a Connect Four AI player as their final project.",
 
         highlights: [
             "Teaching Assistant",

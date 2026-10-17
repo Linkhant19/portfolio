@@ -1,7 +1,6 @@
 // src/components/escape-room/EscapeRoomConcept.jsx
 // the concept
 
-import React from "react";
 export default function EscapeRoomConcept() {
     return (
         <section id="concept" className="mt-32 scroll-mt-20">

@@ -2,8 +2,6 @@
 // how it all started part of my project
 // the beginning !!!
 
-import React from "react";
-
 import EscapeRoomPhoto1 from "../../assets/images/escaperoom/escape_room_general_1.jpg";
 import EscapeRoomPhoto2 from "../../assets/images/escaperoom/escape_room_general_2.jpg";
 import EscapeRoomPhoto3 from "../../assets/images/escaperoom/escape_room_general_3.jpg";

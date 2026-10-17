@@ -8,6 +8,8 @@ import {
 
 import LinProfessionalPhoto from "../../assets/images/villager/lin_professional.jpg";
 import LinGradPhoto from "../../assets/images/villager/lin_grad.jpg";
+import ProjectIntro from "../project/ProjectIntro";
+import MoreAboutMe from "./MoreAboutMe";
 
 export default function VillagerSection({ character }) {
 
@@ -16,121 +18,93 @@ export default function VillagerSection({ character }) {
             id="projects"
             className="min-h-screen scroll-mt-16 px-4 py-16"
         >
+                
             <div className="mx-auto max-w-7xl">
 
-                <p className="font-major-mono text-sm">
-                    character 04 / The Villager
-                </p>
+                <ProjectIntro character={character} />
 
-                <h2 className="mt-6 font-caslon text-5xl md:text-[50px]">
-                    Just Another Townsfolk,
-                </h2>
+                <div className="mt-24 px-5">
 
-                <p className="mt-6 max-w-3xl font-caslon text-[15px] italic text-stone-600">
-                    making a living out of loving the living
-                </p>
-
-                <div className="
-                    mt-16
-                    grid items-center gap-6
-                    sm:grid-cols-2
-                    lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.5fr)]
-                    lg:gap-8
-                    xl:grid-cols-[320px_320px_minmax(0,1fr)]
-                ">
-
-                    <figure className="w-full max-w-80 hidden lg:block">
-
-                        <div className="aspect-[4/5] overflow-hidden rounded-lg border border-black">
-
-                            <img
-                                src={LinProfessionalPhoto}
-                                alt="Lin Photo 1"
-                                className="h-full w-full object-cover"
-                            />
-
-                        </div>
-
-                    </figure>
-
-                    <figure className="w-full max-w-80">
-
-                        <div className="lg:aspect-[4/5] overflow-hidden rounded-lg border border-black">
-
-                            <img
-                                src={LinGradPhoto}
-                                alt="Lin Photo 2"
-                                className="h-full w-full object-cover"
-                            />
-
-                        </div>
-
-                    </figure>
-
-                    <div className="
-                        space-y-6
-                        font-caslon text-lg leading-relaxed
-                        sm:col-span-2
-                        lg:col-span-1
-                    ">
-
-                        <h3 className="font-caslon text-4xl">
-                            Hey, this is Lin!
-                        </h3>
-
-                        <p>
-                            I am a Software Developer and Consultant at Fast Enterprises. I graduated from Boston University in May 2025 with a double major in Computer Science and Psychology. 
-                        </p>
-
-                        <p>
-                            I’m intrigued by how technology and design shape the way people think, feel, and interact, and I’m motivated by finding ways to apply what I learn to build systems that are both helpful and enjoyable to use.
-                        </p>
-
-                        <p>
-                            Outside of software, I enjoy designing puzzles, hosting large events, playing board games, writing, and building interactive experiences.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <p
-                        className="
-                            font-major-mono
-                            text-xs
-                            tracking-[0.15em]
-                            text-stone-500
-                            text-center
-                            mt-16
-                        "
-                    >
-                        More ways to interact
+                
+                    <p className="font-major-mono text-sm">
+                        character 04 / The Villager
                     </p>
 
-                    <div className="mt-5 flex justify-center gap-4">
+                    <h2 className="mt-6 font-caslon text-5xl md:text-[50px]">
+                        Just Another Townsfolk,
+                    </h2>
 
-                        <SocialButton
-                            href={character.socials?.linkedin}
-                            label="LinkedIn"
-                            icon={Linkedin}
-                        />
+                    <p className="mt-6 max-w-3xl font-caslon text-[15px] italic text-stone-600">
+                        making a living out of loving the living
+                    </p>
 
-                        <SocialButton
-                            href={character.socials?.github}
-                            label="GitHub"
-                            icon={Github}
-                        />
+                    <div className="
+                        mt-16
+                        grid items-center gap-6
+                        sm:grid-cols-2
+                        lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.5fr)]
+                        lg:gap-8
+                        xl:grid-cols-[320px_320px_minmax(0,1fr)]
+                    ">
 
-                        <SocialButton
-                            href={character.socials?.email}
-                            label="Email"
-                            icon={Mail}
-                        />
+                        <figure className="w-full max-w-80 hidden lg:block">
+
+                            <div className="aspect-[4/5] overflow-hidden rounded-lg border border-black">
+
+                                <img
+                                    src={LinProfessionalPhoto}
+                                    alt="Lin Photo 1"
+                                    className="h-full w-full object-cover"
+                                />
+
+                            </div>
+
+                        </figure>
+
+                        <figure className="w-full max-w-80">
+
+                            <div className="lg:aspect-[4/5] overflow-hidden rounded-lg border border-black">
+
+                                <img
+                                    src={LinGradPhoto}
+                                    alt="Lin Photo 2"
+                                    className="h-full w-full object-cover"
+                                />
+
+                            </div>
+
+                        </figure>
+
+                        <div className="
+                            space-y-6
+                            font-caslon text-lg leading-relaxed
+                            sm:col-span-2
+                            lg:col-span-1
+                        ">
+
+                            <h3 className="font-caslon text-4xl">
+                                Hey, this is Lin!
+                            </h3>
+
+                            <p>
+                                I am a Software Developer and Consultant at Fast Enterprises. I graduated from Boston University in May 2025 with a double major in Computer Science and Psychology. 
+                            </p>
+
+                            <p>
+                                I’m intrigued by how technology and design shape the way people think, feel, and interact, and I’m motivated by finding ways to apply what I learn to build systems that are both helpful and enjoyable to use.
+                            </p>
+
+                            <p>
+                                Outside of software, I enjoy designing puzzles, hosting large events, playing board games, writing, and building interactive experiences.
+                            </p>
+
+                        </div>
 
                     </div>
-                </div>
 
+                    <MoreAboutMe />
+
+                </div>
             </div>
         </section>
     );

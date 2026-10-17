@@ -1,9 +1,8 @@
-// src/components/escape-room/EscapeRoomNavigation.tsx
+// src/components/escape-room/EscapeRoomNavigation.jsx
 // this should handle my sidebar and navigation
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import React from "react";
 
 const sections = [
     { id: "overview", label: "Overview", number: "00" },
