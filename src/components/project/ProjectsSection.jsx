@@ -95,10 +95,16 @@ export default function ProjectsSection({ projects, character }) {
                             project.presentation === "stage"
                         ) {
                             return (
-                                <EventStage
+                                <div
                                     key={project.id}
-                                    project={project}
-                                />
+                                    className="
+                                        md:col-span-2
+                                        flex
+                                        justify-center
+                                    "
+                                >
+                                    <EventStage project={project} />
+                                </div>
                             );
                         }
 
