@@ -1,6 +1,7 @@
 // src/components/escape-room/EscapeRoomBranchesPuzzle.jsx
 
 import BranchesPuzzleImage1 from "../../assets/images/escaperoom/branches_puzzle_1.jpg";
+import BranchesPuzzleImage2 from "../../assets/images/escaperoom/polaroids.jpg";
 
 export default function EscapeRoomBranchesPuzzle() {
     return (
@@ -22,6 +23,14 @@ export default function EscapeRoomBranchesPuzzle() {
                 combination.
             </p>
 
+            <p className="mt-6 ml-auto max-w-3xl font-caslon text-lg leading-relaxed text-end">
+                The original puzzle was too challenging for the 
+                testers as they did not have the necessary information
+                to arrive to the solution, which was to stack the branches 
+                in a specific way to reveal the combination. So, we implemented
+                a creative visual hint to guide the players to the solution.
+            </p>
+
             <div className="mt-12 grid gap-6 md:grid-cols-2">
 
                 <figure>
@@ -41,9 +50,11 @@ export default function EscapeRoomBranchesPuzzle() {
                 <figure>
 
                     <div className="flex aspect-[4/3] items-center justify-center bg-neutral-200 text-neutral-600">
-                        <p className="font-major-mono text-sm">
-                            photograph of the polaroid hint
-                        </p>
+                        <img
+                            src={BranchesPuzzleImage2}
+                            alt="Hints for the branches puzzle in polaroids"
+                            className="h-full w-full object-cover"
+                        />
                     </div>
 
                     <figcaption className="mt-3 font-caslon text-sm italic">

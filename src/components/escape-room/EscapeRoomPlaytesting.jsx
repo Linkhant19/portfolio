@@ -1,7 +1,7 @@
 // src/components/escape-room/EscapeRoomPlaytesting.jsx
 
 import TesterVideo1 from "../../assets/images/escaperoom/tester_video_1.mp4";
-import TesterVideo2 from "../../assets/images/escaperoom/tester_video_2.mp4";
+import TesterVideo3 from "../../assets/images/escaperoom/strings.mp4";
 import AutoPlayVideo from "../ui/AutoPlayVideo";
 
 export default function EscapeRoomPlaytesting() {
@@ -13,14 +13,16 @@ export default function EscapeRoomPlaytesting() {
             </p>
 
             <h2 className="mt-4 font-caslon text-5xl md:text-6xl">
-                Watching Players Think
+                Running Initial Playtests
             </h2>
 
             <p className="mt-8 max-w-3xl font-caslon text-lg leading-relaxed">
                 Before opening the experience to larger groups,
-                we ran two initial playtests with coworkers and a friend.
+                we ran 4 initial playtests with coworkers and friends.
                 Watching people interact with the puzzles gave us
                 a perspective that designing them ourselves could not.
+                It also gave us a better understanding of how
+                players interact with our more mechanical puzzles created using Arduino.
             </p>
 
             <div className="mt-16 grid gap-6 md:grid-cols-2">
@@ -37,11 +39,11 @@ export default function EscapeRoomPlaytesting() {
 
                 <figure>
                     <div className="aspect-video overflow-hidden">
-                        <AutoPlayVideo src={TesterVideo2} />
+                        <AutoPlayVideo src={TesterVideo3} />
                     </div>
 
                     <figcaption className="mt-3 font-caslon text-sm italic text-end">
-                        Making shapes out of ropes.
+                        Small door opened by getting the correct combination.
                     </figcaption>
                 </figure>
 

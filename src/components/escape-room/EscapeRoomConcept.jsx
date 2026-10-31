@@ -10,7 +10,7 @@ export default function EscapeRoomConcept() {
             </p>
 
             <h2 className="mt-4 font-caslon text-5xl md:text-6xl">
-                Three Caves. One Rescue Crew.
+                Three Caves and One Escpe Crew
             </h2>
 
             <p className="mt-8 max-w-3xl font-caslon text-lg leading-relaxed">

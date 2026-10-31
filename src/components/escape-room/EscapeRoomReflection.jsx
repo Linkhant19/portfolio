@@ -53,7 +53,17 @@ export default function EscapeRoomReflection() {
                         </p>
 
                         <p className="mt-4 font-caslon text-lg leading-relaxed">
-                            I ... do something. Maybe accessibility?
+                            If I built this experience again, I would bring players into the design process 
+                            much earlier through structured playtesting and observation. 
+                            I would test not only whether a puzzle can be solved, but also whether players understand 
+                            what they can interact with, receive enough feedback from the environment, 
+                            and feel supported without having the solution revealed too quickly.
+
+                            I would also design more intentionally for accessibility by considering 
+                            different levels of mobility, vision, hearing, and prior puzzle experience. 
+                            I am interested in exploring how hints, alternative interaction methods, 
+                            and environmental cues could make an immersive experience 
+                            more inclusive without taking away from the challenge or sense of discovery.
                         </p>
                     </div>
 
@@ -69,7 +79,8 @@ export default function EscapeRoomReflection() {
 
                             I would also like to take on a bigger project after
                             more research and experience. It would also be interesting to
-                            apply this to a non-escape room setting like a Murder Mystery Experience.
+                            apply this to a non-escape room setting like a Murder Mystery Experience. 
+                            Or a VR escape room in a physical space.
                         </p>
                     </div>
 
