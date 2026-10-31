@@ -13,7 +13,7 @@ export default function EscapeRoomHero() {
             </h1>
 
             <p className="mt-4 font-caslon text-2xl italic">
-                An Escape Room Adventure by Lin and Nyrein
+                An Escape Room Adventure by Lin and Nyrein 🚧 in progress 🚧
             </p>
 
             <p className="mt-10 max-w-3xl text-lg leading-relaxed font-caslon">

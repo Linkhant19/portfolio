@@ -28,7 +28,7 @@ export default function EventPhotosSection({ projects }) {
                         text-stone-800
                     "
                 >
-                    More Photos from Events
+                    Photos from Events I Designed/Hosted
                 </h2>
             </div>
 

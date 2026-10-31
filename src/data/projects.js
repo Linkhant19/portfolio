@@ -175,7 +175,7 @@ export const projects = [
         category: "work",
         order: 
         {
-            developer: 1,
+            developer: 10,
         },
         dates: "August 2025 - Present",
         description: "As an implementation consultant for Fast Enterprises, I work with the West Virginia State Tax Division to maintain and improve our tax software. My responsibilities range from monitoring production, investigating logs and system interventions, and resolving issues to consulting with state employees on new requirements and implementing annual changes, bug fixes, code conversions, and version upgrades. The role combines software development, production support, client communication, and problem solving within a large system used in real government operations.",
@@ -218,33 +218,33 @@ export const projects = [
     //     image: PortfolioGif,
     // },
 
-    {
-        id: "commute-beat",
-        title: "Commute Beat - Full Stack Web App",
-        characterIds: ["developer"],
-        category: "project",
-        order:
-        {
-            developer: 7,
-        },
-        description:
-            "My team and I developed a user-centric web application that provides personalized travel route and music recommendations based on a user's preferred mode of transportation and the distance of the trip. We built the application with Flask and React and integrated Spotify, weather, and geolocation APIs to create recommendations tailored to each user's journey.",
-        links: [
-            {
-                label: "github",
-                url: "https://github.com/Linkhant19/CommuteBeat",
-            },
-        ],
-        highlights: [
-            "personalized travel and music recommendations",
-            "Flask",
-            "React",
-            "Spotify",
-            "weather",
-            "geolocation APIs",
-        ],
-        image: CommuteBeatGif,
-    },
+    // {
+    //     id: "commute-beat",
+    //     title: "Commute Beat - Full Stack Web App",
+    //     characterIds: ["developer"],
+    //     category: "project",
+    //     order:
+    //     {
+    //         developer: 7,
+    //     },
+    //     description:
+    //         "My team and I developed a user-centric web application that provides personalized travel route and music recommendations based on a user's preferred mode of transportation and the distance of the trip. We built the application with Flask and React and integrated Spotify, weather, and geolocation APIs to create recommendations tailored to each user's journey.",
+    //     links: [
+    //         {
+    //             label: "github",
+    //             url: "https://github.com/Linkhant19/CommuteBeat",
+    //         },
+    //     ],
+    //     highlights: [
+    //         "personalized travel and music recommendations",
+    //         "Flask",
+    //         "React",
+    //         "Spotify",
+    //         "weather",
+    //         "geolocation APIs",
+    //     ],
+    //     image: CommuteBeatGif,
+    // },
     {
         id: "livable-streets",
         title: "Livable Streets - Data Analysis and Visualization",
@@ -343,7 +343,7 @@ export const projects = [
         category: "work",
         order:
         {
-            developer: 2,
+            developer: 20,
         },
         dates: "September 2023 - May 2025",
         description:
@@ -401,7 +401,7 @@ export const projects = [
         category: "work",
         order:
         {
-            developer: 6,
+            developer: 60,
             puzzleDesigner: 3,
         },
         dates: "August 2023 - October 2023",
@@ -525,25 +525,25 @@ export const projects = [
             },
         ]
     },
-    {
-        id: "red-thread-ties",
-        title: "Red Thread Ties",
-        characterIds: ["writer"],
-        category: "writing",
-        order:
-        {
-            writer: 3,
-        },
-        description: "- written in Fall 2022 for a Research and Writing class. It is a narrative non-fiction on the indirect influence of puzzles and escape rooms on anxiety and stress.",
-        excerpt: "Reality is not a great place to be stuck in right now. I choose to be stuck in my puzzles instead.",
-        format: "NARRATIVE NON-FICTION",
-        links: [
-            {
-                label: "PDF",
-                url: "/writings/Red-Thread-Ties.pdf",
-            },
-        ]
-    },
+    // {
+    //     id: "red-thread-ties",
+    //     title: "Red Thread Ties",
+    //     characterIds: ["writer"],
+    //     category: "writing",
+    //     order:
+    //     {
+    //         writer: 3,
+    //     },
+    //     description: "- written in Fall 2022 for a Research and Writing class. It is a narrative non-fiction on the indirect influence of puzzles and escape rooms on anxiety and stress.",
+    //     excerpt: "Reality is not a great place to be stuck in right now. I choose to be stuck in my puzzles instead.",
+    //     format: "NARRATIVE NON-FICTION",
+    //     links: [
+    //         {
+    //             label: "PDF",
+    //             url: "/writings/Red-Thread-Ties.pdf",
+    //         },
+    //     ]
+    // },
     {
         id: "murder-mystery-2022",
         title: "Murder Mystery 2022",
@@ -624,7 +624,7 @@ export const projects = [
     },
     {
         id: "trivia-night-2023",
-        title: "Trivia Night 2024 Spring",
+        title: "Trivia Night 2023 Fall",
         characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
@@ -639,11 +639,11 @@ export const projects = [
             Trivia23Pic7,
             Trivia23Pic8,
         ],
-        description: "Trivia Night 2024 Spring",
+        description: "Trivia Night 2023 Fall",
     },
     {
         id: "trivia-night-2024",
-        title: "Trivia Night 2024 Fall",
+        title: "Trivia Night 2024 Spring",
         characterIds: ["puzzleDesigner"],
         category: "event",
         presentation: "photo-stack",
@@ -661,7 +661,7 @@ export const projects = [
             Trivia24Pic10,
             Trivia24Pic11,
         ],
-        description: "Trivia Night 2024 Fall",
+        description: "Trivia Night 2024 Spring",
     },
     {
         id: "escape-room-2022",
