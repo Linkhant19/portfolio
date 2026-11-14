@@ -1,7 +1,6 @@
 // src/components/character/CharacterSelector.jsx
 
 import CharacterOption from "./CharacterOption";
-import HoldingCharacter from "../../assets/images/ui/holdingman.png";
 import { useEffect, useRef, useState } from "react";
 
 export default function CharacterSelector({
@@ -183,27 +182,6 @@ export default function CharacterSelector({
                             />
                         ))}
                     </div>
-
-                    {/* man holding the panel up! */}
-
-                    <img
-                        src={HoldingCharacter}
-                        alt=""
-                        aria-hidden="true"
-                        className="
-                            pointer-events-none
-                            absolute
-                            -bottom-[130px]
-                            -right-[95px]
-                            -z-2
-                            rotate-17
-                            hidden
-                            w-[150px]
-                            select-none
-                            lg:block
-                            animate-holder-idle
-                        "
-                    />
                 </div>
 
                 <a

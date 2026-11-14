@@ -6,6 +6,8 @@ import ProjectsSection from "../components/project/ProjectsSection";
 import VillagerSection from "../components/villager/VillagerSection";
 import SideSignature from "../components/ui/SideSignature";
 import Footer from "../components/ui/Footer";
+import RooftopBackground from "../assets/images/rooftop.gif";
+
 import { characters } from "../data/characters";
 import { projects } from "../data/projects";
 import { useSearchParams } from "react-router-dom";
@@ -40,7 +42,29 @@ export default function Home() {
     );
 
     return (
-        <main className="min-h-screen lg:pr-4">
+        <main className="relative min-h-screen overflow-x-clip lg:pr-4">
+
+            <div
+                aria-hidden="true"
+                className="
+                    pointer-events-none
+                    fixed
+                    inset-0
+                    -z-10
+                "
+            >
+                <img
+                    src={RooftopBackground}
+                    alt=""
+                    className="
+                        h-full
+                        w-full
+                        y-100px
+                        object-cover
+                    "
+                />
+            </div>
+
             <SideSignature selectedCharacter={selectedCharacter} />
             <div
                 className="
