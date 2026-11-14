@@ -20,24 +20,26 @@ export default function Home() {
     const backgroundRef = useRef(null);
 
     useEffect(() => {
-        function handlePointerMove(event) {
+        function handlePointer(event) {
             if (!backgroundRef.current) return;
-
+    
             backgroundRef.current.style.setProperty(
                 "--mouse-x",
                 `${event.clientX}px`
             );
-
+    
             backgroundRef.current.style.setProperty(
                 "--mouse-y",
                 `${event.clientY}px`
             );
         }
-
-        window.addEventListener("pointermove", handlePointerMove);
-
+    
+        window.addEventListener("pointermove", handlePointer);
+        window.addEventListener("pointerdown", handlePointer);
+    
         return () => {
-            window.removeEventListener("pointermove", handlePointerMove);
+            window.removeEventListener("pointermove", handlePointer);
+            window.removeEventListener("pointerdown", handlePointer);
         };
     }, []);
 
