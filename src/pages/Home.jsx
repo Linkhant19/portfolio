@@ -73,21 +73,22 @@ export default function Home() {
     return (
         <main className="relative min-h-screen overflow-x-clip lg:pr-4">
 
-            <div
-                ref={backgroundRef}
-                aria-hidden="true"
-                className="
-                    pointer-events-none
-                    fixed
-                    inset-0
-                    z-0
-                    overflow-hidden
-                "
-                style={{
-                    "--mouse-x": "50vw",
-                    "--mouse-y": "50vh",
-                }}
-            >
+        <div
+            ref={backgroundRef}
+            aria-hidden="true"
+            className="
+                spotlight-background
+                pointer-events-none
+                fixed
+                inset-0
+                z-[-10]
+                overflow-hidden
+            "
+            style={{
+                "--mouse-x": "50vw",
+                "--mouse-y": "50vh",
+            }}
+        >
                 <img
                     src={RooftopBackgroundDark}
                     alt=""
@@ -118,7 +119,7 @@ export default function Home() {
                     style={{
                         WebkitMaskImage: `
                             radial-gradient(
-                                circle 180px at var(--mouse-x) var(--mouse-y),
+                                circle var(--spotlight-size) at var(--mouse-x) var(--mouse-y),
                                 black 0%,
                                 black 35%,
                                 transparent 100%
@@ -126,7 +127,7 @@ export default function Home() {
                         `,
                         maskImage: `
                             radial-gradient(
-                                circle 180px at var(--mouse-x) var(--mouse-y),
+                                circle var(--spotlight-size) at var(--mouse-x) var(--mouse-y),
                                 black 0%,
                                 black 35%,
                                 transparent 100%
