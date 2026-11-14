@@ -7,12 +7,39 @@ import VillagerSection from "../components/villager/VillagerSection";
 import SideSignature from "../components/ui/SideSignature";
 import Footer from "../components/ui/Footer";
 import RooftopBackground from "../assets/images/rooftop.gif";
+import RooftopBackgroundDark from "../assets/images/rooftop_nbg.gif";
 
 import { characters } from "../data/characters";
 import { projects } from "../data/projects";
 import { useSearchParams } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+
+    // I want my cursor movement to "color" the background
+    const backgroundRef = useRef(null);
+
+    useEffect(() => {
+        function handlePointerMove(event) {
+            if (!backgroundRef.current) return;
+
+            backgroundRef.current.style.setProperty(
+                "--mouse-x",
+                `${event.clientX}px`
+            );
+
+            backgroundRef.current.style.setProperty(
+                "--mouse-y",
+                `${event.clientY}px`
+            );
+        }
+
+        window.addEventListener("pointermove", handlePointerMove);
+
+        return () => {
+            window.removeEventListener("pointermove", handlePointerMove);
+        };
+    }, []);
 
     // my select character logic to dynamically select the character
     const [searchParams, setSearchParams] = useSearchParams();
@@ -45,23 +72,65 @@ export default function Home() {
         <main className="relative min-h-screen overflow-x-clip lg:pr-4">
 
             <div
+                ref={backgroundRef}
                 aria-hidden="true"
                 className="
                     pointer-events-none
                     fixed
                     inset-0
-                    -z-10
+                    z-0
+                    overflow-hidden
                 "
+                style={{
+                    "--mouse-x": "50vw",
+                    "--mouse-y": "50vh",
+                }}
             >
+                <img
+                    src={RooftopBackgroundDark}
+                    alt=""
+                    className="
+                        absolute
+                        left-0
+                        top-[30px]
+                        h-[calc(100%+30px)]
+                        w-full
+                        object-cover
+                        opacity-20
+                        blur-[2px]
+                    "
+                />
+
+                {/* second background I will use for the cursor effect */}
                 <img
                     src={RooftopBackground}
                     alt=""
                     className="
-                        h-full
+                        absolute
+                        left-0
+                        top-[30px]
+                        h-[calc(100%+30px)]
                         w-full
-                        y-100px
                         object-cover
                     "
+                    style={{
+                        WebkitMaskImage: `
+                            radial-gradient(
+                                circle 180px at var(--mouse-x) var(--mouse-y),
+                                black 0%,
+                                black 35%,
+                                transparent 100%
+                            )
+                        `,
+                        maskImage: `
+                            radial-gradient(
+                                circle 180px at var(--mouse-x) var(--mouse-y),
+                                black 0%,
+                                black 35%,
+                                transparent 100%
+                            )
+                        `,
+                    }}
                 />
             </div>
 
