@@ -6,6 +6,7 @@ import PuzzleDraftOneImage from "../../assets/images/escaperoom/puzzle_draft_1.j
 import PuzzleDraftTwoImage from "../../assets/images/escaperoom/puzzle_draft_2.jpg";
 import PuzzleDraftThreeImage from "../../assets/images/escaperoom/puzzle_draft_3.jpg";
 import PuzzleDraftFourImage from "../../assets/images/escaperoom/puzzle_draft_4.jpg";
+import RoomPathImage from "../../assets/images/escaperoom/room_path.png";
 
 export default function EscapeRoomPuzzleDesign() {
     return (
@@ -90,7 +91,7 @@ export default function EscapeRoomPuzzleDesign() {
                 </p>
 
                 <h3 className="mt-4 font-caslon text-4xl">
-                    Connecting the Clues
+                    Pathing Drafts
                 </h3>
 
                 <p className="mt-6 max-w-3xl font-caslon text-lg leading-relaxed">
@@ -102,13 +103,13 @@ export default function EscapeRoomPuzzleDesign() {
                     and engage all individuals.
                 </p>
 
-                <p className="mt-6 max-w-3xl font-caslon text-lg leading-relaxed">
-                    Two starting puzzles can be solved independently.
-                    Their results provide information needed for a
-                    third puzzle. The first three puzzles then
-                    contribute to the room's final challenge,
-                    allowing players to progress into the next cave.
-                </p>
+                <div className="mt-12 aspect-video overflow-hidden">
+                    <img
+                        src={RoomPathImage}
+                        alt="Testers solving the tree puzzle"
+                        className="h-full w-full"
+                    />
+                </div>
 
             </div>
 

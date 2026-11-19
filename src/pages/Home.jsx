@@ -82,7 +82,7 @@ export default function Home() {
                 fixed
                 inset-0
                 z-[-10]
-                overflow-hidden
+                overflow-hidden 
             "
             style={{
                 "--mouse-x": "50vw",
