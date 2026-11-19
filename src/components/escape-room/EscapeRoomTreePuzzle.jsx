@@ -2,6 +2,10 @@
 
 import TreePuzzleImage1 from "../../assets/images/escaperoom/tree_puzzle_1.jpg";
 import MainTreeVideo from "../../assets/images/escaperoom/main_tree_video.mp4";
+import BranchImage1 from "../../assets/images/escaperoom/tree_1.png";
+import BranchImage2 from "../../assets/images/escaperoom/tree_2.png";
+import BranchImage3 from "../../assets/images/escaperoom/tree_3.png";
+import BranchImage4 from "../../assets/images/escaperoom/tree_4.png";
 import AutoPlayVideo from "../ui/AutoPlayVideo";
 
 export default function EscapeRoomTreePuzzle() {
@@ -76,7 +80,7 @@ export default function EscapeRoomTreePuzzle() {
             <div className="mt-12">
 
                 <p className="mb-6 font-major-mono text-sm">
-                    the rules / one branch at a time
+                    the clues
                 </p>
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -86,21 +90,25 @@ export default function EscapeRoomTreePuzzle() {
                             stage: "01",
                             title: "No Branches",
                             description: "Count the leaves.",
+                            image: BranchImage1,
                         },
                         {
                             stage: "02",
                             title: "One Branch",
                             description: "Discover multiplication.",
+                            image: BranchImage2,
                         },
                         {
                             stage: "03",
                             title: "Two Branches",
                             description: "Introduce subtraction.",
+                            image: BranchImage3,
                         },
                         {
                             stage: "04",
                             title: "Three Branches",
                             description: "Apply division.",
+                            image: BranchImage4,
                         },
                     ].map((step) => (
 
@@ -115,9 +123,11 @@ export default function EscapeRoomTreePuzzle() {
 
                             <div className="my-8 flex aspect-square items-center justify-center bg-neutral-100">
 
-                                <p className="font-major-mono text-xs text-neutral-500">
-                                    tree illustration
-                                </p>
+                                <img
+                                    src={step.image}
+                                    alt="Tree illustration"
+                                    className="h-full w-full object-contain"
+                                />
 
                             </div>
 
