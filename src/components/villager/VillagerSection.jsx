@@ -80,6 +80,9 @@ export default function VillagerSection({ character }) {
                             font-caslon text-lg leading-relaxed
                             sm:col-span-2
                             lg:col-span-1
+                            min-h-[350px]
+                            bg-white/90
+                            p-8
                         ">
 
                             <h3 className="font-caslon text-4xl">

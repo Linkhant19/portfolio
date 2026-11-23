@@ -31,12 +31,8 @@ export default function Footer() {
                     transition-all
                     duration-500
 
-                    opacity-40
-                    hover:opacity-100
-                    hover:-translate-y-0.5
-
-                    active:translate-x-[2px]
-                    active:translate-y-[2px]
+                    opacity-100
+                    hover:opacity-50
                 "
             >
                 ↑ back to main menu

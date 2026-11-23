@@ -36,8 +36,8 @@ export const characters = [
             experience: 7,
             technical: 9,
             creativity: 5,
-            leadership: 6, 
-            teamwork: 7, 
+            leadership: 5, 
+            teamwork: 8, 
         },
         description: "with his combined knowledge in Computer Science and Psychology, \
         he develops and implements software solutions that create different ways people could enjoy this world.",
@@ -88,10 +88,10 @@ export const characters = [
         streamLabel: "puzzles",
         stats: {
             experience: 6,
-            technical: 5,
+            technical: 4,
             creativity: 7,
             leadership: 9, 
-            teamwork: 8, 
+            teamwork: 9, 
         },
         description: "once the President of the Board Games Club, he found his passion in \
         hosting various interactive events, and designing puzzles and games, including escape rooms.",
@@ -142,7 +142,7 @@ export const characters = [
         streamLabel: "writer",
         stats: {
             experience: 8,
-            technical: 4,
+            technical: 3,
             creativity: 10,
             leadership: 1, 
             teamwork: 1, 
@@ -196,10 +196,10 @@ export const characters = [
         streamLabel: "villager",
         stats: {
             experience: 10,
-            technical: 3,
-            creativity: 4,
-            leadership: 4, 
-            teamwork: 4, 
+            technical: 6,
+            creativity: 8,
+            leadership: 7, 
+            teamwork: 9, 
         },
         description: "just a normal townsperson who built all of this. his role has no special abilities or powers, but his contributions often make a difference.",
         socials: {
